@@ -1,0 +1,57 @@
+.heading{
+    height: 377px;
+    background-color: #F6F6F6;
+}
+.headingContainer{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.headingText{
+    width: 100%;
+    padding: 80px 0 0 0;
+
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.headingText h1{
+    width: 90%;
+    margin: 0 auto;
+
+    font-weight: bold;
+    font-size: 46px;
+    line-height: 120%;
+}
+.headingText p{
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 140%;
+}
+.headingButton{
+    width: 100%;
+    margin-top: 40px;
+
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.buttonDB{
+    padding: 10px 15px;
+    border: 1px solid #0165DE;
+    border-radius: 5px;
+}
+.headingButton button{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    background: none;
+    border: none;
+    outline: none;
+}
+.arrow-down{
+    margin: -3px 5px;
+
+    color: #0165DE;
+    font-size: 20px;
+}

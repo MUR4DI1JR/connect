@@ -18,7 +18,6 @@ const Header = () => {
             setActive(true)
         }
     };
-    console.log(active);
     return (
         <div className="header">
             <div className="container">
