@@ -1,0 +1,78 @@
+.container{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    display: flex;
+}
+.logo img{
+    margin: 18px 0;
+    width: 54px;
+    height: 54px;
+
+    position: relative;
+    z-index: 5;
+}
+.logo h1{
+    margin: 32px 0 0 13px;
+
+    position: relative;
+    z-index: 5;
+    font-size: 20px;
+    font-weight: bold;
+}
+.logo span{
+    color: #0165DE;
+}
+.burger{
+    display: none;
+}
+.menu-burger{
+    display: flex;
+}
+.navBar{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 35px 52px 36px 68px;
+}
+.navBar p{
+    margin:0 28px 0 0;
+
+    font-size: 16px;
+    font-weight: 500;
+}
+.navBar a{
+    color: #000;
+    text-decoration: none;
+}
+.navBar a:last-child{
+    margin-right: 0;
+}
+.auth-log {
+    margin: 30px 0;
+    position: relative;
+    z-index: 5;
+}
+.signIn{
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: underline;
+    border: none;
+    background: none;
+}
+.signUp{
+    margin: 0 20px;
+    padding: 10px;
+
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+    border: 1px solid #0165DE;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background: none;
+}
