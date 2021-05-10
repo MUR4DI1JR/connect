@@ -1,0 +1,84 @@
+.consults{
+    width: 32%;
+    padding-left: 65px;
+
+    border: 0.5px solid #949CB3;
+    border-radius: 5px;
+}
+.conssButton{
+    display: flex;
+    justify-content: space-between;
+}
+.conssTitle h1{
+    margin: 0;
+    padding: 19px 20px 10px 15px;
+
+    color: #000;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 120%;
+    border-top: none;
+    border-right: 0.5px solid #949CB3;
+    border-left: 0.5px solid #949CB3;
+    border-bottom: 0.5px solid #949CB3;
+    box-sizing: border-box;
+    border-radius: 0 0 5px 5px;
+}
+.allConss{
+    padding: 21px 30px;
+
+    color: #949CB3;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 120%;
+}
+.allConss button{
+    color: #949CB3;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 120%;
+    background: none;
+    border: none;
+}
+.conssItem{
+    padding: 30px 0 30px 0;
+    border-bottom: 0.5px solid #949CB3
+}
+.conssItem:last-child{
+    margin-bottom: 12px;
+
+    border-bottom: none;
+}
+.conss{
+    display: flex;
+
+    color: #909EBB;
+    font-size: 13px;
+}
+.conss img{
+    width: 50px;
+    height: 50px;
+}
+.conssText{
+    margin-left: 20px;
+}
+.conssName h1{
+    margin: 7px 0 0 0;
+
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #014DA8;
+}
+.conssContact{
+    margin: 20px 0 0 0;
+}
+.conssContact h4{
+    margin: 7px 0 0 0;
+
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 120%;
+    color: #334059;
+}

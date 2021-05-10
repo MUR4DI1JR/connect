@@ -1,0 +1,117 @@
+p{
+    margin: 0;
+}
+.adsCommon{
+    max-width: 1200px;
+    margin: 30px auto 80px auto;
+    display: flex;
+    justify-content: space-around;
+}
+.adsContainer{
+    width: 50%;
+    height: 439px;
+    position: relative;
+
+    color: #909EBB;
+    font-size: 13px;
+    border: 0.5px solid #949CB3;
+    border-radius: 5px;
+}
+.slides{
+    padding-left: 65px;
+}
+.ads-date{
+    display: flex;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.ads-date p{
+    padding: 19px 20px 10px 15px;
+
+    color: #000;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 120%;
+    border-top: none;
+    border-left: 0.5px solid #949CB3;
+    border-right: 0.5px solid #949CB3;
+    border-bottom: 0.5px solid #949CB3;
+    border-radius: 0 0 5px 5px;
+}
+.ads-date h2{
+    margin: 0;
+    padding: 20px;
+
+    color: #949CB3;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 120%;
+    background: none;
+    border: none;
+}
+.allAds{
+    width: 30%;
+    padding: 5px 10px 0 10px;
+
+    position: absolute;
+    text-align: center;
+    top: 0;
+    right: 0;
+}
+.allAds button{
+    padding: 18px 0;
+
+    color: #949CB3;
+    font-size: 16px;
+    background: none;
+    border: none
+}
+.adsIcon{
+    margin-left: 10px;
+}
+.slides h4{
+    width: 80%;
+
+    margin: 7px 0 0 0;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 120%;
+    color: #334059;
+}
+.ads{
+    margin: 20px 0 0 0;
+}
+.ads:first-child{
+    margin: 30px 0 0 0 !important;
+}
+.ads:last-child{
+    margin: 20px 0 40px 0;
+}
+.ads h1{
+    margin-top: 7px;
+
+    color: #014DA8;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.paging{
+    width: 8px;
+    height: 8px;
+    color: #fff;
+    background-color: #0165DE;
+    border-radius: 50%;
+    opacity: 0.4;
+}
+.slick-dots{
+    margin-top: 40px !important;
+    text-align: left !important;
+}
+.slick-active .paging{
+    width: 8px;
+    height: 8px;
+    color: #fff;
+    background-color: #0165DE;
+    border-radius: 50%;
+    opacity: 1;
+}

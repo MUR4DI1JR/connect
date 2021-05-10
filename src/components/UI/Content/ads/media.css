@@ -1,0 +1,24 @@
+@media screen and (max-width: 1090px){
+    .adsContainer {
+        height: 470px;
+    }
+    .adsButton{
+        font-size: 13px;
+    }
+    .adsButton:hover,
+    .adsButton:active {
+        font-size: 13px;
+    }
+    .allAds button{
+        font-size: 13px;
+    }
+    .allAds{
+        font-size: 13px;
+    }
+    .allAds button:hover{
+        font-size: 13px;
+    }
+    .allAds:hover{
+        font-size: 13px;
+    }
+}

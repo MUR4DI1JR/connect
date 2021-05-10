@@ -81,7 +81,7 @@
 
         position: fixed;
         display: block;
-        top: -100%;
+        top: -150%;
         background-color: #fff;
         transition: all 0.3s ease 0s;
     }
