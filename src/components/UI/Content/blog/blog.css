@@ -1,0 +1,41 @@
+.blog{
+    background-color: #F6F6F6;
+}
+.blogContainer{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 108px;
+}
+.blogTitle{
+    padding: 80px 0 40px 0;
+    text-align: center;
+}
+.blogItems{
+    display: flex;
+    justify-content: space-between;
+}
+.blogCard{
+    width: 29%;
+
+    background-color: #fff;
+}
+.blogImg img{
+    width: 100%;
+}
+.blogText{
+    padding: 15px 20px;
+}
+.blogText p{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 120%;
+
+    color: #334059;
+}
+.blogText h1{
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 100%;
+
+    text-transform: uppercase;
+}

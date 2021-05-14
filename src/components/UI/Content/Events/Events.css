@@ -1,0 +1,84 @@
+.event{
+    margin-top: 80px;
+    background: #F6F6F6;
+}
+.eventContainer{
+    margin: 0 auto;
+    padding-bottom: 80px;
+    max-width: 1200px;
+}
+.eventTitle h1{
+    padding: 60px 0 40px 0;
+
+    text-align: center;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 120%;
+}
+.eventCard{
+    width: 87%;
+    margin: 0 30px;
+
+    background: #fff;
+    border-radius: 5px;
+}
+.eventImg{
+    width: 100%;
+}
+.eventTitleCard{
+    padding: 15px 20px;
+}
+.eventTitleCard h1{
+    margin: 0;
+
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 100%;
+}
+.eventParameters{
+    margin-top: 23px;
+
+    color: #334059;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+}
+.eventParameters p{
+    margin: 14px 0;
+}
+.eventIcon{
+    margin-right: 8px;
+}
+.eventLocation{
+    margin: 14px 0;
+    display: flex;
+}
+.eventLocation p{
+    margin: 0;
+}
+.eventLocation span{
+    margin-left: 5px;
+
+    text-decoration: underline;
+}
+.icon::before{
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+.slick-next::before{
+    width: 48px;
+    height: 25px;
+    padding: 10px 10px 10px 15px;
+
+    font-size: 24px;
+    content: "\f054";
+    color: #fff;
+    opacity: 1;
+    background: #909EBB;
+    border-radius: 50px;
+}

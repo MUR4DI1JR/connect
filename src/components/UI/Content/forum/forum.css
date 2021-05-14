@@ -1,0 +1,49 @@
+.forum{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.forum h1{
+    margin: 80px 0 20px 0;
+
+    text-align: center;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 120%;
+}
+.forumContainer{
+    display: flex;
+    justify-content: space-between;
+}
+.forumImg img{
+    width: 387px;
+    margin-top: 65px;
+}
+.forumText{
+    width: 49%;
+    margin-bottom: 83px;
+}
+.forumCatalog{
+    margin: 30px 0;
+}
+.forumTitle {
+    width: 35%;
+
+    margin: 10px 0;
+    padding: 5px 20px;
+    line-height: 140%;
+    border: 0.5px solid #0165DE;
+}
+.forumTitle h1{
+    margin: 0;
+
+    font-weight: 600;
+    font-size: 18px;
+    text-align: left;
+}
+.forumCatalog p{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 140%;
+
+    color: #334059;
+}

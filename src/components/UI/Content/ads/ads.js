@@ -9,6 +9,17 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Conss from "../conss/conss";
 
+function SampleNextArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+        <div
+            className={"icon " + className}
+            style={{ ...style, marginRight: "45px", marginTop: '-20px', display: "none"}}
+            onClick={onClick}
+        />
+    );
+}
+
 class Ads extends Component {
     constructor(props) {
         super(props);
@@ -76,9 +87,9 @@ class Ads extends Component {
             slidesToScroll: 1,
             className: 'slides',
             adaptiveHeight: true,
+            nextArrow: <SampleNextArrow/>,
             customPaging: i => (
                 <div className="paging" key={i+1}>
-
                 </div>
             )
         };
@@ -87,9 +98,9 @@ class Ads extends Component {
                 <div className="adsContainer">
                     <Slider ref={c => (this.slider = c)} {...settings}>
                         {
-                            ads.map(ads =>{
+                            ads.map((ads, i) =>{
                                 return(
-                                    <div>
+                                    <div key={i}>
                                         <div className="ads-date">
                                             <p className="adsTitle">
                                                 {ads.title}

@@ -32,9 +32,9 @@ const Conss = () => {
                 </div>
             </div>
             {
-                conss.map(conss => {
+                conss.map((conss, i) => {
                     return (
-                        <div className="conssItem">
+                        <div className="conssItem" key={i}>
                             <div className="conss">
                                 <img src={icon} alt="icon"/>
                                 <div className="conssText">

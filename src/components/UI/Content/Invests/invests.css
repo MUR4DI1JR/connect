@@ -1,0 +1,163 @@
+button:hover{
+    cursor: pointer;
+}
+.invests{
+    margin: 0 auto;
+    max-width: 1185px;
+}
+.investsButtonsItem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.investsButton{
+    width: 30%;
+    background-color: #F6F6F6;
+    border-radius: 26px;
+}
+.investsButton button{
+    padding: 15px 40px;
+
+    border: none;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 22px;
+    background-color: #F6F6F6;
+}
+.investsGrands{
+    border-bottom-left-radius: 26px;
+    border-top-left-radius: 26px;
+}
+.investsInvests{
+    border-top-right-radius: 26px;
+    border-bottom-right-radius: 26px;
+}
+.investsGrands.active{
+    color: #fff;
+    background-color: #0165DE;
+    border-radius: 25px;
+    transition: all 0.5s ease 0s;
+}
+.investsInvests.active{
+    color: #fff;
+    background-color: #0165DE;
+    border-top-left-radius: 26px;
+    border-bottom-left-radius: 26px;
+    transition: all 0.5s ease 0s;
+}
+.investsItems{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.investsBlock{
+    width: 42%;
+    margin: 30px 0;
+    padding: 40px 0 40px 40px;
+
+    background: #F6F6F6;
+    border-radius: 5px 5px 0px 0px;
+}
+.investsTitle{
+    width: 90%;
+    display: flex;
+    padding: 0 40px 0 0;
+}
+.investsTitle img{
+    width: 50px;
+    height: 50px;
+}
+.investsTitle h1{
+    margin: 0 0 0 15px;
+
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 140%;
+
+    color: #000000;
+}
+.investsCheckIcon{
+    margin-left: 10px;
+
+    color: #0165DE;
+}
+.investsParameters{
+    margin: 15px 0 0 0;
+    padding: 0 40px 32px 0;
+    display: flex;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: #334059;
+    border-bottom: 0.5px solid #949CB3;
+}
+.investsParameters p{
+    margin: 10px 0 0 0;
+}
+.investsIcon{
+    margin: 10px 5px 0 2px;
+}
+.investsParameters img{
+    width: 18px;
+    height: 18px;
+    margin: 10px 3px 0 0;
+}
+.investsData{
+    margin-right: 48px;
+}
+.investsData span{
+    text-decoration: underline;
+}
+.investsText{
+    width: 90%;
+    padding: 15px 40px 0 0;
+}
+.investsText p{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 120%;
+
+    color: #334059;
+}
+.investsBlockButton{
+    display: flex;
+    justify-content: space-between;
+}
+.investsBlockButton button{
+    padding: 12px 20px;
+
+    background: #909EBB;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    border: none;
+    border-radius: 5px;
+    color: #FFFFFF;
+}
+.investsTextIcon{
+    font-size: 14px;
+    margin-left: 10px;
+}
+.investsShareIcon{
+    padding: 0 8px !important;
+    border-radius: 50px !important;
+}
+.allShowInvests{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.allShowInvestsButton{
+    padding: 15px 25px;
+    background: #F6F6F6;
+}
+.allShowInvestsButton button{
+    margin: 0 10px 0 0;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    background: none;
+    border: none;
+}
