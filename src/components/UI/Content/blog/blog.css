@@ -11,11 +11,11 @@
     text-align: center;
 }
 .blogItems{
-    display: flex;
-    justify-content: space-between;
+    width: 95%;
+    margin: 0 auto;
 }
 .blogCard{
-    width: 29%;
+    width: 89% !important;
 
     background-color: #fff;
 }

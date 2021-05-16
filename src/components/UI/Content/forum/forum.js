@@ -1,6 +1,7 @@
 import React from 'react';
 
 import './forum.css';
+import './media.css';
 import forumLogo from './../../../../Images/forum_logo.png';
 
 const Forum = () => {

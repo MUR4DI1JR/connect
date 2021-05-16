@@ -1,0 +1,92 @@
+@media screen and (max-width: 900px){
+    .askContainer {
+        width: 80%;
+        margin: 0 auto;
+        display: block;
+    }
+    .askAnswer {
+        width: 100%;
+    }
+    .askUserSupport {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 650px){
+    .askUserEmail {
+         display: block;
+    }
+    .askUserTel {
+        width: 96%;
+        margin-bottom: 10px;
+    }
+    .askUserEmail input {
+        width: 96%;
+    }
+    .askSecurityText {
+        width: 90%;
+    }
+    .askSecurityText p {
+        width: 100%;
+    }
+    .askButton {
+         display: block;
+    }
+    .askButtonConfirm {
+        text-align: center;
+    }
+}
+@media screen and (max-width: 470px){
+    .ask {
+        padding: 35px 0;
+    }
+    .askAnswer {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .askAnswer h1 {
+        margin-bottom: 20px;
+        font-size: 24px;
+    }
+    .askButtonAnswer {
+        font-size: 14px;
+    }
+    .askUserSupport h1 {
+        padding: 35px 0 0 20px;
+        font-size: 24px;
+        margin: 0;
+    }
+    .askContainer {
+        width: 100%;
+    }
+    .askUserSupport{
+        background-color: #F6F6F6;
+    }
+    .askUserForm {
+        padding: 20px 20px;
+        border: none;
+        border-radius: 5px;
+    }
+    .askUserForm input {
+        background-color: #fff;
+        border-bottom: none;
+        border-radius: 5px;
+    }
+    .askUserTel {
+        background-color: #fff;
+        border-bottom: none;
+        border-radius: 5px;
+    }
+    .askUserMessage textarea {
+        background-color: #fff;
+        border-bottom: none;
+        border-radius: 5px;
+    }
+    .askButton {
+        background-color: #fff;
+        border-bottom: none;
+        border-radius: 5px;
+    }
+    .askSecurityText p {
+        width: 70%;
+    }
+}

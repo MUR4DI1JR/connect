@@ -1,0 +1,20 @@
+@media screen and (max-width: 650px){
+    .eventTitleCard h1 {
+        font-size: 14px;
+    }
+    .eventParameters {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .slick-prev, .slick-next {
+        display: none !important;
+    }
+}
+@media screen and (max-width: 420px){
+    .eventParameters {
+        font-size: 13px;
+    }
+    .eventTime:last-child {
+        margin-left: 25px;
+    }
+}

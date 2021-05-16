@@ -1,0 +1,48 @@
+@media screen and (max-width: 900px){
+    .forumContainer {
+        margin: 0 auto;
+        width: 50%;
+        display: block;
+        justify-content: space-between;
+    }
+    .forumText {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 83px;
+    }
+    .forumTitle {
+        text-align: center;
+        width: 93%;
+    }
+    .forumTitle h1 {
+         text-align: center;
+    }
+}
+@media screen and (max-width: 650px){
+    .forumContainer {
+        width: 70%;
+    }
+}
+@media screen and (max-width: 470px){
+    .forum h1 {
+        text-align: left;
+        margin: 80px 0 20px 24px;
+    }
+    .forumContainer {
+        width: 86%;
+    }
+    .forumImg img {
+        width: 148px;
+    }
+    .forumTitle {
+        text-align: left;
+        width: 70%;
+    }
+    .forumTitle h1 {
+        margin: 0;
+        text-align: left;
+    }
+    .forumText {
+        text-align: left;
+    }
+}

@@ -7,11 +7,12 @@ button:hover{
 }
 .investsButtonsItem{
     display: flex;
+    width: 100%;
+    margin: 0 auto;
     justify-content: center;
     align-items: center;
 }
 .investsButton{
-    width: 30%;
     background-color: #F6F6F6;
     border-radius: 26px;
 }

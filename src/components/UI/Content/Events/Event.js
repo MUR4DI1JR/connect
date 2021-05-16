@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faCalendar, faClock} from '@fortawesome/free-regular-svg-icons';
 
 import './Events.css';
+import './media.css';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -33,7 +34,8 @@ class Event extends Component {
                 title: 'Стипендиальная программа для иностранных студентов',
                 data: '15мая 2021',
                 time: '9:00',
-                location: 'Где: Лондон, Великобритания',
+                location: 'Лондон',
+                country: 'Великобритания',
                 coins: '5432',
                 value: 'C'
             },
@@ -42,7 +44,8 @@ class Event extends Component {
                 title: 'Стипендиальная программа для иностранных студентов',
                 data: '15мая 2021',
                 time: '9:00',
-                location: 'Где: Лондон, Великобритания',
+                location: 'Лондон',
+                country: 'Великобритания',
                 coins: '5432',
                 value: 'C'
             },
@@ -51,7 +54,8 @@ class Event extends Component {
                 title: 'Стипендиальная программа для иностранных студентов',
                 data: '15мая 2021',
                 time: '9:00',
-                location: 'Где: Лондон, Великобритания',
+                location: 'Лондон',
+                country: 'Великобритания',
                 coins: '5432',
                 value: 'C'
             },
@@ -60,59 +64,121 @@ class Event extends Component {
                 title: 'Стипендиальная программа для иностранных студентов',
                 data: '15мая 2021',
                 time: '9:00',
-                location: 'Где: Лондон, Великобритания',
+                location: 'Лондон',
+                country: 'Великобритания',
                 coins: '5432',
                 value: 'C'
             }
-        ]
+        ],
+        screen9: false,
+        screen6: window.matchMedia('(max-width: 650px)').matches,
     };
 
-    render() {
-        const {events} = this.state;
+    componentDidMount() {
+        const handler = e => this.setState({screen9: e.matches});
+        const screenHandler = e => this.setState({screen6: e.matches});
+        window.matchMedia("(max-width: 900px)").addListener(handler);
+        window.matchMedia("(max-width: 650px)").addListener(screenHandler);
+    }
+
+    showOneSlides = () =>{
         const settings = {
             dots: false,
             infinite: true,
             speed: 500,
-            slidesToShow: 3,
-            slidesToScroll: 3,
+            slidesToShow: this.state.screen6 ? 1 : 2,
+            slidesToScroll: 1,
             className: 'eventSlides',
-            adaptiveHeight: true,
+
+        };
+
+        return(
+            <Slider {...settings}>
+                {
+                    this.state.events.map((events, i) => {
+                        return (
+                            <div key={i}>
+                                <div className="eventCard">
+                                    <img className="eventImg" src={events.img} alt=""/>
+                                    <div className="eventTitleCard">
+                                        <h1>{events.title}</h1>
+                                        <div className="eventParameters">
+                                            <div className="eventTime">
+                                                <p><FontAwesomeIcon className="eventIcon" icon={faCalendar}/>Когда: {events.data}</p>
+                                                <div className="eventLocation">
+                                                    <img src={value} className="eventIcon" alt="valueIcon"/>
+                                                    <p>Cумма: {events.coins}<span>{events.value}</span></p>
+                                                </div>
+                                            </div>
+                                            <div className="eventTime">
+                                                <p><FontAwesomeIcon className="eventIcon" icon={faClock}/>Время: {events.time}</p>
+                                                <div className="eventLocation">
+                                                    <img src={earth} className="eventIcon" alt="earthIcon"/>
+                                                    <p>Где: {events.location}</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        )
+                    })
+                }
+            </Slider>
+        )
+    };
+
+    render() {
+        const {events} = this.state;
+        const {screen6} = this.state;
+        const settings = {
+            dots: false,
+            infinite: true,
+            speed: 500,
+            slidesToShow: !window.matchMedia("(max-width: 900px)").matches ? 3 : 2,
+            slidesToScroll: 1,
+            className: 'eventSlides',
             nextArrow: <SampleNextArrow />,
         };
+
         return (
             <div className="event">
                 <div className="eventContainer">
                     <div className="eventTitle">
                         <h1>Мероприятия</h1>
                     </div>
-                    <Slider {...settings}>
-                        {
-                            events.map((events, i) => {
-                                return (
-                                    <div key={i}>
-                                        <div className="eventCard">
-                                            <img className="eventImg" src={events.img} alt=""/>
-                                            <div className="eventTitleCard">
-                                                <h1>{events.title}</h1>
-                                                <div className="eventParameters">
-                                                    <p><FontAwesomeIcon className="eventIcon" icon={faCalendar}/>{events.data}</p>
-                                                    <p><FontAwesomeIcon className="eventIcon" icon={faClock}/>{events.time}</p>
-                                                    <div className="eventLocation">
-                                                        <img src={earth} className="eventIcon" alt="earthIcon"/>
-                                                        <p>{events.location}</p>
-                                                    </div>
-                                                    <div className="eventLocation">
-                                                        <img src={value} className="eventIcon" alt="valueIcon"/>
-                                                        <p>{events.coins}<span>{events.value}</span></p>
+                    { screen6 ?
+                        this.showOneSlides() :
+                        <Slider {...settings}>
+                            {
+                                events.map((events, i) => {
+                                    return (
+                                        <div key={i}>
+                                            <div className="eventCard">
+                                                <img className="eventImg" src={events.img} alt=""/>
+                                                <div className="eventTitleCard">
+                                                    <h1>{events.title}</h1>
+                                                    <div className="eventParameters">
+                                                        <p><FontAwesomeIcon className="eventIcon" icon={faCalendar}/>{events.data}</p>
+                                                        <p><FontAwesomeIcon className="eventIcon" icon={faClock}/>{events.time}</p>
+                                                        <div className="eventLocation">
+                                                            <img src={earth} className="eventIcon" alt="earthIcon"/>
+                                                            <p>{events.location}<span className="eventCountry">,{events.country}</span></p>
+                                                        </div>
+                                                        <div className="eventLocation">
+                                                            <img src={value} className="eventIcon" alt="valueIcon"/>
+                                                            <p>{events.coins}<span>{events.value}</span></p>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                )
-                            })
-                        }
-                    </Slider>
+                                    )
+                                })
+                            }
+                        </Slider>
+                    }
+
                 </div>
             </div>
         );

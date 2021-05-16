@@ -1,9 +1,11 @@
 import React from 'react';
-
-import './conss.css';
-import icon from './../../../../Images/Mask Group.png';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faArrowRight} from "@fortawesome/free-solid-svg-icons";
+
+import './conss.css';
+import './media.css';
+import icon from './../../../../Images/Mask Group.png';
+
 
 const Conss = () => {
     const conss = [

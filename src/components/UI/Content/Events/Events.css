@@ -46,6 +46,9 @@
 .eventParameters p{
     margin: 14px 0;
 }
+.eventTime:last-child{
+    margin-left: 50px;
+}
 .eventIcon{
     margin-right: 8px;
 }
@@ -60,6 +63,10 @@
     margin-left: 5px;
 
     text-decoration: underline;
+}
+.eventCountry{
+    margin: 0 !important;
+    text-decoration: none !important;
 }
 .icon::before{
     display: inline-block;

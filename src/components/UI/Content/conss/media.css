@@ -1,0 +1,45 @@
+@media screen and (max-width: 1185px) {
+    .conssTitle h1 {
+        padding: 17px 20px 10px 15px;
+        font-size: 16px;
+    }
+    .allConss {
+        padding: 16px 15px;
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 900px){
+    .consults {
+        width: 66%;
+        padding-left: 35px;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 650px) {
+    .consults {
+        width: 89%;
+        padding-left: 10px;
+    }
+}
+@media screen and (max-width: 460px){
+    .conssTitle h1 {
+        padding: 13px 15px 10px 15px;
+        margin-left: -10px;
+        font-size: 12px;
+    }
+    .allConss button {
+        font-size: 10px;
+    }
+    .allConss {
+        padding: 13px 15px;
+    }
+    .conss {
+        font-size: 10px;
+    }
+    .conssName h1 {
+        font-size: 14px;
+    }
+    .conssContact h4 {
+        font-size: 12px;
+    }
+}
