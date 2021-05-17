@@ -6,8 +6,8 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import './invests.css';
 import './media.css';
 import icon from './../../../../Images/Mask Group.png';
-import value from './../../../../Images/value.png';
-import earth from './../../../../Images/earth.png';
+import value from './../../../../Images/value.svg';
+import earth from './../../../../Images/earth.svg';
 import share from './../../../../Images/Share.png';
 
 const Invests = () => {

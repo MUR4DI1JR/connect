@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'San Francisco Pro';
+    src: local('San Francisco Pro Display Thin'), local('San-Francisco-Pro-Display-Thin'),
+        url('SFProDisplay-Thin.woff2') format('woff2'),
+        url('SFProDisplay-Thin.woff') format('woff'),
+        url('SFProDisplay-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+  }

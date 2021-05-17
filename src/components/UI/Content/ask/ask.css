@@ -20,8 +20,10 @@
 .askAnswerBlock{
     display: none;
 }
-.askAnswerBlock.show{
+.askAnswerBlock.show {
     display: block;
+    width: 76%;
+    margin: 0 auto;
 }
 .askButtonAnswer{
     width: 100%;
@@ -97,13 +99,14 @@
     border-left: none;
     border-bottom: 0.5px solid #7C7C7C;
     border-radius: 5px 5px 0px 0px;
-    font-weight: normal;
+    font-weight: 600;
     font-size: 12px;
     line-height: 14px;
 
     color: #687581;
 }
 .askUserTel input{
+    width: 100%;
     padding: 5px 0 0 0;
     border: none;
 }
@@ -153,7 +156,7 @@
     width: 70%;
     margin-left: 10px;
 
-    font-weight: normal;
+    font-weight: 600;
     font-size: 12px;
     line-height: 14px;
 

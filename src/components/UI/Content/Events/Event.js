@@ -11,8 +11,8 @@ import "slick-carousel/slick/slick-theme.css";
 import card1 from './../../../../Images/card1.png';
 import card2 from './../../../../Images/card2.png';
 import card3 from './../../../../Images/card3.png';
-import earth from './../../../../Images/earth.png';
-import value from './../../../../Images/value.png';
+import earth from './../../../../Images/earth.svg';
+import value from './../../../../Images/value.svg';
 
 
 function SampleNextArrow(props) {

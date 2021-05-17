@@ -102,12 +102,6 @@ const Footer = () => {
                                             })
                                         }
                                     </div>
-                                    <div className="footerButtonLangMedia">
-                                        <select size="1">
-                                            <option value="Russian">Русский</option>
-                                            <option value="English">English</option>
-                                        </select>
-                                    </div>
                                 </div>
                                 <div className="footerNavLink">
                                     <div className="footerText">

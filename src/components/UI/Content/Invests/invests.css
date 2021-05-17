@@ -72,7 +72,7 @@ button:hover{
 .investsTitle h1{
     margin: 0 0 0 15px;
 
-    font-weight: 500;
+    font-weight: 600;
     font-size: 18px;
     line-height: 140%;
 
@@ -95,6 +95,7 @@ button:hover{
     border-bottom: 0.5px solid #949CB3;
 }
 .investsParameters p{
+    font-weight: 600;
     margin: 10px 0 0 0;
 }
 .investsIcon{
@@ -116,7 +117,7 @@ button:hover{
     padding: 15px 40px 0 0;
 }
 .investsText p{
-    font-weight: normal;
+    font-weight: 600;
     font-size: 14px;
     line-height: 120%;
 

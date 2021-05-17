@@ -43,8 +43,8 @@
     font-size: 16px;
     line-height: 100%;
 }
-.eventParameters p{
-    margin: 14px 0;
+.eventParameters p {
+    margin: 14px 0 14px 3px;
 }
 .eventTime:last-child{
     margin-left: 50px;
@@ -77,12 +77,11 @@
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
 }
-.slick-next::before{
+.slick-next::before {
     width: 48px;
-    height: 25px;
-    padding: 10px 10px 10px 15px;
-
-    font-size: 24px;
+    height: 17px;
+    padding: 8px 11px 8px 13px;
+    font-size: 15px;
     content: "\f054";
     color: #fff;
     opacity: 1;

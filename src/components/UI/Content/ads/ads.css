@@ -16,6 +16,7 @@ p{
     font-size: 13px;
     border: 0.5px solid #949CB3;
     border-radius: 5px;
+    z-index: -1;
 }
 .slides{
     padding-left: 65px;
@@ -29,7 +30,7 @@ p{
     padding: 19px 20px 10px 15px;
 
     color: #000;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 18px;
     line-height: 120%;
     border-top: none;
@@ -43,7 +44,7 @@ p{
     padding: 20px;
 
     color: #949CB3;
-    font-weight: normal;
+    font-weight: 600;
     font-size: 16px;
     line-height: 120%;
     background: none;
@@ -73,7 +74,7 @@ p{
     width: 80%;
 
     margin: 7px 0 0 0;
-    font-weight: normal;
+    font-weight: 600;
     font-size: 16px;
     line-height: 120%;
     color: #334059;
@@ -93,7 +94,7 @@ p{
     color: #014DA8;
     font-size: 18px;
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 600;
 }
 .paging{
     width: 8px;

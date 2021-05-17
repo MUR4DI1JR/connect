@@ -36,13 +36,15 @@
 .navBar{
     display: flex;
     flex-wrap: wrap;
-    margin: 35px 52px 36px 68px;
+    margin: 0 20px;
+    justify-content: center;
+    align-items: center;
 }
 .navBar p{
     margin:0 28px 0 0;
 
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 600;
 }
 .navBar a{
     color: #000;
@@ -52,7 +54,9 @@
     margin-right: 0;
 }
 .auth-log {
-    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
     z-index: 5;
 }

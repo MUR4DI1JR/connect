@@ -9,6 +9,7 @@ import Blog from "./components/UI/Content/blog/blog";
 import Ask from "./components/UI/Content/ask/ask";
 import Footer from "./components/UI/Footer/footer";
 
+import './App.css';
 
 const App = () => {
   return (

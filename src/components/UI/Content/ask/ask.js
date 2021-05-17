@@ -61,6 +61,13 @@ class Ask extends Component{
                 answer: 'Lorem ipsum dolor sit amet'
             }
         ],
+        numberUser: '',
+    };
+
+    handleNumber = (event) =>{
+        const numberUser = (event.target.validity.valid) ? event.target.value : this.state.numberUser;
+
+        this.setState({ numberUser });
     };
 
     clickQuestion = (quest) =>{
@@ -103,7 +110,14 @@ class Ask extends Component{
                                 <div className="askUserEmail">
                                     <div className="askUserTel">
                                         <p>Мобильный телефон</p>
-                                        <input type="tel" id="tel" placeholder="+996("/>
+                                        <input
+                                            type="text"
+                                            name="tel"
+                                            pattern="[0-9]*"
+                                            onInput={this.handleNumber.bind(this)}
+                                            value={this.state.numberUser}
+                                            placeholder="+996("
+                                        />
                                     </div>
                                     <input type="email" placeholder="Электронная почта"/>
                                 </div>
