@@ -23,7 +23,7 @@
 .askAnswerBlock.show {
     display: block;
     width: 76%;
-    margin: 0 auto;
+    margin: 15px auto;
 }
 .askButtonAnswer{
     width: 100%;

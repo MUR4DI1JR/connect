@@ -1,7 +1,5 @@
 import React, {Component} from 'react';
 import Slider from 'react-slick';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faCalendar, faClock} from '@fortawesome/free-regular-svg-icons';
 
 import './Events.css';
 import './media.css';
@@ -11,8 +9,7 @@ import "slick-carousel/slick/slick-theme.css";
 import card1 from './../../../../Images/card1.png';
 import card2 from './../../../../Images/card2.png';
 import card3 from './../../../../Images/card3.png';
-import earth from './../../../../Images/earth.svg';
-import value from './../../../../Images/value.svg';
+import {CalendarBlank, Clock, CurrencyCircleDollar, GlobeHemisphereWest} from "phosphor-react";
 
 
 function SampleNextArrow(props) {
@@ -104,18 +101,12 @@ class Event extends Component {
                                         <h1>{events.title}</h1>
                                         <div className="eventParameters">
                                             <div className="eventTime">
-                                                <p><FontAwesomeIcon className="eventIcon" icon={faCalendar}/>Когда: {events.data}</p>
-                                                <div className="eventLocation">
-                                                    <img src={value} className="eventIcon" alt="valueIcon"/>
-                                                    <p>Cумма: {events.coins}<span>{events.value}</span></p>
-                                                </div>
+                                                <p><CalendarBlank size={20} className="eventIcon"/>Когда: {events.data}</p>
+                                                <p><CurrencyCircleDollar size={20} className="eventIcon"/>Cумма: {events.coins}<span>{events.value}</span></p>
                                             </div>
                                             <div className="eventTime">
-                                                <p><FontAwesomeIcon className="eventIcon" icon={faClock}/>Время: {events.time}</p>
-                                                <div className="eventLocation">
-                                                    <img src={earth} className="eventIcon" alt="earthIcon"/>
-                                                    <p>Где: {events.location}</p>
-                                                </div>
+                                                <p><Clock size={20} className="eventIcon"/>Время: {events.time}</p>
+                                                <p><GlobeHemisphereWest size={20} className="eventIcon"/>Где: {events.location}</p>
                                             </div>
                                         </div>
                                     </div>
@@ -159,16 +150,10 @@ class Event extends Component {
                                                 <div className="eventTitleCard">
                                                     <h1>{events.title}</h1>
                                                     <div className="eventParameters">
-                                                        <p><FontAwesomeIcon className="eventIcon" icon={faCalendar}/>{events.data}</p>
-                                                        <p><FontAwesomeIcon className="eventIcon" icon={faClock}/>{events.time}</p>
-                                                        <div className="eventLocation">
-                                                            <img src={earth} className="eventIcon" alt="earthIcon"/>
-                                                            <p>{events.location}<span className="eventCountry">,{events.country}</span></p>
-                                                        </div>
-                                                        <div className="eventLocation">
-                                                            <img src={value} className="eventIcon" alt="valueIcon"/>
-                                                            <p>{events.coins}<span>{events.value}</span></p>
-                                                        </div>
+                                                        <p><CalendarBlank size={20} className="eventIcon"/>Когда: {events.data}</p>
+                                                        <p><Clock size={20} className="eventIcon"/>Время: {events.time}</p>
+                                                        <p><GlobeHemisphereWest size={20} className="eventIcon"/>Где: {events.location}<span className="eventCountry">,{events.country}</span></p>
+                                                        <p><CurrencyCircleDollar size={20} className="eventIcon"/>Cумма: {events.coins}<span>{events.value}</span></p>
                                                     </div>
                                                 </div>
                                             </div>

@@ -4,7 +4,7 @@
     }
     .eventParameters {
         display: flex;
-        flex-wrap: wrap;
+        font-size: 13px;
     }
     .slick-prev, .slick-next {
         display: none !important;
@@ -15,6 +15,6 @@
         font-size: 13px;
     }
     .eventTime:last-child {
-        margin-left: 25px;
+        margin-left: 15px;
     }
 }

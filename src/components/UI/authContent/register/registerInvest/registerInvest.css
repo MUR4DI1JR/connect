@@ -1,0 +1,158 @@
+.registerInvest{
+    margin: 150px 0 50px 0;
+}
+.registerInvestContainer{
+    width: 50%;
+    margin: 0 auto;
+}
+.registerInvestItem{
+    width: 50%;
+    margin: 0 auto;
+    padding: 60px;
+
+    border: 1px solid #7C7C7C;
+    border-radius: 10px;
+}
+.registerInvestItem h1{
+    margin-top: 0;
+    margin-bottom: 25px;
+
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 120%;
+}
+.registerInvestItem input{
+    width: 100%;
+    height: 34px;
+
+    border: 0.5px solid #7C7C7C;
+    border-radius: 5px;
+    outline: none;
+}
+.registerInvestItem p{
+    margin-bottom: 5px;
+
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+}
+.registerInvestItem input::placeholder{
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 120%;
+
+    color: #7C7C7C;
+}
+.registerInvestItem select{
+    width: 100%;
+    height: 38px;
+
+    border: 0.5px solid #7C7C7C;
+    background-color: #FFF;
+    border-radius: 5px;
+    outline: none;
+    color: #7C7C7C;
+}
+.registerSectorBusiness{
+    width: 100%;
+}
+.registerCountCollab{
+    margin-top: 20px;
+}
+.CountCollab{
+    display: flex;
+    justify-content: space-between;
+}
+.CountCollab input{
+    width: 30%;
+}
+.CountCollab select{
+    width: 30%;
+}
+.registerInvests{
+    width: 100%;
+    margin: 20px 0 50px 0;
+}
+.investsRange p{
+    margin-bottom: 30px;
+}
+.investsRange input[type="range"] {
+    -webkit-appearance: none;
+    height: 1px !important;
+    border: 1px solid #7C7C7C;
+    background-color: #7C7C7C;
+    outline: none;
+}
+
+.investsRange input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50px;
+    background-color: black;
+}
+.countRange{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 120%;
+    color: #7C7C7C;
+}
+.circle1{
+    top: -11px;
+    left: 25px;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: grey;
+    border-radius: 50%;
+}
+.circle2{
+    top: -11px;
+    right: 25px;
+    border-radius: 50%;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: grey;
+}
+.countRange div:first-child{
+    margin-left: -28px;
+}
+.countRange div:last-child{
+    margin-right: -35px;
+}
+.showCount{
+    position: relative;
+    width: 100%;
+}
+.showCount span{
+    position: absolute;
+}
+.registerButtons{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.registerLogin{
+    background: none;
+    border: none;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 120%;
+
+    color: #0165DE;
+}
+.registerNext{
+    padding: 7px 22px;
+
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 120%;
+    background-color: #0165DE;
+    border: none;
+    border-radius: 5px;
+}

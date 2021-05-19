@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'San Francisco Pro';
   src: local('San Francisco Pro Display Thin'), local('San-Francisco-Pro-Display-Thin'),
-  url('./fonts/SFProDisplay-Thin.woff2') format('woff2'),
-  url('./fonts/SFProDisplay-Thin.woff') format('woff'),
-  url('./fonts/SFProDisplay-Thin.ttf') format('truetype');
+  url('./fonts/SFUIDisplay-Regular.eot') format('eot'),
+  url('./fonts/SFUIDisplay-Regular.woff') format('woff'),
+  url('./fonts/SFUIDisplay-Regular.ttf') format('truetype');
   font-weight: 100;
   font-style: normal;
 }

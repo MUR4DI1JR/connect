@@ -87,6 +87,7 @@ button:hover{
     margin: 15px 0 0 0;
     padding: 0 40px 32px 0;
     display: flex;
+    justify-content: space-between;
 
     font-weight: 400;
     font-size: 16px;
@@ -95,19 +96,21 @@ button:hover{
     border-bottom: 0.5px solid #949CB3;
 }
 .investsParameters p{
-    font-weight: 600;
+    font-weight: 400;
     margin: 10px 0 0 0;
 }
 .investsIcon{
-    margin: 10px 5px 0 2px;
+    margin-right: 5px;
+    vertical-align: sub;
 }
 .investsParameters img{
     width: 18px;
     height: 18px;
     margin: 10px 3px 0 0;
 }
-.investsData{
-    margin-right: 48px;
+.parametersCatalog{
+    font-weight: 600 !important;
+    text-decoration: none !important;
 }
 .investsData span{
     text-decoration: underline;

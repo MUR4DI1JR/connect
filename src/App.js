@@ -1,29 +1,35 @@
 import React from 'react';
+import {BrowserRouter, Switch, Route} from "react-router-dom";
+
 import Header from "./components/UI/Header/header";
-import Heading from "./components/UI/Content/Heading/Heading";
-import Ads from "./components/UI/Content/ads/ads";
-import Invests from "./components/UI/Content/Invests/invests";
-import Event from "./components/UI/Content/Events/Event";
-import Forum from "./components/UI/Content/forum/forum";
-import Blog from "./components/UI/Content/blog/blog";
-import Ask from "./components/UI/Content/ask/ask";
+import MainPage from './components/UI/Content/mainPage';
+import RegisterInvest from "./components/UI/authContent/register/registerInvest/registerInvest";
+import RegisterMsBcontact from "./components/UI/authContent/register/registerMSBcontact/registerMSBcontact";
+import RegisterMsb from "./components/UI/authContent/register/registerMSB/registerMSB";
+import RegisterConsults from './components/UI/authContent/register/registerConsults';
+import Login from "./components/UI/authContent/login/login";
 import Footer from "./components/UI/Footer/footer";
+import Role from "./components/UI/authContent/Role/Role";
 
 import './App.css';
 
+
+
 const App = () => {
   return (
-      <div>
-        <Header/>
-        <Heading/>
-        <Ads/>
-        <Invests/>
-        <Event/>
-        <Forum/>
-        <Blog/>
-        <Ask/>
-        <Footer/>
-      </div>
+      <BrowserRouter>
+          <Header/>
+          <Switch>
+              <Route path='/login' component={Login}/>
+              <Route path='/register-invest' component={RegisterInvest}/>
+              <Route path='/register-contact' component={RegisterMsBcontact}/>
+              <Route path='/register-msb' component={RegisterMsb}/>
+              <Route path='/register-cons' component={RegisterConsults}/>
+              <Route path='/role' component={Role}/>
+              <Route path='/' exact component={MainPage}/>
+          </Switch>
+          <Footer/>
+      </BrowserRouter>
   );
 };
 

@@ -50,16 +50,10 @@
     margin-left: 50px;
 }
 .eventIcon{
-    margin-right: 8px;
+    vertical-align: sub;
+    margin-right: 5px;
 }
-.eventLocation{
-    margin: 14px 0;
-    display: flex;
-}
-.eventLocation p{
-    margin: 0;
-}
-.eventLocation span{
+.eventParameters span{
     margin-left: 5px;
 
     text-decoration: underline;

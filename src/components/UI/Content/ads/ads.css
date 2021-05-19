@@ -16,7 +16,6 @@ p{
     font-size: 13px;
     border: 0.5px solid #949CB3;
     border-radius: 5px;
-    z-index: -1;
 }
 .slides{
     padding-left: 65px;

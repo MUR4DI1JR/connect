@@ -39,14 +39,14 @@
         display: none;
     }
     .investsParameters {
-        padding: 0 0px 32px 0;
+        padding: 0 0 32px 0;
         font-size: 12px;
         font-weight: 600;
     }
     .investsText p {
         font-size: 12px;
     }
-    .investsEvents span{
+    .investsEvents .investsLocation{
         display: none;
     }
 }
