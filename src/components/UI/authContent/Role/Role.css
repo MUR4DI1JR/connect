@@ -11,24 +11,22 @@
     margin: 50px 0 60px 0;
     padding: 30px;
     border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid #fff;
 }
 .roleMSB:hover{
-    width: 30%;
-    border-radius: 5px;
     border: 1px solid #949CB3;
-    cursor: pointer;
 }
 .roleCons{
     width: 30%;
     margin: 50px 0 60px 0;
     padding: 30px;
     border-radius: 5px;
+    border: 1px solid #fff;
+    cursor: pointer;
 }
 .roleCons:hover{
-    width: 30%;
-    border-radius: 5px;
     border: 1px solid #949CB3;
-    cursor: pointer;
 }
 .roleChooser{
     width: 80%;

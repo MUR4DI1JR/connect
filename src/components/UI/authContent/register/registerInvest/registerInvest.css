@@ -37,6 +37,8 @@
     line-height: 16px;
 }
 .registerInvestItem input::placeholder{
+    padding: 10px;
+
     font-weight: normal;
     font-size: 13px;
     line-height: 120%;
@@ -146,6 +148,7 @@
     color: #0165DE;
 }
 .registerNext{
+    width: 30% !important;
     padding: 7px 22px;
 
     color: #fff;
