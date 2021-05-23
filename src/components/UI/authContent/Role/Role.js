@@ -10,7 +10,7 @@ class Role extends Component {
     };
 
     registerCons = () =>{
-        this.props.history.push('/register-cons')
+        this.props.history.push('/register-cons-user')
     };
 
     render() {

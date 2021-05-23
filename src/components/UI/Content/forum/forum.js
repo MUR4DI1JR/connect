@@ -2,7 +2,7 @@ import React from 'react';
 
 import './forum.css';
 import './media.css';
-import forumLogo from './../../../../Images/forum_logo.png';
+import dart from './../../../../Images/dart.png';
 
 const Forum = () => {
     const forumContent = [
@@ -28,8 +28,17 @@ const Forum = () => {
         <div className="forum">
             <h1>Форум</h1>
             <div className="forumContainer">
-                <div className="forumImg">
-                    <img src={forumLogo} alt="forumLogoIcon"/>
+                <div className="forumCalc">
+                    <div className="forumCalcTitle">
+                        <h1>Калькулятор </h1>
+                        <p>показывает вероятность получения гранта/инвестиции</p>
+                        <p>1.Попробовать?</p>
+                    </div>
+                    <div className="forumButtonCalc">
+                        <button>Да</button>
+                        <button>Нет</button>
+                    </div>
+                    <img src={dart} alt="dart"/>
                 </div>
                 <div className="forumText">
                     {

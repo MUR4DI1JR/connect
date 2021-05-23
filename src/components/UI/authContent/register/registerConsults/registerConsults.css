@@ -1,0 +1,81 @@
+.registerCons{
+    margin: 150px 0 50px 0;
+}
+.registerConsContainer{
+    width: 50%;
+    margin: 0 auto;
+}
+.registerConsItem{
+    width: 50%;
+    margin: 0 auto;
+    padding: 60px;
+
+    border: 1px solid #7C7C7C;
+    border-radius: 10px;
+}
+.registerConsItem h1{
+    margin: 5px 0;
+
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 120%;
+}
+.registerConsItem input{
+    width: 100%;
+    height: 34px;
+
+    border: 0.5px solid #7C7C7C;
+    border-radius: 5px;
+    outline: none;
+}
+.registerConsItem input:valid{
+    width: 100%;
+    height: 34px;
+
+    border: 0.5px solid #7C7C7C;
+    border-radius: 5px;
+    outline: none;
+}
+.registerConsItem input::placeholder{
+    padding: 10px;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 120%;
+
+    color: #7C7C7C;
+}
+.registerConsTitle h1{
+    margin-bottom: 25px;
+
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 120%;
+}
+.skils{
+    margin: 20px 0;
+}
+.registerButtons{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.registerLogin{
+    background: none;
+    border: none;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 120%;
+
+    color: #0165DE;
+}
+.registerNext{
+    padding: 7px 22px;
+
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 120%;
+    background-color: #0165DE;
+    border: none;
+    border-radius: 5px;
+}

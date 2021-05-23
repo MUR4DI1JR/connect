@@ -14,9 +14,58 @@
     display: flex;
     justify-content: space-between;
 }
-.forumImg img{
-    width: 387px;
-    margin-top: 65px;
+.forumCalc{
+    width: 32%;
+    padding: 78px 25px 0 25px;
+    background-image: url("./../../../../Images/calcBackground.png");
+    background-repeat: no-repeat;
+    position: relative;
+}
+.forumCalc img{
+    position: absolute;
+    bottom: 43px;
+    right: 25px;
+}
+
+.forumCalcTitle{
+    width: 85%;
+    margin: 0 auto;
+}
+.forumCalcTitle h1{
+    margin: 0;
+    text-align: left;
+    font-weight: bold;
+    font-size: 52px;
+    line-height: 120%;
+}
+.forumCalcTitle p{
+    margin: 0;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 120%;
+}
+.forumCalcTitle p:last-child{
+    margin: 30px 0 20px 0;
+}
+.forumButtonCalc{
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.forumButtonCalc button{
+    width: 45%;
+    padding: 15px 40px;
+
+    border: none;
+    border-radius: 15px;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 120%;
+}
+.forumButtonCalc button:hover{
+    color: #fff;
+    background: #0165DE;
 }
 .forumText{
     width: 49%;

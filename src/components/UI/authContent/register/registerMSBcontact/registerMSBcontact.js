@@ -1,159 +1,86 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import {useHistory} from 'react-router-dom';
-import {parsePhoneNumberFromString} from "libphonenumber-js";
 
 import './registerMSBcontact.css';
+import useInput from "../useInput";
+
 
 const RegisterMsBcontact = () => {
-    const [number, setNumber] = useState('');
-    const [telegram, setTelegram] = useState('');
-    const [numberDirty, setNumberDirty] = useState(false);
-    const [telegramDirty, setTelegramDirty] = useState(false);
-    const [errorNumber, setErrorNumber] = useState('Номер не должен быть пустым!');
-    const [errorTelegram, setErrorTelegram] = useState('Номер не должен быть пустым!');
-    const [day, setDay] = useState(null);
-    const [month, setMonth] = useState('');
-    const [year, setYear] = useState(null);
-    const [dayDirty, setDayDirty] = useState(false);
-    const [yearDirty, setYearDirty] = useState(false);
-    const [errorDate, setErrorDate] =useState('Неверные данные!');
-    const [userGender, setUserGender] = useState('');
-    const [country, setCountry] = useState('');
-    const [city, setCity] = useState('');
-    const [formValid, setFormValid] = useState(false);
-    let history = useHistory();
-
-    const normalizePhoneNumber = (value) =>{
-        const phoneNumber = parsePhoneNumberFromString(value);
-        if(!phoneNumber){
-            return value
-        }
-        return(
-            phoneNumber.formatInternational()
-        )
-    };
-
-    useEffect(()=>{
-
-    }, []);
-
-
-    const telegramNumber = e =>{
-        setTelegram(normalizePhoneNumber(e.target.value));
-        setTelegramDirty(false);
-        setErrorTelegram('')
-    };
-
-    const handleNumber = (event) =>{
-        if (!event.target.value){
-            setErrorNumber('Номер не должен быть пустым!')
-            setNumberDirty(true)
-        }else{
-            setNumberDirty(false)
-        }
-        setNumber(normalizePhoneNumber(event.target.value));
-        setNumberDirty(false);
-        setErrorNumber('')
-    };
-    console.log(numberDirty);
-
-    const blurHandler = e =>{
-        switch (e.target.name) {
-            case 'number':
-                setNumberDirty(true);
-                break;
-            case 'userTelegram':
-                setTelegramDirty(true);
-                break;
-            case 'day':
-                setDayDirty(true);
-                break;
-            case 'year':
-                setYearDirty(true);
-                break;
-        }
-    };
-
-
-    const handleDate = (event) =>{
-        if (event.target.name === 'day'){
-            setDay(event.target.value);
-            setDayDirty(false);
-            setErrorDate('');
-            if (event.target.value > 32){
-                setDayDirty(true)
-            }else {
-                setDayDirty(false)
-            }
-        }else if(event.target.name === 'year'){
-            setYear(event.target.value);
-            if (event.target.value.length < 5){
-                setYearDirty(false);
-                if (event.target.value > 2021){
-                    setYearDirty(true);
-                }else {
-                    setYearDirty(false)
-                }
-            }else {
-                setYearDirty(true)
-            }
-        }
-    };
-
+    const number = useInput('', {isEmpty: true, minLength: 8,});
+    const telegram = useInput('', {isEmpty: true, minLength: 8});
+    const day = useInput('', {isEmpty: true, maxNumber: 31});
+    const month = useInput('Месяц', {monthValue: false});
+    const year = useInput('', {isEmpty: true,  maxLength: 4, minLength: 4, minNumber: 1930});
+    const gender = useInput('Пол',  {genderValue: true});
+    const country = useInput('Выберите', {countryValue: false});
+    const city = useInput('', {isEmpty: true, minLength: 2});
+    const history = useHistory();
 
     const clickBack = () =>{
         history.push('/register-msb')
     };
 
+    console.log(gender.inputValid);
+
+    const clickNext = (e) =>{
+        e.preventDefault();
+        if (!number.inputValid || !telegram.inputValid || !day.inputValid || month.value === 'Месяц' || !year.inputValid || gender.value === 'Пол' || country.value === 'Выберите' || !city.inputValid){
+            return false
+        }else {
+            history.push('/register-invest')
+        }
+    };
+
 
     return (
         <div className="registerMSBContact">
-            <form>
+            <form id='user'>
                 <div className="registerContactContainer">
                     <div className="registerContactItem">
                         <h1>Добро пожаловать, <span>Имя!</span></h1>
                         <div className="registerUserTel">
-                            <div className={numberDirty ? 'userName'.concat(' error') : 'userName' }>
+                            <div className='userName'>
                                 <p>Номер телефона</p>
                                 <input
-                                    onBlur={e => blurHandler(e)}
                                     type="tel"
-                                    maxLength={18}
                                     name="number"
-                                    value={number}
-                                    onChange={handleNumber}
-                                    placeholder="+996"
-                                />
-                                {numberDirty ? <p style={{color: 'red'}}>{errorNumber}</p> : null}
-                            </div>
-                            <div className={telegramDirty ? 'userName'.concat(' error') : 'userName' }>
-                                <p>Телеграм</p>
-                                <input
-                                    onBlur={e => blurHandler(e)}
-                                    type="tel"
-                                    maxLength={18}
-                                    name="userTelegram"
-                                    value={telegram}
-                                    onChange={telegramNumber}
+                                    onChange={e => number.onChange(e)}
+                                    onBlur={e => number.onBlur(e)}
+                                    value={number.value}
                                     placeholder="+996"
                                     required
                                 />
-                                {telegramDirty ? <p style={{color: 'red'}}>{errorTelegram}</p> : null}
+                                {(number.isDirty && number.isEmpty) && <p style={{color: 'red'}}>Поле не должен быть пустым</p>}
+                                {(number.isDirty && number.minLengthError) && <p style={{color: 'red'}}>Неккоректная длина</p>}
+                            </div>
+                            <div className='userName'>
+                                <p>Телеграм</p>
+                                <input
+                                    type="tel"
+                                    name="userTelegram"
+                                    onChange={e => telegram.onChange(e)}
+                                    onBlur={e => telegram.onBlur(e)}
+                                    value={telegram.value}
+                                    placeholder="+996"
+                                    required
+                                />
+                                {(telegram.isDirty && telegram.isEmpty) && <p style={{color: 'red'}}>Поле не должен быть пустым</p>}
+                                {(telegram.isDirty && telegram.minLengthError) && <p style={{color: 'red'}}>Неккоректная длина</p>}
                             </div>
                         </div>
                         <div className="registerUserBorn">
                             <p>Дата рождения*</p>
-                            <div className={dayDirty || yearDirty ? 'userBorn'.concat(' error') : 'userBorn'}>
+                            <div className='userBorn'>
                                 <input
-                                    onBlur={e => blurHandler(e)}
                                     type="number"
                                     name="day"
+                                    onChange={e => day.onChange(e)}
+                                    onBlur={e => day.onBlur(e)}
+                                    value={day.value}
                                     placeholder="День"
-                                    value={day}
-                                    onChange={handleDate}
                                     required
                                 />
-                                <select name="month" id="month">
+                                <select name="month" id="month" value={month.value} onBlur={e => month.onBlur(e)} onChange={e => month.onChange(e)} required>
                                     <option value="Месяц">Месяц</option>
                                     <option value="Январь">Январь</option>
                                     <option value="Февраль">Февраль</option>
@@ -169,45 +96,65 @@ const RegisterMsBcontact = () => {
                                     <option value="Декабрь">Декабрь</option>
                                 </select>
                                 <input
-                                    onBlur={e => blurHandler(e)}
                                     type="number"
                                     name="year"
+                                    onBlur={e => year.onBlur(e)}
+                                    onChange={e => year.onChange(e)}
+                                    value={year.value}
                                     placeholder="Год"
-                                    value={year}
-                                    onChange={handleDate}
                                     required
                                 />
                             </div>
-                            {dayDirty || yearDirty ?  <p style={{color: 'red'}}>{errorDate}</p> : null}
+                            {(day.isEmpty && day.isDirty) && <p style={{color: 'red'}}>Поле не должен быть пустым</p>}
+                            {(day.isDirty && day.maxNumberError) && <p style={{color: 'red'}}>Неверные данные</p>}
+                            {(month.isDirty && month.monthError) && <p style={{color: 'red'}}>Выберите месяц которой вы родились!</p>}
+                            {(year.isDirty && year.isEmpty) && <p style={{color: "red"}}>Поле не должен быть пустым</p>}
+                            {(year.isDirty && year.maxLengthError) && <p style={{color: 'red'}}>Неккоректная длина</p>}
+                            {(year.isDirty && year.value > new Date().getFullYear()) && <p style={{color: 'red'}}>Неверные данные</p>}
+                            {(year.isDirty && year.minNumberError) && <p style={{color: 'red'}}>Неверные данные</p>}
+                            {(year.isDirty && year.minLengthError) && <p style={{color: 'red'}}>Неккоректная длина</p>}
                         </div>
-                        <div className="userSex">
-                            <select name="sex" id="sex">
+                        <div className="userGender">
+                            <select name="gender" form='user' id="gender" onBlur={e => gender.onBlur(e)} onChange={e => gender.onChange(e)} value={gender.value}>
                                 <option value="Пол">Пол</option>
                                 <option value="Мужской">Мужской</option>
                                 <option value="Женский">Женский</option>
                             </select>
+                            {(gender.isDirty && gender.genderError) && <p style={{color: 'red'}}>Выберите пол</p>}
                         </div>
                         <div className="registerCountry">
                             <div className="userCountry">
                                 <p>Страна</p>
-                                <select name="country" id="country">
+                                <select name="country" required id="country" onBlur={e => country.onBlur(e)} onChange={e => country.onChange(e)} value={country.value}>
                                     <option value="Выберите">Выберите</option>
                                     <option value="Кыргызстан">Кыргызстан</option>
                                     <option value="Россия">Россия</option>
                                     <option value="Казахстан">Казахстан</option>
                                 </select>
+                                {(country.isDirty && country.countryError) && <p style={{color: 'red'}}>Выберите страну которой проживаете</p>}
                             </div>
                             <div className="userCity">
                                 <p>Город/село</p>
                                 <input
                                     type="text"
+                                    name='city'
+                                    onBlur={e => city.onBlur(e)}
+                                    onChange={e => city.onChange(e)}
+                                    value={city.value}
                                     required
                                 />
+                                {(city.isDirty && city.isEmpty) && <p style={{color: 'red'}}>Поле не должен быть пустым</p>}
+                                {(city.isDirty && city.minLengthError) && <p style={{color: 'red'}}>Неккоректная длина</p>}
                             </div>
                         </div>
                         <div className="registerButtons">
                             <button className="registerLogin" onClick={clickBack}>Назад</button>
-                            <input type="submit" className="registerNext"  value="Далее"/>
+                            <input
+                                type="submit"
+                                className="registerNext"
+                                value="Далее"
+                                onClick={clickNext}
+                            />
                         </div>
                     </div>
                 </div>

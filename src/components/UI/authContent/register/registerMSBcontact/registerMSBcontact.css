@@ -83,7 +83,7 @@ input::-webkit-inner-spin-button {
 .userBorn select{
     width: 30%;
 }
-.userSex {
+.userGender {
     margin-top: 20px;
 }
 .registerCountry{
