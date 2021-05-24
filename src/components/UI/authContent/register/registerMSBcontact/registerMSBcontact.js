@@ -69,7 +69,7 @@ const RegisterMsBcontact = () => {
                             </div>
                         </div>
                         <div className="registerUserBorn">
-                            <p>Дата рождения*</p>
+                            <p>Дата рождения<span>*</span></p>
                             <div className='userBorn'>
                                 <input
                                     type="number"

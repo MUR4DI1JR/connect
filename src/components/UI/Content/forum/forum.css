@@ -1,11 +1,11 @@
 .forum{
     max-width: 1200px;
+    width: 72%;
     margin: 0 auto;
 }
 .forum h1{
-    margin: 80px 0 20px 0;
+    margin: 80px 0 35px 0;
 
-    text-align: center;
     font-weight: 600;
     font-size: 36px;
     line-height: 120%;
@@ -15,7 +15,8 @@
     justify-content: space-between;
 }
 .forumCalc{
-    width: 32%;
+    width: 34%;
+    margin-top: 85px;
     padding: 78px 25px 0 25px;
     background-image: url("./../../../../Images/calcBackground.png");
     background-repeat: no-repeat;
@@ -23,7 +24,7 @@
 }
 .forumCalc img{
     position: absolute;
-    bottom: 43px;
+    bottom: 107px;
     right: 25px;
 }
 

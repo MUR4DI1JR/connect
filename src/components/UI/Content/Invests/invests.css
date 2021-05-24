@@ -48,13 +48,14 @@ button:hover{
 }
 .investsItems{
     width: 100%;
+    margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 .investsBlock{
-    width: 42%;
-    margin: 30px 0;
+    width: 44%;
+    margin: 15px 0;
     padding: 40px 0 40px 40px;
 
     background: #F6F6F6;

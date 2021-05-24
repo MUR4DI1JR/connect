@@ -21,7 +21,7 @@ const Conss = () => {
         }
     ];
     return (
-        <div className="consults">
+        <div className="consults" id='1'>
             <div className="conssButton">
                 <div className="conssTitle">
                     <h1>Консультанты</h1>

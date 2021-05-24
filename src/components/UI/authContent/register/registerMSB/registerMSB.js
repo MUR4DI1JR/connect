@@ -117,7 +117,7 @@ const RegisterMsb = () => {
                         <h1>Регистрация</h1>
                         <div className="registerUserName">
                             <div className={nameDirty ? "userName".concat(' error') : "userName"}>
-                                <p>Имя*</p>
+                                <p>Имя<span>*</span></p>
                                 <input
                                     onBlur={e => blurHandle(e)}
                                     type="text"
@@ -129,7 +129,7 @@ const RegisterMsb = () => {
                                 />
                             </div>
                             <div className={surnameDirty ? "userName".concat(' error'):"userName"}>
-                                <p>Фамилия*</p>
+                                <p>Фамилия<span>*</span></p>
                                 <input
                                     onBlur={e => blurHandle(e)}
                                     type="text"
@@ -143,7 +143,7 @@ const RegisterMsb = () => {
                         </div>
                         <div className="registerUserEmail">
                             <div className={emailDirty ? 'userEmail'.concat(' error') : 'userEmail'}>
-                                <p>Электронный адрес*</p>
+                                <p>Электронный адрес<span>*</span></p>
                                 <input
                                     onBlur={e => blurHandle(e)}
                                     type="email"
@@ -158,7 +158,7 @@ const RegisterMsb = () => {
                         </div>
                         <div className="registerPassword">
                             <div className={passwordDirty ? 'userPassword'.concat(' error') : 'userPassword'}>
-                                <p>Пароль*</p>
+                                <p>Пароль<span>*</span></p>
                                 <input
                                     onBlur={e => blurHandle(e)}
                                     type="password"
@@ -171,7 +171,7 @@ const RegisterMsb = () => {
                                 {passwordDirty ? <p style={{color: "red"}}>{errorPassword}</p> : null}
                             </div>
                             <div className={confirmDirty ? 'userPassword'.concat(' error') : 'userPassword'}>
-                                <p>Подтвердить пароль*</p>
+                                <p>Подтвердить пароль<span>*</span></p>
                                 <input
                                     onBlur={e => blurHandle(e)}
                                     type="password"

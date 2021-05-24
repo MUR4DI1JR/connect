@@ -25,8 +25,7 @@ const Forum = () => {
     ];
 
     return (
-        <div className="forum">
-            <h1>Форум</h1>
+        <div className="forum" id='3'>
             <div className="forumContainer">
                 <div className="forumCalc">
                     <div className="forumCalcTitle">
@@ -41,6 +40,7 @@ const Forum = () => {
                     <img src={dart} alt="dart"/>
                 </div>
                 <div className="forumText">
+                    <h1>Форум</h1>
                     {
                         forumContent.map((forum, i) =>{
                             return(

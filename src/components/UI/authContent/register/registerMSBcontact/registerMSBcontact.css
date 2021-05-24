@@ -66,6 +66,9 @@
 .registerUserBorn{
     margin-top: 20px;
 }
+.registerUserBorn span{
+    color: red;
+}
 .userBorn{
     width: 102%;
     display: flex;

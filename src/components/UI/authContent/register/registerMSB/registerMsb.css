@@ -13,6 +13,9 @@
     border: 1px solid #7C7C7C;
     border-radius: 10px;
 }
+.registerItem span{
+    color: red;
+}
 .registerItem h1{
     margin-top: 0;
     margin-bottom: 25px;

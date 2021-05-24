@@ -10,7 +10,7 @@ const Header = () => {
     let history = useHistory();
     const navText = ['Финансы', 'Консультанты', 'Мероприятия', 'Форум', 'О нас', 'Дать Объявление'];
 
-    let showText = navText.map((text, i) =>  <p key={i}><a href="#">{text}</a></p>);
+    let showText = navText.map((text, i) =>  <p key={i}><a href={`#${i}`}>{text}</a></p>);
 
     let showNavBar = e =>{
         e.preventDefault();

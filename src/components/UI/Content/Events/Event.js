@@ -133,7 +133,7 @@ class Event extends Component {
         };
 
         return (
-            <div className="event">
+            <div className="event" id='2'>
                 <div className="eventContainer">
                     <div className="eventTitle">
                         <h1>Мероприятия</h1>
