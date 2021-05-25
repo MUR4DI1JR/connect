@@ -3,7 +3,7 @@ p{
     margin: 0;
 }
 .adsCommon{
-    width: 75%;
+    max-width: 1200px;
     margin: 30px auto 80px auto;
     display: flex;
     justify-content: space-evenly;
