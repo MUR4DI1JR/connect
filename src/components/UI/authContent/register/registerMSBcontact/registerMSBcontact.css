@@ -60,7 +60,7 @@
     display: flex;
     justify-content: space-between;
 }
-.userName{
+.userContactName{
     width: 45%;
 }
 .registerUserBorn{

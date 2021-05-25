@@ -1,0 +1,48 @@
+@media screen and (max-width: 900px){
+    .roleChooser {
+        display: block;
+    }
+    .roleMSB{
+        width: 95%;
+    }
+    .roleCons{
+        width: 95%;
+    }
+}
+@media screen and (max-width: 600px){
+    .roleChooser{
+        width: 100%;
+    }
+    .roleTitle {
+        margin-top: 70px;
+        margin-bottom: 15px;
+        font-size: 18px;
+    }
+    .roleMSB{
+        width: 90%;
+        padding: 10px;
+        margin: 0 auto 10px auto;
+    }
+    .roleCons{
+        width: 90%;
+        margin: 0 auto;
+        padding: 10px;
+    }
+    .roleText{
+        width: 100%;
+    }
+    .roleText p {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 20px;
+        color: #334059;
+    }
+    .roleHelpText {
+        width: 70%;
+        border: none;
+        background: #F6F6F6;
+    }
+    .roleHelpText p{
+        font-size: 12px;
+    }
+}

@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import { User} from "phosphor-react";
 
 import './Role.css';
+import './media.css';
 
 class Role extends Component {
 

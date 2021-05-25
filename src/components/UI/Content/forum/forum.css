@@ -1,5 +1,5 @@
 .forum{
-    max-width: 1150px;
+    max-width: 1160px;
     margin: 0 auto;
 }
 .forum h1{
@@ -11,6 +11,7 @@
 }
 .forumContainer{
     display: flex;
+    margin: 0 10px;
     justify-content: space-between;
 }
 .forumCalc{

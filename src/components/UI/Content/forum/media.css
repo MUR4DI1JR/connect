@@ -1,14 +1,15 @@
-@media screen and (max-width: 1260px){
-    .forumCalcTitle h1 {
-        font-size: 40px;
-    }
-}
 @media screen and (max-width: 900px){
     .forumContainer {
         margin: 0 auto;
         width: 50%;
         display: block;
         justify-content: space-between;
+    }
+    .forumCalc{
+        width: 85%;
+    }
+    .forumCalcTitle {
+        padding-top: 78px;
     }
     .forumText {
         width: 100%;
@@ -22,16 +23,39 @@
     .forumTitle h1 {
          text-align: center;
     }
+    .forumCatalog {
+         width: 95%;
+    }
 }
 @media screen and (max-width: 650px){
     .forumContainer {
         width: 70%;
     }
+    .forumCalcTitle h1 {
+        font-size: 36px;
+    }
+    .forumCalcTitle p {
+        font-size: 18px;
+    }
+    .forumCalcTitle p:last-child{
+        font-size: 22px;
+    }
 }
 @media screen and (max-width: 470px){
+    .forumCalc {
+        height: 490px;
+    }
     .forum h1 {
         text-align: left;
         margin: 80px 0 20px 24px;
+    }
+    .forumCalcTitle h1 {
+        margin: 0;
+        font-size: 36px;
+    }
+    .forumCalcTitle p {
+        margin: 5px 0;
+        font-size: 18px;
     }
     .forumContainer {
         width: 86%;

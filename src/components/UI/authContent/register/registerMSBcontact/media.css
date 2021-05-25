@@ -1,0 +1,27 @@
+@media screen and (max-width: 1120px){
+    .registerContactContainer {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 900px){
+    .registerContactContainer {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 640px){
+    .registerContactItem {
+        width: 65%;
+    }
+    .registerContactItem input[type=submit] {
+        width: 47% !important;
+    }
+}
+@media screen and (max-width: 450px){
+    .registerContactItem {
+        width: 85%;
+        border: none;
+        padding: 10px;
+    }
+}

@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import {useHistory} from "react-router-dom";
 
 import './registerMsb.css';
+import './media.css';
 
 const RegisterMsb = () => {
     const [user, setUser] = useState({

@@ -2,6 +2,7 @@ import React from 'react';
 import {useHistory} from 'react-router-dom';
 
 import './registerMSBcontact.css';
+import './media.css';
 import useInput from "../useInput";
 
 
@@ -39,7 +40,7 @@ const RegisterMsBcontact = () => {
                     <div className="registerContactItem">
                         <h1>Добро пожаловать, <span>Имя!</span></h1>
                         <div className="registerUserTel">
-                            <div className='userName'>
+                            <div className='userContactName'>
                                 <p>Номер телефона</p>
                                 <input
                                     type="tel"
@@ -53,7 +54,7 @@ const RegisterMsBcontact = () => {
                                 {(number.isDirty && number.isEmpty) && <p style={{color: 'red'}}>Поле не должен быть пустым</p>}
                                 {(number.isDirty && number.minLengthError) && <p style={{color: 'red'}}>Неккоректная длина</p>}
                             </div>
-                            <div className='userName'>
+                            <div className='userContactName'>
                                 <p>Телеграм</p>
                                 <input
                                     type="tel"

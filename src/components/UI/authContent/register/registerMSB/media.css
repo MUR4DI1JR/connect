@@ -1,0 +1,32 @@
+@media screen and (max-width: 1120px){
+    .registerContainer {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 820px){
+    .registerContainer {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 640px){
+    .registerContainer {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .registerItem {
+        width: 89%;
+        padding: 10px;
+        border: none;
+    }
+    .registerUserName {
+        display: block;
+    }
+    .userName {
+        width: 100%;
+    }
+    .userName:last-child {
+        margin-top: 15px;
+    }
+}
