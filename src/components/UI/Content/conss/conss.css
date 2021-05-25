@@ -1,5 +1,5 @@
 .consults{
-    width: 32%;
+    width: 36%;
     padding-left: 65px;
 
     border: 0.5px solid #949CB3;
@@ -14,7 +14,7 @@
     padding: 19px 20px 19px 15px;
 
     color: #000;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 18px;
     line-height: 120%;
     border-top: none;
@@ -65,7 +65,7 @@
 .conssName h1{
     margin: 7px 0 0 0;
 
-    font-weight: 600;
+    font-weight: 400;
     font-size: 18px;
     line-height: 120%;
     text-transform: uppercase;
@@ -77,7 +77,7 @@
 .conssContact h4{
     margin: 7px 0 0 0;
 
-    font-weight: 600;
+    font-weight: 400;
     font-size: 16px;
     line-height: 120%;
     color: #334059;

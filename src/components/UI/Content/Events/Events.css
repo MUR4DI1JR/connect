@@ -5,7 +5,7 @@
 .eventContainer{
     margin: 0 auto;
     padding-bottom: 80px;
-    max-width: 1200px;
+    width: 72%;
 }
 .eventTitle h1{
     padding: 60px 0 40px 0;
@@ -16,8 +16,7 @@
     line-height: 120%;
 }
 .eventCard{
-    width: 87%;
-    margin: 0 30px;
+    width: 93%;
 
     background: #fff;
     border-radius: 5px;

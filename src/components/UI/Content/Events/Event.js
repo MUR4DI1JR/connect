@@ -22,6 +22,16 @@ function SampleNextArrow(props) {
         />
     );
 }
+function SamplePrevArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+        <div
+            className={className}
+            style={{ ...style, display: "none", background: "green" }}
+            onClick={onClick}
+        />
+    );
+}
 
 class Event extends Component {
     state = {
@@ -130,6 +140,7 @@ class Event extends Component {
             slidesToScroll: 1,
             className: 'eventSlides',
             nextArrow: <SampleNextArrow />,
+            prevArrow: <SamplePrevArrow />
         };
 
         return (

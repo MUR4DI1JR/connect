@@ -1,14 +1,15 @@
 p{
+    font-weight: 400;
     margin: 0;
 }
 .adsCommon{
-    max-width: 1200px;
+    width: 75%;
     margin: 30px auto 80px auto;
     display: flex;
     justify-content: space-evenly;
 }
 .adsContainer{
-    width: 50%;
+    width: 52%;
     height: 439px;
     position: relative;
 
@@ -29,7 +30,7 @@ p{
     padding: 19px 20px 10px 15px;
 
     color: #000;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 18px;
     line-height: 120%;
     border-top: none;
@@ -43,7 +44,7 @@ p{
     padding: 20px;
 
     color: #949CB3;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 16px;
     line-height: 120%;
     background: none;
@@ -73,7 +74,7 @@ p{
     width: 80%;
 
     margin: 7px 0 0 0;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 16px;
     line-height: 120%;
     color: #334059;
@@ -93,7 +94,7 @@ p{
     color: #014DA8;
     font-size: 18px;
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 500;
 }
 .paging{
     width: 8px;

@@ -1,3 +1,10 @@
+.roleChooser{
+    width: 70%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-around;
+    text-align: center;
+}
 .roleTitle{
     margin-top: 70px;
 
@@ -7,7 +14,7 @@
     line-height: 120%;
 }
 .roleMSB{
-    width: 30%;
+    width: 35%;
     margin: 50px 0 60px 0;
     padding: 30px;
     border-radius: 5px;
@@ -18,7 +25,7 @@
     border: 1px solid #949CB3;
 }
 .roleCons{
-    width: 30%;
+    width: 35%;
     margin: 50px 0 60px 0;
     padding: 30px;
     border-radius: 5px;
@@ -28,15 +35,8 @@
 .roleCons:hover{
     border: 1px solid #949CB3;
 }
-.roleChooser{
-    width: 80%;
-    display: flex;
-    margin: 0 auto;
-    justify-content: space-around;
-    text-align: center;
-}
 .roleTitleText h1{
-    font-weight: bold;
+    font-weight: 700;
     font-size: 18px;
     line-height: 120%;
 }
@@ -45,7 +45,7 @@
     margin: 0 auto;
 }
 .roleText p{
-    font-weight: normal;
+    font-weight: 400;
     font-size: 14px;
     line-height: 20px;
 
