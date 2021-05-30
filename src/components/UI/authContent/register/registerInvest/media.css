@@ -1,0 +1,26 @@
+@media screen and (max-width: 900px){
+    .registerInvestContainer {
+        width: 70%;
+    }
+}
+@media screen and (max-width: 650px){
+    .registerInvestContainer {
+        width: 90%;
+    }
+    .registerNext{
+        width: 45% !important;
+    }
+}
+@media screen and (max-width: 450px){
+    .registerInvestContainer {
+        width: 90%;
+    }
+    .registerInvestItem {
+        width: 88%;
+        padding: 10px;
+        border: none;
+    }
+    .registerInvestItem h1 {
+        font-size: 22px;
+    }
+}

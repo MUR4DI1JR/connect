@@ -13,6 +13,8 @@ const UseValidation = (value, validations) => {
     const [collabError, setCollabError] = useState(false);
     const [investValid, setInvestValid] = useState(false);
     const [inputValid, setInputValid] = useState(false);
+    const [emailError, setEmailError] = useState(false);
+    const [consValid, setConsValid] = useState(false);
 
     useEffect(()=>{
         for (const validation in validations){
@@ -47,6 +49,10 @@ const UseValidation = (value, validations) => {
                 case 'collabValue':
                     value === 'Выберите' ? setCollabError(true) : setCollabError(false);
                     break;
+                case 'isEmail':
+                    const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                    re.test(String(value).toLowerCase()) ? setEmailError(false) : setEmailError(true);
+                    break
             }
         }
     }, [value]);
@@ -67,6 +73,14 @@ const UseValidation = (value, validations) => {
         }
     }, [isEmpty, minNumberError, maxNumberError, sectorError, collabError]);
 
+    useEffect(()=>{
+        if (isEmpty || minLengthError|| maxLengthError || emailError || countryError){
+            setConsValid(false)
+        }else {
+            setConsValid(true)
+        }
+    }, [isEmpty, minLengthError, emailError, maxLengthError, countryError]);
+
     return{
         isEmpty,
         minLengthError,
@@ -79,7 +93,9 @@ const UseValidation = (value, validations) => {
         sectorError,
         collabError,
         inputValid,
-        investValid
+        investValid,
+        emailError,
+        consValid
     }
 };
 

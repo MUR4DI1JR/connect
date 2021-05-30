@@ -7,7 +7,7 @@ import useInput from "../useInput";
 
 
 const RegisterMsBcontact = () => {
-    const number = useInput('', {isEmpty: true, minLength: 8,});
+    const number = useInput('', {isEmpty: true, minLength: 8});
     const telegram = useInput('', {isEmpty: true, minLength: 8});
     const day = useInput('', {isEmpty: true, maxNumber: 31});
     const month = useInput('Месяц', {monthValue: false});
@@ -21,7 +21,6 @@ const RegisterMsBcontact = () => {
         history.push('/register-msb')
     };
 
-    console.log(gender.inputValid);
 
     const clickNext = (e) =>{
         e.preventDefault();

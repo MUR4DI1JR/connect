@@ -1,8 +1,9 @@
 .registerUserCons{
-    margin: 150px 0 50px 0;
+    max-width: 1200px;
+    margin: 150px auto 50px auto;
 }
 .registerUserConsContainer{
-    width: 50%;
+    width: 60%;
     margin: 0 auto;
 }
 .registerUserConsItem{
@@ -28,20 +29,22 @@
     border-radius: 5px;
     outline: none;
 }
-.registerUserConsItem input:valid{
-    width: 100%;
-    height: 34px;
-
-    border: 0.5px solid #7C7C7C;
-    border-radius: 5px;
-    outline: none;
-}
 .registerUserConsItem input::placeholder{
     padding: 10px;
     font-weight: normal;
     font-size: 13px;
     line-height: 120%;
 
+    color: #7C7C7C;
+}
+.registerInputOne select{
+    width: 102%;
+    height: 38px;
+
+    border: 0.5px solid #7C7C7C;
+    background-color: #FFF;
+    border-radius: 5px;
+    outline: none;
     color: #7C7C7C;
 }
 .registerUserInfo{
@@ -59,6 +62,97 @@
 }
 .registerInputTwo{
     width: 47%;
+}
+.registerUserConsTitle{
+    width: 70%;
+    margin-bottom: 20px;
+}
+.registerUserConsTitle h1{
+    font-weight: 600 !important;
+    font-size: 24px !important;
+    line-height: 120% !important;
+}
+.registerUserConsItem span{
+    color: red;
+}
+.registerUserConsItem h1{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 120%;
+}
+.registerEmailCons{
+    margin: 20px 0;
+}
+.registerEmail{
+    width: 100%;
+}
+.registerConsPassword{
+    display: flex;
+    justify-content: space-between;
+}
+.registerPasswordOne{
+    width: 47%;
+}
+.registerPasswordTwo{
+    width: 47%;
+}
+.registerUserConsItem select{
+    width: 102%;
+    height: 38px;
+
+    border: 0.5px solid #7C7C7C;
+    background-color: #FFF;
+    border-radius: 5px;
+    outline: none;
+    color: #7C7C7C;
+}
+.registerConsUserBorn{
+    margin-top: 20px;
+}
+.userConsBorn{
+    width: 102%;
+    display: flex;
+    justify-content: space-between;
+}
+.userConsBorn input{
+    width: 30%;
+}
+.userConsBorn
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.userConsBorn select{
+    width: 30%;
+}
+.userConsGender {
+    margin-top: 20px;
+}
+.registerUserConsLocation{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.registerLocationOne{
+    width: 47%;
+}
+.registerLocationTwo{
+    width: 47%;
+}
+.registerUserConsContact{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.registerContactOne{
+    width: 47%;
+}
+.registerContactTwo{
+    width: 47%;
+}
+.registerConsSocialLink{
+    margin-top: 20px;
 }
 .registerButtons{
     margin-top: 30px;

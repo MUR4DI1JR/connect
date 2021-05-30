@@ -1,0 +1,133 @@
+@media screen and (max-width: 1150px){
+    .registerUserConsContainer {
+        width: 70%;
+    }
+    .registerUserConsItem {
+        width: 70%;
+    }
+}
+@media screen and (max-width: 900px){
+    .registerUserConsContainer {
+        width: 90%;
+    }
+    .registerUserConsItem {
+        width: 85%;
+        padding: 20px;
+    }
+}
+@media screen and (max-width: 600px){
+    .registerUserCons {
+        max-width: 1200px;
+        margin: 30px auto 50px auto;
+    }
+    .registerUserConsTitle{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .registerUserConsTitle h1{
+        font-weight: bold !important;
+        font-size: 16px !important;
+        line-height: 120% !important;
+    }
+    .registerUserConsItem span{
+        color: red;
+    }
+    .registerUserConsItem h1{
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 120%;
+    }
+    .registerUserInfo {
+        display: block;
+        margin: 10px 0;
+    }
+    .registerInputOne {
+         width: 100%;
+    }
+    .registerInputTwo {
+        width: 100%;
+    }
+    .registerConsPassword{
+        display: flex;
+        justify-content: space-between;
+    }
+    .registerPasswordOne{
+        width: 47%;
+    }
+    .registerPasswordTwo{
+        width: 47%;
+    }
+    .registerUserConsItem select{
+        width: 102%;
+        height: 38px;
+
+        border: 0.5px solid #7C7C7C;
+        background-color: #FFF;
+        border-radius: 5px;
+        outline: none;
+        color: #7C7C7C;
+    }
+    .registerConsUserBorn{
+        margin-top: 20px;
+    }
+    .userConsBorn{
+        width: 102%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .userConsBorn input{
+        width: 30%;
+    }
+    .userConsBorn
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+    .userConsBorn select{
+        width: 30%;
+    }
+    .userConsGender {
+        margin-top: 20px;
+    }
+    .registerUserConsLocation{
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .registerLocationOne{
+        width: 47%;
+    }
+    .registerLocationTwo{
+        width: 47%;
+    }
+    .registerUserConsContact{
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .registerContactOne{
+        width: 47%;
+    }
+    .registerContactTwo{
+        width: 47%;
+    }
+    .registerConsSocialLink{
+        margin-top: 10px;
+    }
+}
+@media screen and (max-width: 465px){
+    .registerUserConsContainer {
+        width: 100%;
+    }
+    .registerUserConsItem {
+        width: 90%;
+        padding: 10px;
+        border: none;
+    }
+    .registerUserConsItem h1 {
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 120%;
+    }
+}

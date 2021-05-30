@@ -1,12 +1,13 @@
 .registerMSB{
-    margin: 150px 0 50px 0;
+    max-width: 1200px;
+    margin: 150px auto 50px auto;
 }
 .registerContainer{
     width: 50%;
     margin: 0 auto;
 }
 .registerItem{
-    width: 50%;
+    width: 65%;
     margin: 0 auto;
     padding: 60px;
 

@@ -1,8 +1,9 @@
 .registerCons{
-    margin: 150px 0 50px 0;
+    max-width: 1200px;
+    margin: 150px auto 50px auto;
 }
 .registerConsContainer{
-    width: 50%;
+    width: 60%;
     margin: 0 auto;
 }
 .registerConsItem{
@@ -51,8 +52,20 @@
     font-size: 24px;
     line-height: 120%;
 }
-.skils{
+.skills{
     margin: 20px 0;
+}
+.userSkill{
+    display: flex;
+    flex-wrap: wrap;
+}
+.userSkill p{
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 120%;
+
+    color: #7C7C7C;
 }
 .registerButtons{
     margin-top: 30px;

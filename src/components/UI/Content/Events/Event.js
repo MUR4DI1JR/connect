@@ -174,7 +174,6 @@ class Event extends Component {
                             }
                         </Slider>
                     }
-
                 </div>
             </div>
         );

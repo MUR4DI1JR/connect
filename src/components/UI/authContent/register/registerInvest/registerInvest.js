@@ -3,6 +3,7 @@ import {useHistory} from "react-router-dom";
 import useInput from "../useInput";
 
 import './registerInvest.css';
+import './media.css';
 
 
 const RegisterInvest = () => {

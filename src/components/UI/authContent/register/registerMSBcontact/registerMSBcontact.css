@@ -1,8 +1,9 @@
 .registerMSBContact{
-    margin: 150px 0 50px 0;
+    max-width: 1200px;
+    margin: 150px auto 50px auto;
 }
 .registerContactContainer{
-    width: 50%;
+    width: 65%;
     margin: 0 auto;
 }
 .registerContactItem{
