@@ -14,7 +14,7 @@ const Header = () => {
     const active = useSelector(state => state.slice.active);
     let history = useHistory();
     const navText = ['Финансы', 'Консультанты', 'Мероприятия', 'Форум', 'О нас', 'Дать Объявление'];
-    const [screen, setScreen] = useState(window.matchMedia('(max-width: 915px)'));
+    const [screen, setScreen] = useState(window.matchMedia('(max-width: 915px)').matches);
     const dispatch = useDispatch();
 
     let showText = navText.map((text, i) =>  <p key={i}><a href={`#${i}`}>{text}</a></p>);
