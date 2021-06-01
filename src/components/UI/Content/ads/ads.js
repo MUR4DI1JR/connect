@@ -8,6 +8,8 @@ import './media.css';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Conss from "../conss/conss";
+import {connect} from "react-redux";
+
 
 function SampleNextArrow(props) {
     const { className, style, onClick } = props;
@@ -73,9 +75,10 @@ class Ads extends Component {
                     feedBack: 'Обучение по ХААСП, помощь с продажей в Узбекистане, технологией выращивания дождевых червей и т.п.',
                     contact: '+996 999 999 999'
                 },
-            ]
+            ],
         };
     }
+
 
     render() {
         const {ads} = this.state;
@@ -95,7 +98,7 @@ class Ads extends Component {
         };
         return (
             <div className="adsCommon">
-                <div className="adsContainer">
+                <div className={this.props.active ? "adsContainer" : "adsContainer".concat(' active')}>
                     <Slider ref={c => (this.slider = c)} {...settings}>
                         {
                             ads.map((ads, i) =>{
@@ -143,4 +146,9 @@ class Ads extends Component {
     }
 }
 
-export default Ads;
+
+const mapStateToProps = state => ({
+    active: state.slice.active
+});
+
+export default connect(mapStateToProps)(Ads);

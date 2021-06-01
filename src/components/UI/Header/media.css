@@ -6,15 +6,19 @@
     }
 }
 @media screen and (max-width: 915px){
+    .container {
+        position: relative;
+        /*justify-content: none;*/
+    }
     .logo{
-        margin-left: 15px;
+        z-index: 0;
     }
     .burger{
         display: block;
         width: 30px;
         height: 20px;
         margin-top: 38px;
-        margin-right: 15px;
+        margin-left: 15px;
 
         position: relative;
         float: left;
@@ -57,29 +61,125 @@
     .burger.active span{
         display: none;
     }
+    .signInHeader{
+        right: 100px;
+        position: absolute;
+        z-index: 5;
+    }
+    .signIn{
+        display: none;
+    }
+    .signIn.active{
+        display: block;
+        margin: 30px 0 0 0;
+        padding: 8px 22px;
+        border: 1px solid #949CB3;
+        box-sizing: border-box;
+        border-radius: 50px;
+        text-decoration: none;
+    }
+    .magnifier{
+        margin: 30px 10px 0 0;
+    }
     .menu-burger{
+        display: none;
+    }
+    .menu-burger.active{
+        display: block;
+        width: 80%;
+        height: 100%;
+        margin: 0;
+        padding: 72px 0 0 0;
+
+        position: fixed;
+        background-color: #fff;
+        transition: all 0.3s ease 0s;
+    }
+    .wallpaper{
         width: 100%;
         height: 100%;
         margin: 0;
-        padding: 100px 0 0 0;
 
         position: fixed;
         display: block;
         top: -150%;
-        background-color: #fff;
-        transition: all 0.3s ease 0s;
+        background: rgba(0, 0, 0, 0.4);
     }
-    .menu-burger.active{
+    .wallpaper.active{
         top: 0;
     }
     .navBar{
         display: block;
     }
     .navBar p {
-        margin: 10px 20px;
+        margin: 30px 0;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19px;
     }
     .auth-log {
         justify-content: end;
         margin: 30px 0 0 15px;
+    }
+    .signUp {
+        margin: 0;
+        color: #fff;
+        padding: 8px 22px;
+        background: #0165DE;
+        border-radius: 50px;
+    }
+    .headerButtonLang select {
+        margin: 30px 0;
+        padding: 0 5px;
+        border: none;
+
+        background: none;
+        outline: none;
+        border-radius: 5px;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .headerButtonLang option{
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+
+        color: #000000;
+    }
+    .wallpaper.active hr{
+        width: 97%;
+        float: right;
+    }
+    .headerNavLink{
+        width: 95%;
+        margin: 40px auto 0 auto;
+    }
+    .headerNavLink p{
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 100%;
+
+        color: #334059;
+    }
+    .headerText{
+        width: 80%;
+    }
+    .headerText span{
+        color: #0165DE;
+    }
+    .headerTel{
+        margin: 23px 0;
+    }
+    .headerSocialIcon{
+        margin-right: 15px;
+        padding: 10px;
+
+        color: #fff;
+        background-color: #909EBB;
+        border-radius: 50px;
+    }
+    .headerSocialIcon:first-child{
+        padding: 10px 13px;
     }
 }

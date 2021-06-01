@@ -10,25 +10,18 @@ const RegisterUserCons = () => {
     const name = useInput('', {isEmpty: true, minLength: 3});
     const password = useInput('', {isEmpty: true, maxLength: 8, minLength: 3});
     const confirmPassword = useInput('', {isEmpty: true});
-    const born = useInput('', {isEmpty: true});
     const email = useInput('', {isEmpty: true, isEmail: true, minLength: 3});
     const telegram = useInput('', {isEmpty: true, minLength: 8});
     const link = useInput('');
     const country = useInput('Выберите', {isEmpty: true, countryValue: false});
     const city = useInput('', {isEmpty: true});
     const [passwordError, setPasswordError] = useState(false);
-    const [screen, setScreen] = useState(window.matchMedia('(max-width: 600px)').matches);
     const day = useInput('', {isEmpty: true, maxNumber: 31});
     const month = useInput('Месяц', {monthValue: false});
     const year = useInput('', {isEmpty: true,  maxLength: 4, minLength: 4, minNumber: 1930});
     const gender = useInput('Пол',  {genderValue: true});
     const number = useInput('', {isEmpty: true, minLength: 8});
 
-
-    useEffect(() =>{
-        const handler = e =>{setScreen(e.matches)};
-        window.matchMedia('(max-width: 600px)').addListener(handler)
-    });
 
 
     const history = useHistory();

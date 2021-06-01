@@ -1,25 +1,29 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import {useHistory} from "react-router-dom";
+import {useDispatch, useSelector} from 'react-redux';
 
 import './header.css';
 import './media.css';
 import logo from './../../../Images/logo.png';
+import {MagnifyingGlass} from "phosphor-react";
+import {openHandle} from "../../../redux/sliceReducer";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faFacebookF, faTelegramPlane, faTwitter, faVk} from "@fortawesome/free-brands-svg-icons";
 
 const Header = () => {
-    const [active, setActive] = useState(true);
+    const active = useSelector(state => state.slice.active);
     let history = useHistory();
     const navText = ['Финансы', 'Консультанты', 'Мероприятия', 'Форум', 'О нас', 'Дать Объявление'];
+    const [screen, setScreen] = useState(window.matchMedia('(max-width: 915px)'));
+    const dispatch = useDispatch();
 
     let showText = navText.map((text, i) =>  <p key={i}><a href={`#${i}`}>{text}</a></p>);
 
-    let showNavBar = e =>{
-        e.preventDefault();
-        if (active){
-            setActive(false)
-        }else {
-            setActive(true)
-        }
-    };
+    useEffect(()=>{
+        const handler = e => setScreen(e.matches);
+        window.matchMedia('(max-width: 915px)').addListener(handler)
+    });
+
 
     const registerClick = () =>{
         history.push('/role')
@@ -33,28 +37,95 @@ const Header = () => {
         history.push('/')
     };
 
-    return (
-        <div className="header">
-            <div className="container">
+    const adaptiveHeader = () =>{
+        if (active){
+            document.body.style.overflow = 'visible'
+        }else {
+            document.body.style.overflow = 'hidden'
+        }
+        return(
+            <div className='container'>
+                <div className={active ? "burger" : "burger".concat(' active')} onClick={() => dispatch(openHandle())}>
+                    <span></span>
+                </div>
+                {
+                    active ? null
+                        :
+                        <div className="signInHeader">
+                            <button className={ active ? "signIn" : "signIn".concat(' active')} onClick={loginClick}>Вход</button>
+                        </div>
+                }
                 <div className="logo" onClick={mainPage}>
                     <img src={logo} alt="logo"/>
                     <h1>Connect<span>4pro</span></h1>
                 </div>
-                <div className={active ? "burger" : "burger".concat(' active')} onClick={showNavBar}>
-                    <span></span>
+                <div className="magnifier">
+                    <MagnifyingGlass size={30} />
                 </div>
-                <div className={active ? "menu-burger" : "menu-burger".concat(' active')}>
-                    <div className="navBar">
-                        {
-                            showText
-                        }
-                    </div>
-                    <div className="auth-log">
-                        <button className="signIn" onClick={loginClick}>Вход</button>
-                        <button className="signUp" onClick={registerClick}>Регистрация</button>
+                <div className={active ? "wallpaper" : "wallpaper".concat(' active')}>
+                    <div className={active ? "menu-burger" : "menu-burger".concat(' active')}>
+                        <div className="navBar">
+                            {
+                                showText
+                            }
+                        </div>
+                        <div className="auth-log">
+                            <button className="signUp" onClick={registerClick}>Регистрация</button>
+                        </div>
+                        <div className="headerButtonLang">
+                            <select size="1">
+                                <option value="Russian">Русский</option>
+                                <option value="English">English</option>
+                            </select>
+                        </div>
+                        <hr/>
+                        <div className="headerNavLink">
+                            <div className="headerText">
+                                <p>Есть информация про грант / инвестицию, пришлите на
+                                    почту <span>prof4dev@gmail.com</span></p>
+                            </div>
+                            <div className="headerTel">
+                                <p>+996 700 123-456</p>
+                            </div>
+                            <div className="headerSocial">
+                                <FontAwesomeIcon className="headerSocialIcon" icon={faFacebookF}/>
+                                <FontAwesomeIcon className="headerSocialIcon" icon={faTwitter}/>
+                                <FontAwesomeIcon className="headerSocialIcon" icon={faVk}/>
+                                <FontAwesomeIcon className="headerSocialIcon" icon={faTelegramPlane}/>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+        )
+    };
+
+    return (
+        <div className="header">
+            {
+                screen ? adaptiveHeader()
+                    :
+                    <div className="container">
+                        <div className="logo" onClick={mainPage}>
+                            <img src={logo} alt="logo"/>
+                            <h1>Connect<span>4pro</span></h1>
+                        </div>
+                        <div className={active ? "burger" : "burger".concat(' active')} onClick={() => openHandle()}>
+                            <span></span>
+                        </div>
+                        <div className={active ? "menu-burger" : "menu-burger".concat(' active')}>
+                            <div className="navBar">
+                                {
+                                    showText
+                                }
+                            </div>
+                            <div className="auth-log">
+                                <button className="signIn" onClick={loginClick}>Вход</button>
+                                <button className="signUp" onClick={registerClick}>Регистрация</button>
+                            </div>
+                        </div>
+                    </div>
+            }
         </div>
     );
 };
