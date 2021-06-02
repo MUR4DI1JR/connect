@@ -48,13 +48,6 @@ const Header = () => {
                 <div className={active ? "burger" : "burger".concat(' active')} onClick={() => dispatch(openHandle())}>
                     <span></span>
                 </div>
-                {
-                    active ? null
-                        :
-                        <div className="signInHeader">
-                            <button className={ active ? "signIn" : "signIn".concat(' active')} onClick={loginClick}>Вход</button>
-                        </div>
-                }
                 <div className="logo" onClick={mainPage}>
                     <img src={logo} alt="logo"/>
                     <h1>Connect<span>4pro</span></h1>
@@ -64,6 +57,13 @@ const Header = () => {
                 </div>
                 <div className={active ? "wallpaper" : "wallpaper".concat(' active')}>
                     <div className={active ? "menu-burger" : "menu-burger".concat(' active')}>
+                        {
+                            active ? null
+                                :
+                                <div className="signInHeader">
+                                    <button className={ active ? "signIn" : "signIn".concat(' active')} onClick={loginClick}>Вход</button>
+                                </div>
+                        }
                         <div className="navBar">
                             {
                                 showText

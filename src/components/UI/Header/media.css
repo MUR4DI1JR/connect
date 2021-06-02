@@ -62,7 +62,8 @@
         display: none;
     }
     .signInHeader{
-        right: 100px;
+        top: -5px;
+        right: 20px;
         position: absolute;
         z-index: 5;
     }
