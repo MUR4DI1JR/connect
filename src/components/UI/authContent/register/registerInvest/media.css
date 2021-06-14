@@ -4,6 +4,9 @@
     }
 }
 @media screen and (max-width: 650px){
+    .registerInvest{
+        margin: 0 auto 50px auto;
+    }
     .registerInvestContainer {
         width: 90%;
     }

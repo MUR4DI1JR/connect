@@ -11,6 +11,9 @@
     }
 }
 @media screen and (max-width: 640px){
+    .registerMSB{
+        margin: 0 auto 50px auto;
+    }
     .registerContainer {
         width: 100%;
         margin: 0 auto;

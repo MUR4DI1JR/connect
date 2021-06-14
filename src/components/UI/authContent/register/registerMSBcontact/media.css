@@ -11,6 +11,9 @@
     }
 }
 @media screen and (max-width: 640px){
+    .registerMSBContact{
+        margin: 0 auto 50px auto;
+    }
     .registerContactItem {
         width: 65%;
     }
