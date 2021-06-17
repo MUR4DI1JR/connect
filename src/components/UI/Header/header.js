@@ -55,7 +55,6 @@ const Header = () => {
                     <h1>Connect<span>4pro</span></h1>
                 </div>
                 <div className="magnifier">
-                    <MagnifyingGlass size={30} />
                 </div>
                 <div className={active ? "wallpaper" : "wallpaper".concat(' active')}>
                     <div className={active ? "menu-burger" : "menu-burger".concat(' active')}>

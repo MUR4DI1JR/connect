@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import {useDispatch, useSelector} from 'react-redux';
 import {Link} from 'react-router-dom';
 
+
 import './adsMSB.css';
 import Search from "../../UI/search/search";
 import {ArrowRight, Plus, Printer} from "phosphor-react";
@@ -9,12 +10,16 @@ import './media.css';
 
 const AdsMsb = () => {
     const ads = useSelector(state => state.slice.ads);
+    const filteredItems = useSelector(state => state.slice.filteredItems);
     const [screen, setScreen] = useState(window.matchMedia('(max-width: 450px)').matches);
+
 
     useEffect(()=>{
         const handler = e => setScreen(e.matches);
         window.matchMedia('(max-width: 450px)').addListener(handler)
     });
+
+    console.log(filteredItems);
 
     const addMsbAd = () =>{
       return(
@@ -27,16 +32,18 @@ const AdsMsb = () => {
       )
     };
 
+    console.log('ads',filteredItems);
+
     return (
         <div className="adsMsb">
-            <Search title='Поиск объявления МСБ'/>
+            <Search title='Поиск объявления МСБ' item={ads}/>
             {
                 screen ? addMsbAd() : null
             }
             <div className="adsItems">
                 {
-                    ads.map((ads, i) =>{
-                        return(
+                    filteredItems.map((ads, i) => {
+                        return (
                             <div key={i} className='adsItem'>
                                 <div className="ads-msb-date">
                                     <div className="adsMsbTitle">
@@ -49,7 +56,7 @@ const AdsMsb = () => {
                                             Размещено: <span>{ads.date}</span>
                                         </h2>
                                         <button>
-                                            <Printer size={24} />
+                                            <Printer size={24}/>
                                         </button>
                                     </div>
                                 </div>

@@ -12,6 +12,7 @@
     padding: 45px 0 25px 0;
 }
 .searchItem{
+    position: relative;
     padding-bottom: 77px;
 }
 .searchInput{
@@ -38,4 +39,26 @@
 }
 .searchIcon{
     padding: 12px 13px 0 0;
+}
+.autocomplete{
+    position: absolute;
+    left: 0;
+    top: 60px;
+    width: 100%;
+    background: #fff;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    z-index: 111;
+    max-height: 240px;
+    height: auto;
+    overflow: auto;
+}
+.autocomplete__item{
+    padding: 10px;
+}
+.autocomplete__item:hover{
+    background: rgb(180, 180, 180);
+    cursor: pointer;
+    transition: cubic-bezier(1, 0, 0, 1) .3s all;
 }

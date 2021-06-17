@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheckCircle } from '@fortawesome/free-regular-svg-icons';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import {CalendarBlank, CurrencyCircleDollar, GlobeHemisphereWest, HourglassLow} from "phosphor-react";
+import {useSelector} from "react-redux";
 
 import './invests.css';
 import './media.css';
@@ -10,81 +11,7 @@ import icon from './../../../../Images/Mask Group.png';
 import share from './../../../../Images/Share.png';
 
 const Invests = () => {
-    const invests = [
-        {
-            img: "",
-            title: "Международная стипендия Warwick Chancellor’s International Scholarships",
-            star: false,
-            deadline: '9 мая 2021',
-            coins: 5432,
-            value: "c",
-            events: "каждый год",
-            geolocation: "Лондон",
-            country: 'Великобритания',
-            text: "Стипендиальная программа Science@Leuven разработана для талантливых иностранных студентов желающих обучаться... "
-        },
-        {
-            img: "",
-            title: "Международная стипендия Warwick Chancellor’s International Scholarships",
-            star: true,
-            deadline: '9 мая 2021',
-            coins: 10000,
-            value: "$",
-            events: "каждый год",
-            geolocation: "Лондон",
-            country: 'Великобритания',
-            text: "Стипендиальная программа Science@Leuven разработана для талантливых иностранных студентов желающих обучаться muradil... "
-        },
-        {
-            img: "",
-            title: "Международная стипендия Warwick Chancellor’s International Scholarships",
-            star: false,
-            deadline: '9 мая 2021',
-            coins: 5432,
-            value: "c",
-            events: "каждый год",
-            geolocation: "Лондон",
-            country: 'Великобритания',
-            text: "Стипендиальная программа Science@Leuven разработана для талантливых иностранных студентов желающих обучаться... "
-        },
-        {
-            img: "",
-            title: "Международная стипендия Warwick Chancellor’s International Scholarships",
-            star: false,
-            deadline: '9 мая 2021',
-            coins: 5432,
-            value: "c",
-            events: "каждый год",
-            geolocation: "Лондон",
-            country: 'Великобритания',
-            text: "Стипендиальная программа Science@Leuven разработана для талантливых иностранных студентов желающих обучаться... "
-        },
-        {
-            img: "",
-            title: "Международная стипендия Warwick Chancellor’s International Scholarships",
-            star: false,
-            deadline: '9 мая 2021',
-            coins: 5432,
-            value: "c",
-            events: "каждый год",
-            geolocation: "Лондон",
-            country: 'Великобритания',
-            text: "Стипендиальная программа Science@Leuven разработана для талантливых иностранных студентов желающих обучаться... "
-        },
-        {
-            img: "",
-            title: "Международная стипендия Warwick Chancellor’s International Scholarships",
-            star: false,
-            deadline: '9 мая 2021',
-            coins: 5432,
-            value: "c",
-            events: "каждый год",
-            geolocation: "Лондон",
-            country: 'Великобритания',
-            text: "Стипендиальная программа Science@Leuven разработана для талантливых иностранных студентов желающих обучаться... "
-        },
-
-    ];
+    const invests = useSelector(state => state.slice.invests);
     const [showGrands, setShowGrands] = useState(true);
     const [showInvests, setShowInvests] = useState(false);
     const [screen, setScreen] = useState(window.matchMedia('(max-width: 900px)').matches);
