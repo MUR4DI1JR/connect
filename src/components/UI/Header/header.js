@@ -26,10 +26,12 @@ const Header = () => {
 
 
     const registerClick = () =>{
-        history.push('/role')
+        dispatch(openHandle());
+        history.push('/role');
     };
 
     const loginClick = () =>{
+        dispatch(openHandle());
         history.push('/login')
     };
 

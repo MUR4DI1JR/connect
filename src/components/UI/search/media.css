@@ -1,0 +1,16 @@
+@media screen and (max-width: 450px){
+    .searchTitle{
+        width: 95%;
+        margin: 0 auto;
+    }
+    .searchTitle h1 {
+        font-size: 24px;
+    }
+    .searchInput{
+        width: 95%;
+        margin: 0 auto;
+    }
+    .searchItem {
+        padding-bottom: 30px;
+    }
+}

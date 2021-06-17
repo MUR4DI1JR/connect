@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import Slider from 'react-slick';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { withRouter } from 'react-router-dom';
 
 import './ads.css';
 import './media.css';
@@ -23,65 +24,8 @@ function SampleNextArrow(props) {
 }
 
 class Ads extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            ads : [
-                {
-                    name: 'ads1',
-                    date: "5 мая 2021, 11:57",
-                    title: 'Объявления МСБ',
-                    task: 'Скачать заявку, разработать проект или бизнес-план, составить презентацию и т.п.)',
-                    feedBack: 'Обучение по ХААСП, помощь с продажей в Узбекистане, технологией выращивания дождевых червей и т.п.',
-                    contact: '+996 999 999 999'
-                },
-                {
-                    name: 'ads1',
-                    date: "5 мая 2021, 11:57",
-                    title: 'Объявления МСБ',
-                    task: 'Скачать заявку, разработать проект или бизнес-план, составить презентацию и т.п.)',
-                    feedBack: 'Обучение по ХААСП, помощь с продажей в Узбекистане, технологией выращивания дождевых червей и т.п.',
-                    contact: '+996 999 999 999'
-                },
-                {
-                    name: 'ads1',
-                    date: "5 мая 2021, 11:57",
-                    title: 'Объявления МСБ',
-                    task: 'Скачать заявку, разработать проект или бизнес-план, составить презентацию и т.п.)',
-                    feedBack: 'Обучение по ХААСП, помощь с продажей в Узбекистане, технологией выращивания дождевых червей и т.п.',
-                    contact: '+996 999 999 999'
-                },
-                {
-                    name: 'ads1',
-                    title: 'Объявления МСБ',
-                    date: "5 мая 2021, 11:57",
-                    task: 'Скачать заявку, разработать проект или бизнес-план, составить презентацию и т.п.)',
-                    feedBack: 'Обучение по ХААСП, помощь с продажей в Узбекистане, технологией выращивания дождевых червей и т.п.',
-                    contact: '+996 999 999 999'
-                },
-                {
-                    name: 'ads1',
-                    title: 'Объявления МСБ',
-                    date: "5 мая 2021, 11:57",
-                    task: 'Скачать заявку, разработать проект или бизнес-план, составить презентацию и т.п.)',
-                    feedBack: 'Обучение по ХААСП, помощь с продажей в Узбекистане, технологией выращивания дождевых червей и т.п.',
-                    contact: '+996 999 999 999'
-                },
-                {
-                    name: 'ads1',
-                    title: 'Объявления МСБ',
-                    date: "5 мая 2021, 11:57",
-                    task: 'Скачать заявку, разработать проект или бизнес-план, составить презентацию и т.п.)',
-                    feedBack: 'Обучение по ХААСП, помощь с продажей в Узбекистане, технологией выращивания дождевых червей и т.п.',
-                    contact: '+996 999 999 999'
-                },
-            ],
-        };
-    }
-
 
     render() {
-        const {ads} = this.state;
         const settings = {
             dots: true,
             infinite: true,
@@ -101,7 +45,7 @@ class Ads extends Component {
                 <div className={this.props.active ? "adsContainer" : "adsContainer".concat(' active')}>
                     <Slider ref={c => (this.slider = c)} {...settings}>
                         {
-                            ads.map((ads, i) =>{
+                            this.props.ads.map((ads, i) =>{
                                 return(
                                     <div key={i}>
                                         <div className="ads-date">
@@ -134,7 +78,7 @@ class Ads extends Component {
                         }
                     </Slider>
                     <div className="allAds">
-                        <button>
+                        <button onClick={()=> {this.props.history.push('/all-ads-msb')}}>
                             Все объявления
                         </button>
                         <FontAwesomeIcon className="adsIcon" icon={faArrowRight}/>
@@ -148,7 +92,8 @@ class Ads extends Component {
 
 
 const mapStateToProps = state => ({
-    active: state.slice.active
+    active: state.slice.active,
+    ads: state.slice.ads,
 });
 
-export default connect(mapStateToProps)(Ads);
+export default withRouter(connect(mapStateToProps)(Ads));

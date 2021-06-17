@@ -1,0 +1,69 @@
+@media screen and (max-width: 850px){
+    .adsItem {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 590px){
+    .ads-msb-date p {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 590px){
+    .adsItem {
+        width: 95%;
+        padding-left: 0;
+    }
+    .ads-msb-date p {
+        font-size: 12px;
+    }
+    .adsMsbContent {
+        margin: 20px 0 0 0;
+        padding-left: 15px;
+    }
+}
+@media screen and (max-width: 450px){
+    .addMsdAd{
+        width: 95%;
+        margin: 20px auto;
+    }
+    .addMsdAd button{
+        width: 100%;
+        padding: 12px 20px;
+        color: #fff;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 120%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        border: none;
+        border-radius: 5px;
+        background: #0165DE;
+        text-align: left;
+    }
+    .adsMsbContent h1 {
+        font-size: 14px;
+    }
+    .adsItem h4 {
+        width: 95%;
+        font-size: 12px;
+    }
+    .ads-msb-date p {
+        padding: 15px 20px 10px 15px;
+        width: 80%;
+        font-size: 12px;
+    }
+    .adsMsbDate{
+        margin-right: 0;
+    }
+    .adsMsbDate h2{
+        padding: 15px 0;
+        font-size: 10px !important;
+    }
+    .adsLink a {
+        font-size: 12px;
+    }
+    .ads-msb-icon{
+        width: 20px;
+    }
+}

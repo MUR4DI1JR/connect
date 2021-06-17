@@ -13,6 +13,7 @@ import Footer from "./components/UI/Footer/footer";
 import Role from "./components/UI/authContent/Role/Role";
 
 import './App.css';
+import AdsMsb from "./components/pages/adMSB/adsMSB";
 
 
 
@@ -22,13 +23,14 @@ const App = () => {
           <Header/>
           <Switch>
               <Route path='/login' component={Login}/>
+              <Route path='/all-ads-msb' component={AdsMsb}/>
               <Route path='/register-cons-user' exact component={RegisterUserCons}/>
               <Route path='/register-invest' exact component={RegisterInvest}/>
               <Route path='/register-contact' exact component={RegisterMsBcontact}/>
               <Route path='/register-msb' exact component={RegisterMsb}/>
               <Route path='/register-cons' component={RegisterConsults}/>
               <Route path='/role' component={Role}/>
-              <Route path='/' exact component={MainPage}/>
+              <Route path='/'  component={MainPage}/>
           </Switch>
           <Footer/>
       </BrowserRouter>

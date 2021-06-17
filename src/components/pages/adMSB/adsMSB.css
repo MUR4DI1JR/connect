@@ -1,0 +1,104 @@
+p{
+    font-weight: 400;
+    margin: 0;
+}
+.adsItems{
+    max-width: 1152px;
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: #909EBB;
+    font-size: 13px;
+}
+.adsItem{
+    width: 45%;
+    margin: 15px auto;
+    padding-left: 40px;
+    border: 0.5px solid #949CB3;
+    border-radius: 5px;
+}
+.ads-msb-date{
+    display: flex;
+    margin-bottom: 10px;
+    text-align: center;
+    justify-content: space-between;
+}
+.adsMsbDate{
+    display: flex;
+    margin-right: 25px;
+}
+.adsMsbDate span{
+    color: #000;
+}
+.adsMsbDate button{
+    background: none;
+    outline: none;
+    border: none;
+    color: #909EBB;;
+}
+.ads-msb-date p{
+    padding: 19px 20px 10px 15px;
+
+    color: #000;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    border-top: none;
+    border-left: 0.5px solid #949CB3;
+    border-right: 0.5px solid #949CB3;
+    border-bottom: 0.5px solid #949CB3;
+    border-radius: 0 0 5px 5px;
+}
+.ads-msb-date h2{
+    margin: 0;
+    padding: 20px;
+
+    color: #949CB3;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    background: none;
+    border: none;
+}
+.adsMsbContent{
+    margin: 20px 0 0 0;
+}
+.adsMsbContent:first-child{
+    margin: 30px 0 0 0 !important;
+}
+.adsMsbContent:last-child{
+    margin: 20px 0 40px 0;
+}
+.adsMsbContent h1{
+    margin-top: 7px;
+
+    color: #014DA8;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.adsItem h4{
+    width: 85%;
+
+    margin: 7px 0 0 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    color: #334059;
+}
+.adsLink{
+    margin: 30px 40px 40px 0;
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    color: #014DA8;
+}
+.adsLink a{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 120%;
+    margin-right: 20px;
+    color: #014DA8;
+    text-decoration: none;
+}
