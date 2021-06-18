@@ -4,17 +4,22 @@ import { faCheckCircle } from '@fortawesome/free-regular-svg-icons';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import {CalendarBlank, CurrencyCircleDollar, GlobeHemisphereWest, HourglassLow} from "phosphor-react";
 import {useSelector} from "react-redux";
+import {useHistory} from "react-router";
+
 
 import './invests.css';
 import './media.css';
 import icon from './../../../../Images/Mask Group.png';
 import share from './../../../../Images/Share.png';
+import {Link} from "react-router-dom";
+
 
 const Invests = () => {
     const invests = useSelector(state => state.slice.invests);
     const [showGrands, setShowGrands] = useState(true);
     const [showInvests, setShowInvests] = useState(false);
     const [screen, setScreen] = useState(window.matchMedia('(max-width: 900px)').matches);
+    const history = useHistory();
 
     const clickShowItem = e =>{
       if (!showGrands || showInvests){
@@ -37,7 +42,7 @@ const Invests = () => {
             let listInvests = invests.slice(0, -3);
             return listInvests.map((invests, i)=>{
                 return(
-                    <div className="investsBlock" key={i}>
+                    <div className="investsBlock" key={i} onClick={() => history.push(`invests-page/${invests.id}`)}>
                         <div className="investsTitle">
                             <img src={icon} alt="iconTitle"/>
                             <h1>{invests.title}{invests.star ? <FontAwesomeIcon className="investsCheckIcon" icon={faCheckCircle} /> : null}</h1>
@@ -56,7 +61,7 @@ const Invests = () => {
                             {
                                 invests.text.length > 113 ?
                                     <div className="investsBlockButton">
-                                        <button>Подробнее <FontAwesomeIcon className="investsTextIcon" icon={faArrowRight}/></button>
+                                        <Link to={`/invests-page/${invests.id}`}>Подробнее <FontAwesomeIcon className="investsTextIcon" icon={faArrowRight}/></Link>
                                         <button className="investsShareIcon"><img src={share} alt="shareIcon"/></button>
                                     </div>
                                     :
@@ -82,7 +87,7 @@ const Invests = () => {
                     showItem() :
                     invests.map((invests, i) => {
                         return (
-                            <div className="investsBlock" key={i}>
+                            <div className="investsBlock" key={i} onClick={() => history.push(`/invests-page/${invests.id}`)}>
                                 <div className="investsTitle">
                                     <img src={icon} alt="iconTitle"/>
                                     <h1>{invests.title}{invests.star ? <FontAwesomeIcon className="investsCheckIcon" icon={faCheckCircle} /> : null}</h1>
@@ -101,7 +106,7 @@ const Invests = () => {
                                     {
                                         invests.text.length > 113 ?
                                             <div className="investsBlockButton">
-                                                <button>Подробнее <FontAwesomeIcon className="investsTextIcon" icon={faArrowRight}/></button>
+                                                <Link to={`/invests-page/${invests.id}`}>Подробнее <FontAwesomeIcon className="investsTextIcon" icon={faArrowRight}/></Link>
                                                 <button className="investsShareIcon"><img src={share} alt="shareIcon"/></button>
                                             </div>
                                             :
@@ -115,7 +120,7 @@ const Invests = () => {
             </div>
             <div className="allShowInvests">
                 <div className="allShowInvestsButton">
-                    <button>Показать еще</button>
+                    <button onClick={() => history.push('/invests-page')}>Показать еще</button>
                     <FontAwesomeIcon icon={faArrowRight}/>
                 </div>
             </div>

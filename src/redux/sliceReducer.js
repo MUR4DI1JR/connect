@@ -63,6 +63,7 @@ const slice = createSlice({
         ],
         invests : [
             {
+                id: 1,
                 img: "",
                 title: "Международная стипендия Warwick Chancellor’s International Scholarships",
                 star: false,
@@ -75,6 +76,7 @@ const slice = createSlice({
                 text: "Стипендиальная программа Science@Leuven разработана для талантливых иностранных студентов желающих обучаться... "
             },
             {
+                id: 2,
                 img: "",
                 title: "Международная стипендия Warwick Chancellor’s International Scholarships",
                 star: true,
@@ -87,6 +89,7 @@ const slice = createSlice({
                 text: "Стипендиальная программа Science@Leuven разработана для талантливых иностранных студентов желающих обучаться muradil... "
             },
             {
+                id: 3,
                 img: "",
                 title: "Международная стипендия Warwick Chancellor’s International Scholarships",
                 star: false,
@@ -99,6 +102,7 @@ const slice = createSlice({
                 text: "Стипендиальная программа Science@Leuven разработана для талантливых иностранных студентов желающих обучаться... "
             },
             {
+                id: 4,
                 img: "",
                 title: "Международная стипендия Warwick Chancellor’s International Scholarships",
                 star: false,
@@ -111,6 +115,7 @@ const slice = createSlice({
                 text: "Стипендиальная программа Science@Leuven разработана для талантливых иностранных студентов желающих обучаться... "
             },
             {
+                id: 5,
                 img: "",
                 title: "Международная стипендия Warwick Chancellor’s International Scholarships",
                 star: false,
@@ -123,6 +128,7 @@ const slice = createSlice({
                 text: "Стипендиальная программа Science@Leuven разработана для талантливых иностранных студентов желающих обучаться... "
             },
             {
+                id: 6,
                 img: "",
                 title: "Международная стипендия Warwick Chancellor’s International Scholarships",
                 star: false,

@@ -131,6 +131,18 @@ button:hover{
     display: flex;
     justify-content: space-between;
 }
+.investsBlockButton a{
+    padding: 12px 20px;
+
+    text-decoration: none;
+    background: #909EBB;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    border: none;
+    border-radius: 5px;
+    color: #FFFFFF;
+}
 .investsBlockButton button{
     padding: 12px 20px;
 

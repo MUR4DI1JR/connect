@@ -11,11 +11,11 @@ import RegisterConsults from './components/UI/authContent/register/registerConsu
 import Login from "./components/UI/authContent/login/login";
 import Footer from "./components/UI/Footer/footer";
 import Role from "./components/UI/authContent/Role/Role";
+import AdsMsb from "./components/pages/adMSB/adsMSB";
+import InvestsPage from "./components/pages/investsPage/investsPage";
+import InvestsDetailsPage from "./components/pages/investsDetails/investsDetailsPage";
 
 import './App.css';
-import AdsMsb from "./components/pages/adMSB/adsMSB";
-
-
 
 const App = () => {
   return (
@@ -24,6 +24,8 @@ const App = () => {
           <Switch>
               <Route path='/login' component={Login}/>
               <Route path='/all-ads-msb' component={AdsMsb}/>
+              <Route path='/invests-page/:id' component={InvestsDetailsPage}/>
+              <Route path='/invests-page' component={InvestsPage}/>
               <Route path='/register-cons-user' exact component={RegisterUserCons}/>
               <Route path='/register-invest' exact component={RegisterInvest}/>
               <Route path='/register-contact' exact component={RegisterMsBcontact}/>
