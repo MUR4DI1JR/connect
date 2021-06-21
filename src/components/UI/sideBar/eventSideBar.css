@@ -1,0 +1,57 @@
+.eventSideBarCard{
+    margin: 10px 0;
+    width: 93%;
+
+    background: #fff;
+    border-radius: 5px;
+    border: 1px solid #949CB3;
+}
+.eventSideBarImg{
+    width: 100%;
+}
+.eventSideBarTitleCard{
+    padding: 15px 20px;
+}
+.eventSideBarTitleCard h1{
+    margin: 0;
+
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 100%;
+}
+.eventSideBarParameters{
+    margin-top: 23px;
+
+    color: #334059;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+}
+.eventSideBarParameters p {
+    margin: 14px 0 14px 3px;
+}
+.eventSideBarTime:last-child{
+    margin-left: 50px;
+}
+.eventSideBarIcon{
+    vertical-align: sub;
+    margin-right: 5px;
+}
+.eventSideBarParameters span{
+    margin-left: 5px;
+
+    text-decoration: underline;
+}
+.eventSideBarCountry{
+    margin: 0 !important;
+    text-decoration: none !important;
+}
+.icon::before{
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}

@@ -1,0 +1,90 @@
+.investsDetails{
+    max-width: 1155px;
+    margin: 0 auto;
+    display: flex;
+}
+.investsDetailsItems{
+    width: 100%;
+}
+.investsDetailsItem{
+    display: flex;
+}
+.investsDetailsBlock{
+    width: 60%;
+    margin: 0;
+    padding: 22px 0 0 40px;
+    cursor: pointer;
+
+    background: #F6F6F6;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.investsDetailsTitle{
+    width: 90%;
+    display: flex;
+    padding: 0 40px 0 0;
+}
+.investsDetailsTitle img{
+    width: 50px;
+    height: 50px;
+}
+.investsDetailsTitle h1{
+    margin: 0 0 0 15px;
+
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 140%;
+
+    color: #000000;
+}
+.investsDetailsCheckIcon{
+    margin-left: 10px;
+
+    color: #0165DE;
+}
+.investsDetailsParameters{
+    margin: 15px 0 0 0;
+    padding: 0 40px 22px 0;
+    display: flex;
+    justify-content: space-between;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: #334059;
+    border-bottom: 0.5px solid #949CB3;
+}
+.investsDetailsParameters p{
+    font-weight: 400;
+    margin: 10px 0 0 0;
+}
+.investsDetailsIcon{
+    margin-right: 5px;
+    vertical-align: sub;
+}
+.investsDetailsParameters img{
+    width: 18px;
+    height: 18px;
+    margin: 10px 3px 0 0;
+}
+.parametersDetailsCatalog{
+    font-weight: 600 !important;
+    text-decoration: none !important;
+}
+.investsDetailsData span{
+    text-decoration: underline;
+}
+.investsDetailsText{
+    width: 90%;
+    padding: 15px 40px 0 0;
+}
+.investsDetailsText p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+
+    color: #334059;
+}
+.otherInvestsDetail{
+    width: 40%;
+}

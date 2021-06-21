@@ -2,6 +2,7 @@ import {createSlice} from "@reduxjs/toolkit";
 import card1 from "../Images/card1.png";
 import card2 from "../Images/card2.png";
 import card3 from "../Images/card3.png";
+import investsImg from "../Images/Rectangle 94.png";
 
 const slice = createSlice({
     name: 'slice',
@@ -123,10 +124,11 @@ const slice = createSlice({
         invests : [
             {
                 id: 1,
-                img: "",
+                img: investsImg,
                 title: "Международная стипендия Warwick Chancellor’s International Scholarships",
                 star: false,
                 deadline: '9 мая 2021',
+                posted: '5 мая 2021',
                 coins: 5432,
                 value: "c",
                 events: "каждый год",
@@ -136,10 +138,11 @@ const slice = createSlice({
             },
             {
                 id: 2,
-                img: "",
+                img: investsImg,
                 title: "Международная стипендия Warwick Chancellor’s International Scholarships",
                 star: true,
                 deadline: '9 мая 2021',
+                posted: '5 мая 2021',
                 coins: 10000,
                 value: "$",
                 events: "каждый год",
@@ -149,10 +152,11 @@ const slice = createSlice({
             },
             {
                 id: 3,
-                img: "",
+                img: investsImg,
                 title: "Международная стипендия Warwick Chancellor’s International Scholarships",
                 star: false,
                 deadline: '9 мая 2021',
+                posted: '5 мая 2021',
                 coins: 5432,
                 value: "c",
                 events: "каждый год",
@@ -162,10 +166,11 @@ const slice = createSlice({
             },
             {
                 id: 4,
-                img: "",
+                img: investsImg,
                 title: "Международная стипендия Warwick Chancellor’s International Scholarships",
                 star: false,
                 deadline: '9 мая 2021',
+                posted: '5 мая 2021',
                 coins: 5432,
                 value: "c",
                 events: "каждый год",
@@ -175,10 +180,11 @@ const slice = createSlice({
             },
             {
                 id: 5,
-                img: "",
+                img: investsImg,
                 title: "Международная стипендия Warwick Chancellor’s International Scholarships",
                 star: false,
                 deadline: '9 мая 2021',
+                posted: '5 мая 2021',
                 coins: 5432,
                 value: "c",
                 events: "каждый год",
@@ -188,10 +194,11 @@ const slice = createSlice({
             },
             {
                 id: 6,
-                img: "",
+                img: investsImg,
                 title: "Muradil",
                 star: false,
                 deadline: '9 мая 2021',
+                posted: '5 мая 2021',
                 coins: 5432,
                 value: "c",
                 events: "каждый год",
@@ -201,10 +208,11 @@ const slice = createSlice({
             },
             {
                 id: 7,
-                img: "",
+                img: investsImg,
                 title: "Muradil",
                 star: false,
                 deadline: '9 мая 2021',
+                posted: '5 мая 2021',
                 coins: 5432,
                 value: "c",
                 events: "каждый год",
@@ -214,10 +222,11 @@ const slice = createSlice({
             },
             {
                 id: 8,
-                img: "",
+                img: investsImg,
                 title: "Muradil",
                 star: false,
                 deadline: '9 мая 2021',
+                posted: '5 мая 2021',
                 coins: 5432,
                 value: "c",
                 events: "каждый год",
@@ -227,10 +236,11 @@ const slice = createSlice({
             },
             {
                 id: 9,
-                img: "",
+                img: investsImg,
                 title: "Muradil",
                 star: false,
                 deadline: '9 мая 2021',
+                posted: '5 мая 2021',
                 coins: 5432,
                 value: "c",
                 events: "каждый год",
@@ -240,10 +250,11 @@ const slice = createSlice({
             },
             {
                 id: 10,
-                img: "",
+                img: investsImg,
                 title: "Muradil",
                 star: false,
                 deadline: '9 мая 2021',
+                posted: '5 мая 2021',
                 coins: 5432,
                 value: "c",
                 events: "каждый год",
@@ -253,10 +264,11 @@ const slice = createSlice({
             },
             {
                 id: 11,
-                img: "",
+                img: investsImg,
                 title: "Muradil",
                 star: false,
                 deadline: '9 мая 2021',
+                posted: '5 мая 2021',
                 coins: 5432,
                 value: "c",
                 events: "каждый год",
@@ -266,10 +278,11 @@ const slice = createSlice({
             },
             {
                 id: 12,
-                img: "",
+                img: investsImg,
                 title: "Muradil",
                 star: false,
                 deadline: '9 мая 2021',
+                posted: '5 мая 2021',
                 coins: 5432,
                 value: "c",
                 events: "каждый год",
@@ -314,6 +327,28 @@ const slice = createSlice({
             },
             {
                 id: 4,
+                img: card1,
+                title: 'Стипендиальная программа для иностранных студентов',
+                data: '15мая 2021',
+                time: '9:00',
+                location: 'Лондон',
+                country: 'Великобритания',
+                coins: '5432',
+                value: 'C'
+            },
+            {
+                id: 5,
+                img: card1,
+                title: 'Стипендиальная программа для иностранных студентов',
+                data: '15мая 2021',
+                time: '9:00',
+                location: 'Лондон',
+                country: 'Великобритания',
+                coins: '5432',
+                value: 'C'
+            },
+            {
+                id: 6,
                 img: card1,
                 title: 'Стипендиальная программа для иностранных студентов',
                 data: '15мая 2021',
