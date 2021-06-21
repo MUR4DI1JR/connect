@@ -84,7 +84,7 @@ const AdsMsb = () => {
                                     <h4>{ads.contact}</h4>
                                 </div>
                                 <div className="adsLink">
-                                    <Link to={`/ads-msb/${ads.id}`}>ПЕРЕЙТИ К ОБЪЯВЛЕНИЮ</Link>
+                                    <Link to={`/all-ads-msb/${ads.id}`}>ПЕРЕЙТИ К ОБЪЯВЛЕНИЮ</Link>
                                     <ArrowRight size={25} className='ads-msb-icon'/>
                                 </div>
                             </div>

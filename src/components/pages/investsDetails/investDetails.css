@@ -1,6 +1,6 @@
 .investsDetails{
     max-width: 1155px;
-    margin: 0 auto;
+    margin: 30px auto;
     display: flex;
 }
 .investsDetailsItems{
@@ -8,6 +8,20 @@
 }
 .investsDetailsItem{
     display: flex;
+}
+.investsIMG{
+    height: 240px;
+    position: relative;
+}
+.investsIMG p{
+    padding: 11px 15px;
+    position: absolute;
+    background: #F6F6F6;
+    border-radius: 5px 0;
+}
+.investsIMG img{
+    width: 255px;
+    height: 240px;
 }
 .investsDetailsBlock{
     width: 60%;
@@ -87,4 +101,26 @@
 }
 .otherInvestsDetail{
     width: 40%;
+}
+.telegramDetails{
+    width: 96%;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, #30A9DD 0%, #208BD4 100%);
+    border-radius: 5px;
+
+    color: #fff;
+}
+.telegramDetails h1{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 100%;
+}
+.telegramIcon{
+    margin-left: 20px;
+    padding: 5px;
+    border: 3px solid #fff;
+    border-radius: 50px;
 }

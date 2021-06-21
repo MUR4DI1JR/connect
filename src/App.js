@@ -16,6 +16,7 @@ import InvestsPage from "./components/pages/investsPage/investsPage";
 import InvestsDetailsPage from "./components/pages/investsDetails/investsDetailsPage";
 import EventPage from "./components/pages/eventPage/eventPage";
 import EventDetails from "./components/pages/eventDetails/eventDetails";
+import AdDetails from "./components/pages/adsDetails/adDetails";
 
 
 import './App.css';
@@ -26,6 +27,7 @@ const App = () => {
           <Header/>
           <Switch>
               <Route path='/login' component={Login}/>
+              <Route path='/all-ads-msb/:id' component={AdDetails}/>
               <Route path='/all-ads-msb' component={AdsMsb}/>
               <Route path='/invests-page/:id' component={InvestsDetailsPage}/>
               <Route path='/invests-page' component={InvestsPage}/>

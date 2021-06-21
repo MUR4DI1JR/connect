@@ -1,0 +1,80 @@
+.eventDetailContainer{
+    max-width: 1150px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.eventDetailItems{
+    width: 96%;
+}
+.eventDetailItem{
+    width: 90%;
+    padding-bottom: 30px;
+    border: 1px solid #949CB3;
+    border-radius: 5px;
+}
+.eventDetailImg img{
+    width: 100%;
+    height: 300px;
+}
+.eventDetailImg p{
+    width: 95%;
+    margin: 10px auto;
+
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 120%;
+
+    color: #334059
+}
+.eventDetailTitleCard{
+    padding: 15px 20px;
+}
+.eventDetailTitleCard h1{
+    width: 70%;
+    margin: 0;
+
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 100%;
+}
+.eventDetailParameters{
+    width: 85%;
+
+    margin: 23px 0 10px 0;
+    display: flex;
+    justify-content: space-between;
+
+    color: #334059;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+}
+.eventDetailParameters p {
+    margin: 14px 0 14px 3px;
+}
+.eventDetailTime:last-child{
+    margin-left: 50px;
+}
+.eventDetailIcon{
+    vertical-align: sub;
+    margin-right: 5px;
+}
+.eventDetailParameters span{
+    margin-left: 5px;
+
+    text-decoration: underline;
+}
+.eventDetailCountry{
+    margin: 0 !important;
+    text-decoration: none !important;
+}
+.icon::before{
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}

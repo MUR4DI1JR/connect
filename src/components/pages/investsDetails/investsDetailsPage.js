@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {useHistory} from "react-router";
 import {useSelector} from "react-redux";
 
@@ -6,8 +6,16 @@ import './investDetails.css';
 import icon from "../../../Images/Mask Group.png";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faCheckCircle} from "@fortawesome/free-regular-svg-icons";
-import {CalendarBlank, Clock, CurrencyCircleDollar, GlobeHemisphereWest, HourglassLow} from "phosphor-react";
+import {
+    CalendarBlank,
+    Clock,
+    CurrencyCircleDollar,
+    GlobeHemisphereWest,
+    HourglassLow,
+    TelegramLogo
+} from "phosphor-react";
 import EventSideBar from "../../UI/sideBar/eventSideBar";
+import Descriptions from "../../UI/Content/descriptions/descriptions";
 
 const InvestsDetailsPage = () => {
     const invests = useSelector(state => state.slice.invests);
@@ -15,6 +23,9 @@ const InvestsDetailsPage = () => {
     const history = useHistory();
     const itemId = history.location.pathname.slice(14);
 
+    useEffect(()=>{
+        window.scrollTo(0, 0)
+    });
 
     for (var i = 0; i < invests.length; i++) {
         if (itemId === invests[i].id.toString()) {
@@ -33,7 +44,7 @@ const InvestsDetailsPage = () => {
                         return(
                             <div className='investsDetailsItem' key={id}>
                                 <div className="investsIMG">
-                                    <p>Размещено: {content.posted}</p>
+                                    <p>Размещено: {content.posted},{content.postedTime}</p>
                                     <img src={content.img} alt=""/>
                                 </div>
                                 <div className="investsDetailsBlock">
@@ -44,11 +55,11 @@ const InvestsDetailsPage = () => {
                                     <div className="investsDetailsParameters">
                                         <div className="investsDetailsData">
                                             <p><HourglassLow size={20} className="investsDetailsIcon"/><span className="parametersCatalog">Дедлайн:</span> {content.deadline}</p>
-                                            <p><CurrencyCircleDollar size={20} className="investsDetailsIcon"/><span className="parametersCatalog">Сумма:</span> {content.coins} <span>{invests.value}</span></p>
+                                            <p><CurrencyCircleDollar size={20} className="investsDetailsIcon"/><span className="parametersCatalog">Сумма:</span> {content.coins} <span>{content.value}</span></p>
                                         </div>
                                         <div className="investsEvents">
                                             <p><CalendarBlank size={20} className="investsDetailsIcon"/><span className="parametersCatalog">Когда:</span> {content.events}</p>
-                                            <p><GlobeHemisphereWest size={20} className="investsDetailsIcon"/><span className="parametersCatalog">Где:</span> {content.geolocation}<span className="investsLocation">, {invests.country}</span></p>
+                                            <p><GlobeHemisphereWest size={20} className="investsDetailsIcon"/><span className="parametersCatalog">Где:</span> {content.geolocation}<span className="investsDetailsLocation">, {content.country}</span></p>
                                         </div>
                                     </div>
                                     <div className="investsDetailsText">
@@ -58,6 +69,13 @@ const InvestsDetailsPage = () => {
                             </div>
                         )
                     })
+                }
+                <div className="telegramDetails">
+                    <h1>Все самое интересное в Telegram!</h1>
+                    <TelegramLogo className="telegramIcon" size={20} />
+                </div>
+                {
+                    investsItem.map(content =>( <Descriptions width='97%' margin='30px 0 0 0' description={content.description} programs={content.programs}  req={content.req}/>))
                 }
             </div>
             <div className="otherInvestsDetail">

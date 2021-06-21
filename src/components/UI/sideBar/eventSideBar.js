@@ -8,7 +8,7 @@ const EventSideBar = () => {
     const events = useSelector(state => state.slice.events);
     const itemSideBar = events.slice(0, 3);
     return (
-        <div>
+        <div className='itemSideBar'>
             <h1>Возможно вам интересно:</h1>
             {
                 itemSideBar.map(event => (

@@ -35,10 +35,11 @@ const Invests = (props) => {
        window.matchMedia('(max-width: 900px)').addListener(handler);
     });
     
+    const listItems = props.filteredItem.slice(0, 6);
 
     const showItem = () =>{
         if (screen){
-            let listInvests = props.filteredItem.slice(0, -3);
+            let listInvests = props.filteredItem.slice(0, 3);
             return listInvests.map((invests, i)=>{
                 return(
                     <div className="investsBlock" key={i} onClick={() => history.push(`invests-page/${invests.id}`)}>
@@ -84,7 +85,7 @@ const Invests = (props) => {
             <div className="investsItems" style={{marginTop: props.button ? '0' : '-35px'}}>
                 {screen ?
                     showItem() :
-                    props.filteredItem.map((invests, i) => {
+                    listItems.map((invests, i) => {
                         return (
                             <div className="investsBlock" key={i} onClick={() => history.push(`/invests-page/${invests.id}`)}>
                                 <div className="investsTitle">

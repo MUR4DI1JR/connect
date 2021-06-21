@@ -1,0 +1,47 @@
+.descriptionContainer{
+    width: 97%;
+    margin-top: 30px;
+
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 140%;
+    color: #334059;
+}
+.descriptionContainer h1{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 100%;
+
+    color: #000;
+}
+.descriptionContainer span{
+    color: #0165DE;
+}
+.descriptionContainer a{
+    color: #0165DE;
+}
+.descPrograms{
+    margin-top: 20px;
+}
+.listDescPrograms{
+    color: #0165DE;
+}
+.requirementItem{
+    margin-top: 30px;
+}
+.requirementList{
+    margin-top: 20px;
+}
+.shareDesc{
+    margin-top: 20px;
+}
+.shareDesc button{
+    padding: 5px 5px;
+    background: #1877F2;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+}
+.descIcon{
+    margin-right: 7px;
+}

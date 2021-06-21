@@ -1,35 +1,33 @@
-.itemSideBar h1{
-    margin: 0;
-    width: 55%;
-    text-align: left;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 100%;
-    color: #000;
+.eventItemContainer{
+    max-width: 1150px;
+    margin: 0 auto;
 }
-.eventSideBarCard{
-    margin: 10px 0;
-    width: 93%;
+.eventItems{
+    display: flex;
+    flex-wrap: wrap;
+}
+.eventItemCard{
+    margin: 30px 0;
+    width: 80%;
 
     background: #fff;
+    border: 0.5px solid #949CB3;
     border-radius: 5px;
-    border: 1px solid #949CB3;
 }
-.eventSideBarImg{
+.eventItemImg{
     width: 100%;
 }
-.eventSideBarTitleCard{
+.eventItemTitleCard{
     padding: 15px 20px;
 }
-.eventSideBarTitleCard h1{
-    width: 90%;
+.eventItemTitleCard h1{
     margin: 0;
 
     font-weight: 600;
     font-size: 18px;
     line-height: 100%;
 }
-.eventSideBarParameters{
+.eventItemParameters{
     margin-top: 23px;
 
     color: #334059;
@@ -37,22 +35,22 @@
     font-size: 16px;
     line-height: 100%;
 }
-.eventSideBarParameters p {
+.eventItemParameters p {
     margin: 14px 0 14px 3px;
 }
-.eventSideBarTime:last-child{
+.eventItemTime:last-child{
     margin-left: 50px;
 }
-.eventSideBarIcon{
+.eventItemIcon{
     vertical-align: sub;
     margin-right: 5px;
 }
-.eventSideBarParameters span{
+.eventItemParameters span{
     margin-left: 5px;
 
     text-decoration: underline;
 }
-.eventSideBarCountry{
+.eventItemCountry{
     margin: 0 !important;
     text-decoration: none !important;
 }
