@@ -1,39 +1,29 @@
-import React, {useEffect, useMemo, useState} from 'react';
+import React, {useState} from 'react';
 import {MagnifyingGlass} from "phosphor-react";
-import {useDispatch} from 'react-redux';
+import {useDispatch, useSelector} from 'react-redux';
 import {filtered} from "../../../redux/sliceReducer";
 
 import './search.css';
 import './media.css';
 
 const Search = (props) => {
-    const [value, setValue] = useState('');
+    const value = useSelector(state => state.slice.searchValue);
     const [isOpen, setIsOpen] = useState(true);
     const dispatch = useDispatch();
 
-    const  filteredItems = props.item.filter(items =>{
+    const filteredItems = props.item.filter(items =>{
         return items.title.toLowerCase().includes(value.toLowerCase());
     });
 
-
-    useMemo(() =>{
-        const showItem = () =>{
-            dispatch(filtered(filteredItems))
-        };
-        showItem()
-    }, []);
-
-
     const itemClickHandler = (e) =>{
-        setValue(e.target.textContent);
+        dispatch(filtered(e.target.textContent));
         setIsOpen(!isOpen);
-        dispatch(filtered(filteredItems));
     };
 
     const inputClickHandler = (e) =>{
         setIsOpen(true);
-        dispatch(filtered(filteredItems))
     };
+
 
     return (
         <div className="searchComponent">
@@ -46,7 +36,7 @@ const Search = (props) => {
                         <input type="text"
                                placeholder='Введите полностью или часть номера, наименование и так далее, в общем тут должен список по ключивым словам'
                                value={value}
-                               onChange={event => setValue(event.target.value)}
+                               onChange={event => dispatch(filtered(event.target.value))}
                                onClick={inputClickHandler}
                         />
                         <MagnifyingGlass size={25} color='#7C7C7C' className='searchIcon'/>

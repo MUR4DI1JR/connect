@@ -7,19 +7,28 @@ import './adsMSB.css';
 import Search from "../../UI/search/search";
 import {ArrowRight, Plus, Printer} from "phosphor-react";
 import './media.css';
+import Pagination from "../../UI/pagination/pagination";
 
 const AdsMsb = () => {
     const ads = useSelector(state => state.slice.ads);
-    const filteredItems = useSelector(state => state.slice.filteredItems);
+    const value = useSelector(state => state.slice.searchValue);
     const [screen, setScreen] = useState(window.matchMedia('(max-width: 450px)').matches);
-
+    const currentPage = useSelector(state => state.slice.currentPage);
+    const itemsPerPage = useSelector(state=> state.slice.itemsPerPage);
 
     useEffect(()=>{
         const handler = e => setScreen(e.matches);
         window.matchMedia('(max-width: 450px)').addListener(handler)
     });
 
-    console.log(filteredItems);
+    const filteredItems = ads.filter(items =>{
+        return items.title.toLowerCase().includes(value.toLowerCase());
+    });
+
+    const lastItemsIndex = currentPage * itemsPerPage;
+    const firstItemsIndex = lastItemsIndex - itemsPerPage;
+    const currentItem = filteredItems.slice(firstItemsIndex, lastItemsIndex);
+
 
     const addMsbAd = () =>{
       return(
@@ -32,8 +41,6 @@ const AdsMsb = () => {
       )
     };
 
-    console.log('ads',filteredItems);
-
     return (
         <div className="adsMsb">
             <Search title='Поиск объявления МСБ' item={ads}/>
@@ -42,7 +49,7 @@ const AdsMsb = () => {
             }
             <div className="adsItems">
                 {
-                    filteredItems.map((ads, i) => {
+                    currentItem.map((ads, i) => {
                         return (
                             <div key={i} className='adsItem'>
                                 <div className="ads-msb-date">
@@ -85,6 +92,7 @@ const AdsMsb = () => {
                     })
                 }
             </div>
+            <Pagination itemsPerPage={itemsPerPage} totalItems={ads.length}/>
         </div>
     );
 };

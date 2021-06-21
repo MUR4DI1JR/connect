@@ -14,6 +14,9 @@ import Role from "./components/UI/authContent/Role/Role";
 import AdsMsb from "./components/pages/adMSB/adsMSB";
 import InvestsPage from "./components/pages/investsPage/investsPage";
 import InvestsDetailsPage from "./components/pages/investsDetails/investsDetailsPage";
+import EventPage from "./components/pages/eventPage/eventPage";
+import EventDetails from "./components/pages/eventDetails/eventDetails";
+
 
 import './App.css';
 
@@ -26,6 +29,8 @@ const App = () => {
               <Route path='/all-ads-msb' component={AdsMsb}/>
               <Route path='/invests-page/:id' component={InvestsDetailsPage}/>
               <Route path='/invests-page' component={InvestsPage}/>
+              <Route path='/event-page/:id' component={EventDetails}/>
+              <Route path='/event-page' component={EventPage}/>
               <Route path='/register-cons-user' exact component={RegisterUserCons}/>
               <Route path='/register-invest' exact component={RegisterInvest}/>
               <Route path='/register-contact' exact component={RegisterMsBcontact}/>

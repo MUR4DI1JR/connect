@@ -6,14 +6,17 @@ import Event from "./Events/Event";
 import Forum from "./forum/forum";
 import Blog from "./blog/blog";
 import Ask from "./ask/ask";
+import {withRouter} from "react-router";
+import {connect} from "react-redux";
 
 class MainPage extends Component {
+
     render() {
         return (
             <div>
                 <Heading/>
                 <Ads/>
-                <Invests/>
+                <Invests button={true} filteredItem={this.props.invests}/>
                 <Event/>
                 <Forum/>
                 <Blog/>
@@ -23,4 +26,8 @@ class MainPage extends Component {
     }
 }
 
-export default MainPage;
+const mapStateToProps = state => ({
+    invests: state.slice.invests,
+});
+
+export default withRouter(connect(mapStateToProps)(MainPage));

@@ -5,7 +5,6 @@ import {useDispatch, useSelector} from 'react-redux';
 import './header.css';
 import './media.css';
 import logo from './../../../Images/logo.png';
-import {MagnifyingGlass} from "phosphor-react";
 import {openHandle} from "../../../redux/sliceReducer";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faFacebookF, faTelegramPlane, faTwitter, faVk} from "@fortawesome/free-brands-svg-icons";

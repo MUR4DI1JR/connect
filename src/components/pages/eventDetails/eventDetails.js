@@ -1,21 +1,20 @@
 import React from 'react';
-import {useHistory} from "react-router";
 import {useSelector} from "react-redux";
+import {useHistory} from "react-router";
 
-const InvestsDetailsPage = () => {
-    const invests = useSelector(state => state.slice.invests);
+const EventDetails = () => {
+    const events = useSelector(state => state.slice.events);
     let investsItem = [];
     const history = useHistory();
-    const itemId = history.location.pathname.slice(14);
+    const itemId = history.location.pathname.slice(12);
 
 
-    for (var i = 0; i < invests.length; i++) {
-        if (itemId === invests[i].id.toString()) {
-            investsItem.push(invests[i]);
+    for (var i = 0; i < events.length; i++) {
+        if (itemId === events[i].id.toString()) {
+            investsItem.push(events[i]);
             break;
         }
     }
-
 
     return (
         <div>
@@ -32,4 +31,4 @@ const InvestsDetailsPage = () => {
     );
 };
 
-export default InvestsDetailsPage;
+export default EventDetails;

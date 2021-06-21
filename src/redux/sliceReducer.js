@@ -1,10 +1,15 @@
 import {createSlice} from "@reduxjs/toolkit";
+import card1 from "../Images/card1.png";
+import card2 from "../Images/card2.png";
+import card3 from "../Images/card3.png";
 
 const slice = createSlice({
     name: 'slice',
     initialState:{
         active : true,
-        filteredItems: [],
+        searchValue: '',
+        currentPage: 1,
+        itemsPerPage: 6,
         ads : [
             {
                 id: 1,
@@ -53,6 +58,60 @@ const slice = createSlice({
             },
             {
                 id: 6,
+                name: 'ads1',
+                title: 'watch Dog',
+                date: "5 мая 2021, 11:57",
+                task: 'Скачать заявку, разработать проект или бизнес-план, составить презентацию и т.п.)',
+                feedBack: 'Обучение по ХААСП, помощь с продажей в Узбекистане, технологией выращивания дождевых червей и т.п.',
+                contact: '+996 999 999 999'
+            },
+            {
+                id: 7,
+                name: 'ads1',
+                title: 'watch Dog',
+                date: "5 мая 2021, 11:57",
+                task: 'Скачать заявку, разработать проект или бизнес-план, составить презентацию и т.п.)',
+                feedBack: 'Обучение по ХААСП, помощь с продажей в Узбекистане, технологией выращивания дождевых червей и т.п.',
+                contact: '+996 999 999 999'
+            },
+            {
+                id: 8,
+                name: 'ads1',
+                title: 'watch Dog',
+                date: "5 мая 2021, 11:57",
+                task: 'Скачать заявку, разработать проект или бизнес-план, составить презентацию и т.п.)',
+                feedBack: 'Обучение по ХААСП, помощь с продажей в Узбекистане, технологией выращивания дождевых червей и т.п.',
+                contact: '+996 999 999 999'
+            },
+            {
+                id: 9,
+                name: 'ads1',
+                title: 'watch Dog',
+                date: "5 мая 2021, 11:57",
+                task: 'Скачать заявку, разработать проект или бизнес-план, составить презентацию и т.п.)',
+                feedBack: 'Обучение по ХААСП, помощь с продажей в Узбекистане, технологией выращивания дождевых червей и т.п.',
+                contact: '+996 999 999 999'
+            },
+            {
+                id: 10,
+                name: 'ads1',
+                title: 'watch Dog',
+                date: "5 мая 2021, 11:57",
+                task: 'Скачать заявку, разработать проект или бизнес-план, составить презентацию и т.п.)',
+                feedBack: 'Обучение по ХААСП, помощь с продажей в Узбекистане, технологией выращивания дождевых червей и т.п.',
+                contact: '+996 999 999 999'
+            },
+            {
+                id: 11,
+                name: 'ads1',
+                title: 'watch Dog',
+                date: "5 мая 2021, 11:57",
+                task: 'Скачать заявку, разработать проект или бизнес-план, составить презентацию и т.п.)',
+                feedBack: 'Обучение по ХААСП, помощь с продажей в Узбекистане, технологией выращивания дождевых червей и т.п.',
+                contact: '+996 999 999 999'
+            },
+            {
+                id: 12,
                 name: 'ads1',
                 title: 'watch Dog',
                 date: "5 мая 2021, 11:57",
@@ -130,7 +189,7 @@ const slice = createSlice({
             {
                 id: 6,
                 img: "",
-                title: "Международная стипендия Warwick Chancellor’s International Scholarships",
+                title: "Muradil",
                 star: false,
                 deadline: '9 мая 2021',
                 coins: 5432,
@@ -140,7 +199,130 @@ const slice = createSlice({
                 country: 'Великобритания',
                 text: "Стипендиальная программа Science@Leuven разработана для талантливых иностранных студентов желающих обучаться... "
             },
-
+            {
+                id: 7,
+                img: "",
+                title: "Muradil",
+                star: false,
+                deadline: '9 мая 2021',
+                coins: 5432,
+                value: "c",
+                events: "каждый год",
+                geolocation: "Лондон",
+                country: 'Великобритания',
+                text: "Стипендиальная программа Science@Leuven разработана для талантливых иностранных студентов желающих обучаться... "
+            },
+            {
+                id: 8,
+                img: "",
+                title: "Muradil",
+                star: false,
+                deadline: '9 мая 2021',
+                coins: 5432,
+                value: "c",
+                events: "каждый год",
+                geolocation: "Лондон",
+                country: 'Великобритания',
+                text: "Стипендиальная программа Science@Leuven разработана для талантливых иностранных студентов желающих обучаться... "
+            },
+            {
+                id: 9,
+                img: "",
+                title: "Muradil",
+                star: false,
+                deadline: '9 мая 2021',
+                coins: 5432,
+                value: "c",
+                events: "каждый год",
+                geolocation: "Лондон",
+                country: 'Великобритания',
+                text: "Стипендиальная программа Science@Leuven разработана для талантливых иностранных студентов желающих обучаться... "
+            },
+            {
+                id: 10,
+                img: "",
+                title: "Muradil",
+                star: false,
+                deadline: '9 мая 2021',
+                coins: 5432,
+                value: "c",
+                events: "каждый год",
+                geolocation: "Лондон",
+                country: 'Великобритания',
+                text: "Стипендиальная программа Science@Leuven разработана для талантливых иностранных студентов желающих обучаться... "
+            },
+            {
+                id: 11,
+                img: "",
+                title: "Muradil",
+                star: false,
+                deadline: '9 мая 2021',
+                coins: 5432,
+                value: "c",
+                events: "каждый год",
+                geolocation: "Лондон",
+                country: 'Великобритания',
+                text: "Стипендиальная программа Science@Leuven разработана для талантливых иностранных студентов желающих обучаться... "
+            },
+            {
+                id: 12,
+                img: "",
+                title: "Muradil",
+                star: false,
+                deadline: '9 мая 2021',
+                coins: 5432,
+                value: "c",
+                events: "каждый год",
+                geolocation: "Лондон",
+                country: 'Великобритания',
+                text: "Стипендиальная программа Science@Leuven разработана для талантливых иностранных студентов желающих обучаться... "
+            },
+        ],
+        events: [
+            {
+                id: 1,
+                img: card1,
+                title: 'Стипендиальная программа для иностранных студентов',
+                data: '15мая 2021',
+                time: '9:00',
+                location: 'Лондон',
+                country: 'Великобритания',
+                coins: '5432',
+                value: 'C'
+            },
+            {
+                id: 2,
+                img: card2,
+                title: 'Стипендиальная программа для иностранных студентов',
+                data: '15мая 2021',
+                time: '9:00',
+                location: 'Лондон',
+                country: 'Великобритания',
+                coins: '5432',
+                value: 'C'
+            },
+            {
+                id: 3,
+                img: card3,
+                title: 'Стипендиальная программа для иностранных студентов',
+                data: '15мая 2021',
+                time: '9:00',
+                location: 'Лондон',
+                country: 'Великобритания',
+                coins: '5432',
+                value: 'C'
+            },
+            {
+                id: 4,
+                img: card1,
+                title: 'Стипендиальная программа для иностранных студентов',
+                data: '15мая 2021',
+                time: '9:00',
+                location: 'Лондон',
+                country: 'Великобритания',
+                coins: '5432',
+                value: 'C'
+            }
         ],
     },
 
@@ -153,9 +335,12 @@ const slice = createSlice({
             }
         },
         filtered(state, action){
-            state.filteredItems = action.payload
+            state.searchValue = action.payload
         },
+        paginate(state, action){
+            state.currentPage = action.payload
+        }
     }
 });
 export default slice.reducer;
-export const {openHandle, filtered} = slice.actions;
+export const {openHandle, filtered, paginate} = slice.actions;

@@ -14,8 +14,7 @@ import share from './../../../../Images/Share.png';
 import {Link} from "react-router-dom";
 
 
-const Invests = () => {
-    const invests = useSelector(state => state.slice.invests);
+const Invests = (props) => {
     const [showGrands, setShowGrands] = useState(true);
     const [showInvests, setShowInvests] = useState(false);
     const [screen, setScreen] = useState(window.matchMedia('(max-width: 900px)').matches);
@@ -35,11 +34,11 @@ const Invests = () => {
        const handler = (e) =>{setScreen(e.matches)};
        window.matchMedia('(max-width: 900px)').addListener(handler);
     });
-
+    
 
     const showItem = () =>{
         if (screen){
-            let listInvests = invests.slice(0, -3);
+            let listInvests = props.filteredItem.slice(0, -3);
             return listInvests.map((invests, i)=>{
                 return(
                     <div className="investsBlock" key={i} onClick={() => history.push(`invests-page/${invests.id}`)}>
@@ -76,16 +75,16 @@ const Invests = () => {
 
     return (
         <div className="invests">
-            <div className="investsButtonsItem">
+            <div className="investsButtonsItem" style={{visibility: props.button ? 'none' : 'hidden'}}>
                 <div className="investsButton">
                     <button onClick={clickShowItem} className={showGrands ? "investsGrands":"investsGrands".concat(" active")}>Гранты</button>
                     <button onClick={clickShowItem} className={showInvests ? "investsInvests":"investsInvests".concat(" active")}>Инвестиции</button>
                 </div>
             </div>
-            <div className="investsItems">
+            <div className="investsItems" style={{marginTop: props.button ? '0' : '-35px'}}>
                 {screen ?
                     showItem() :
-                    invests.map((invests, i) => {
+                    props.filteredItem.map((invests, i) => {
                         return (
                             <div className="investsBlock" key={i} onClick={() => history.push(`/invests-page/${invests.id}`)}>
                                 <div className="investsTitle">
@@ -119,7 +118,7 @@ const Invests = () => {
                 }
             </div>
             <div className="allShowInvests">
-                <div className="allShowInvestsButton">
+                <div className="allShowInvestsButton" style={{visibility: props.button ? 'none' : 'hidden'}}>
                     <button onClick={() => history.push('/invests-page')}>Показать еще</button>
                     <FontAwesomeIcon icon={faArrowRight}/>
                 </div>

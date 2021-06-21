@@ -1,14 +1,13 @@
 import React, {Component} from 'react';
 import Slider from 'react-slick';
+import {withRouter} from "react-router";
+import {connect} from "react-redux";
 
 import './Events.css';
 import './media.css';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import card1 from './../../../../Images/card1.png';
-import card2 from './../../../../Images/card2.png';
-import card3 from './../../../../Images/card3.png';
 import {CalendarBlank, Clock, CurrencyCircleDollar, GlobeHemisphereWest} from "phosphor-react";
 
 
@@ -35,48 +34,6 @@ function SamplePrevArrow(props) {
 
 class Event extends Component {
     state = {
-        events: [
-            {
-                img:card1,
-                title: 'Стипендиальная программа для иностранных студентов',
-                data: '15мая 2021',
-                time: '9:00',
-                location: 'Лондон',
-                country: 'Великобритания',
-                coins: '5432',
-                value: 'C'
-            },
-            {
-                img:card2,
-                title: 'Стипендиальная программа для иностранных студентов',
-                data: '15мая 2021',
-                time: '9:00',
-                location: 'Лондон',
-                country: 'Великобритания',
-                coins: '5432',
-                value: 'C'
-            },
-            {
-                img:card3,
-                title: 'Стипендиальная программа для иностранных студентов',
-                data: '15мая 2021',
-                time: '9:00',
-                location: 'Лондон',
-                country: 'Великобритания',
-                coins: '5432',
-                value: 'C'
-            },
-            {
-                img:card1,
-                title: 'Стипендиальная программа для иностранных студентов',
-                data: '15мая 2021',
-                time: '9:00',
-                location: 'Лондон',
-                country: 'Великобритания',
-                coins: '5432',
-                value: 'C'
-            }
-        ],
         screen9: false,
         screen6: window.matchMedia('(max-width: 650px)').matches,
     };
@@ -102,7 +59,7 @@ class Event extends Component {
         return(
             <Slider {...settings}>
                 {
-                    this.state.events.map((events, i) => {
+                    this.props.events.map((events, i) => {
                         return (
                             <div key={i}>
                                 <div className="eventCard">
@@ -130,7 +87,6 @@ class Event extends Component {
     };
 
     render() {
-        const {events} = this.state;
         const {screen6} = this.state;
         const settings = {
             dots: false,
@@ -153,7 +109,7 @@ class Event extends Component {
                         this.showOneSlides() :
                         <Slider {...settings}>
                             {
-                                events.map((events, i) => {
+                                this.props.events.map((events, i) => {
                                     return (
                                         <div key={i}>
                                             <div className="eventCard">
@@ -180,4 +136,8 @@ class Event extends Component {
     }
 };
 
-export default Event;
+const mapStateToProps = state => ({
+    events: state.slice.events,
+});
+
+export default withRouter(connect(mapStateToProps)(Event));
