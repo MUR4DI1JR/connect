@@ -1,4 +1,5 @@
 import React from 'react';
+import {useHistory} from "react-router";
 
 import './forum.css';
 import './media.css';
@@ -24,6 +25,8 @@ const Forum = () => {
         },
     ];
 
+    const history = useHistory();
+
     return (
         <div className="forum" id='3'>
             <div className="forumContainer">
@@ -34,7 +37,7 @@ const Forum = () => {
                         <p>1.Попробовать?</p>
                     </div>
                     <div className="forumButtonCalc">
-                        <button>Да</button>
+                        <button onClick={()=> history.push(`/calculator`)}>Да</button>
                         <button>Нет</button>
                     </div>
                     <img src={dart} alt="dart"/>

@@ -1,0 +1,107 @@
+.aboutUsHeading{
+    background: #F6F6F6;
+}
+.aboutUsHeadingTitle{
+    max-width: 1150px;
+    margin: 0 auto;
+}
+.aboutUsHeadingTitle h1{
+    margin: 0;
+    padding: 40px 0;
+
+    font-weight: 500;
+    font-size: 46px;
+    line-height: 100%;
+}
+.aboutUsContainer{
+    max-width: 1150px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.aboutUsContent{
+    width: 68%;
+}
+.aboutImg img{
+    width: 100%;
+}
+.aboutImg p{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 120%;
+
+    color: #334059;
+}
+.aboutUsText h1{
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 100%;
+}
+.aboutUsText span{
+    color: #0165DE;
+}
+.aboutText{
+    margin: 30px 0;
+}
+.aboutText h1{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 100%;
+}
+.aboutText p{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 140%;
+
+    color: #334059;
+}
+.aboutCollab h1{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 100%;
+}
+.aboutCollab p{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 140%;
+
+    color: #334059;
+}
+.aboutTelegramDetails{
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, #30A9DD 0%, #208BD4 100%);
+    border-radius: 5px;
+
+    color: #fff;
+}
+.aboutTelegramDetails h1{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 100%;
+}
+.aboutTelegramIcon{
+    margin-left: 20px;
+    padding: 5px;
+    border: 3px solid #fff;
+    border-radius: 50px;
+}
+.aboutShare{
+    margin-top: 20px;
+}
+.aboutShare button{
+    padding: 5px 7px;
+    background: #1877F2;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+}
+.aboutIcon{
+    margin-right: 7px;
+}
+.aboutSideBar{
+    width: 29%;
+}

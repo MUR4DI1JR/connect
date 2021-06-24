@@ -1,18 +1,25 @@
 .eventItemContainer{
     max-width: 1150px;
     margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
 }
 .eventItems{
+    width: 60%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 .eventItemCard{
     margin: 30px 0;
-    width: 80%;
+    width: 45%;
 
     background: #fff;
     border: 0.5px solid #949CB3;
     border-radius: 5px;
+}
+.eventItemCard.itemActive{
+    border: 5px solid red;
 }
 .eventItemImg{
     width: 100%;

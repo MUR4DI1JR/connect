@@ -1,0 +1,87 @@
+.searchSideBar{
+    width: 70%;
+}
+.searchSideBar h1{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 120%;
+
+    color: #000000;
+}
+.searchSideBar select{
+    background: none;
+    border: none;
+    outline: none;
+
+    color: #0165DE;
+}
+.searchSideBar hr{
+    color: #949CB3;
+}
+.searchSideBar label{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 120%;
+
+    color: #000000;
+}
+.searchSideBar input[type='date']{
+    width: 40%;
+    padding: 5px;
+    color: #0165DE;
+    background: #FFFFFF;
+    border: 0.5px solid #7C7C7C;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.searchSideBar input[type='text']{
+    width: 40%;
+    padding: 5px;
+    color: #0165DE;
+    background: #FFFFFF;
+    border: 0.5px solid #7C7C7C;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.sort{
+    padding: 15px 0;
+    display: flex;
+}
+.searchLocation{
+    display: flex;
+    justify-content: space-between;
+}
+.dateSearch{
+    display: flex;
+}
+.dateSearch hr{
+    transform: rotate(90deg);
+}
+.valueConfirm{
+    display: flex;
+}
+.valueConfirm hr{
+    transform: rotate(90deg);
+}
+.buttonConfirm{
+    margin-top: 30px;
+    display: block;
+}
+.buttonConfirm button{
+    width: 100%;
+    margin: 12px 0;
+    padding: 12px;
+    background: #909EBB;
+    border: none;
+    border-radius: 5px;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 120%;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+.buttonConfirm button:hover{
+    background: #0165DE;
+}

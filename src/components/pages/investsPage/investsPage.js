@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import Invests from "../../UI/Content/Invests/invests";
 import Search from "../../UI/search/search";
 import {useSelector} from "react-redux";
@@ -12,6 +12,10 @@ const InvestsPage = () => {
 
     const  filteredItems = invests.filter(items =>{
         return items.title.toLowerCase().includes(value.toLowerCase());
+    });
+
+    useEffect(()=>{
+        window.scrollTo(0,0)
     });
 
     const lastItemsIndex = currentPage * itemsPerPage;

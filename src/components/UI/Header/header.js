@@ -16,9 +16,20 @@ const Header = () => {
     const [screen, setScreen] = useState(window.matchMedia('(max-width: 915px)').matches);
     const dispatch = useDispatch();
 
-    let showText = navText.map((text, i) =>  <p key={i}><a href={`#${i}`} onClick={() => dispatch(openHandle())}>{text}</a></p>);
+    const clickHeader = e =>{
+        dispatch(openHandle());
+        if (e.target.textContent === 'О нас') {
+            history.push('/about-us')
+        }
+    };
 
-    useEffect(()=>{
+    let showText = navText.map((text, i) => {
+        return (
+            <p key={i}><a href={`#${i}`} onClick={clickHeader}>{text}</a></p>
+        )
+    });
+
+    useEffect(() => {
         const handler = e => setScreen(e.matches);
         window.matchMedia('(max-width: 915px)').addListener(handler)
     });

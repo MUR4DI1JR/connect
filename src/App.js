@@ -17,16 +17,28 @@ import InvestsDetailsPage from "./components/pages/investsDetails/investsDetails
 import EventPage from "./components/pages/eventPage/eventPage";
 import EventDetails from "./components/pages/eventDetails/eventDetails";
 import AdDetails from "./components/pages/adsDetails/adDetails";
-
+import Calculator from "./components/pages/calculator/calculator";
+import AboutUs from "./components/pages/aboutUs/aboutUs";
+import BlogPage from "./components/pages/blogPage/blogPage";
+import BlogDetails from "./components/pages/blogDetails/blogDetails";
+import DataBasePage from "./components/pages/dataBasePage/dataBasePage";
+import UserPage from "./components/pages/userPage/userPage";
 
 import './App.css';
+
 
 const App = () => {
   return (
       <BrowserRouter>
           <Header/>
           <Switch>
+              <Route path='/user' component={UserPage}/>
               <Route path='/login' component={Login}/>
+              <Route path='/about-us' component={AboutUs}/>
+              <Route path='/data-base' component={DataBasePage}/>
+              <Route path='/calculator' component={Calculator}/>
+              <Route path='/blog-page/:id' component={BlogDetails}/>
+              <Route path='/blog-page' component={BlogPage}/>
               <Route path='/all-ads-msb/:id' component={AdDetails}/>
               <Route path='/all-ads-msb' component={AdsMsb}/>
               <Route path='/invests-page/:id' component={InvestsDetailsPage}/>

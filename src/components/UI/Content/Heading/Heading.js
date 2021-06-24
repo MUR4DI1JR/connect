@@ -1,11 +1,15 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import {useHistory} from "react-router";
+
 
 import './Heading.css';
 import './media.css';
 
 const Heading = () => {
+    const history = useHistory();
+
     return (
         <div className="heading">
             <div className="headingContainer">
@@ -15,7 +19,7 @@ const Heading = () => {
                 </div>
                 <div className="headingButton">
                     <span className="buttonDB">
-                        <button>База данных</button>
+                        <button onClick={()=> history.push('/data-base')}>База данных</button>
                         <FontAwesomeIcon icon={faChevronDown} className="arrow-down"/>
                     </span>
                 </div>

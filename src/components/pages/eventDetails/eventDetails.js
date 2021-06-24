@@ -50,9 +50,6 @@ const EventDetails = () => {
                         )
                     })
                 }
-                {/*{*/}
-                {/*    investsItem.map(content =>(<Descriptions width='93%' margin='0 auto' description={content.description} programs={content.programs}  req={content.req}/>))*/}
-                {/*}*/}
             </div>
             <EventSideBar/>
         </div>

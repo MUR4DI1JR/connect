@@ -18,7 +18,8 @@ const AdsMsb = () => {
 
     useEffect(()=>{
         const handler = e => setScreen(e.matches);
-        window.matchMedia('(max-width: 450px)').addListener(handler)
+        window.matchMedia('(max-width: 450px)').addListener(handler);
+        window.scrollTo(0, 0);
     });
 
     const filteredItems = ads.filter(items =>{

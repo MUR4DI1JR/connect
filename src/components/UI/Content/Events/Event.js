@@ -9,7 +9,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import {CalendarBlank, Clock, CurrencyCircleDollar, GlobeHemisphereWest} from "phosphor-react";
-
+import {clickedItem} from "../../../../redux/sliceReducer";
 
 function SampleNextArrow(props) {
     const { className, style, onClick } = props;
@@ -62,7 +62,7 @@ class Event extends Component {
                     this.props.events.map((events, i) => {
                         return (
                             <div key={i}>
-                                <div className="eventCard">
+                                <div className="eventCard" onClick={()=> {this.props.history.push(`/event-page`); this.props.clickedItem(events.id)}}>
                                     <img className="eventImg" src={events.img} alt=""/>
                                     <div className="eventTitleCard">
                                         <h1>{events.title}</h1>
@@ -112,7 +112,7 @@ class Event extends Component {
                                 this.props.events.map((events, i) => {
                                     return (
                                         <div key={i}>
-                                            <div className="eventCard">
+                                            <div className="eventCard" onClick={()=> {this.props.history.push(`/event-page`); this.props.clickedItem(events.id)}}>
                                                 <img className="eventImg" src={events.img} alt=""/>
                                                 <div className="eventTitleCard">
                                                     <h1>{events.title}</h1>
@@ -140,4 +140,10 @@ const mapStateToProps = state => ({
     events: state.slice.events,
 });
 
-export default withRouter(connect(mapStateToProps)(Event));
+const mapDispatchToProps = dispatch =>{
+    return{
+        clickedItem: id => dispatch(clickedItem(id))
+    }
+};
+
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Event));

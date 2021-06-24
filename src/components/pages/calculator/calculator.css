@@ -1,0 +1,110 @@
+.calculatorHeading{
+    background: #F6F6F6;
+}
+.calculatorHeadingText{
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+.calculatorHeadingText h1{
+    margin: 0;
+
+    font-weight: 500;
+    font-size: 46px;
+    line-height: 100%;
+
+    color: #000000;
+}
+.calculatorHeadingText p{
+    margin: 10px 0;
+
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 120%;
+
+    color: #000000;
+}
+.calculatorHeadingText button{
+    margin-top: 27px;
+    padding: 7px 50px;
+
+    color: #fff;
+    background: #0165DE;
+    border-radius: 5px;
+    border: none;
+
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 120%;
+}
+.calculatorContainer{
+    max-width: 1150px;
+    margin: 0 auto;
+}
+.calculatorContent{
+    margin: 50px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.questCalculator{
+    width: 35%;
+}
+.questCalculator p{
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 120%;
+}
+.answerUser{
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.answerUser select{
+    padding: 7px 42px;
+
+    background: #F2F2F2;
+    border: 0.5px solid #7C7C7C;
+    box-sizing: border-box;
+    border-radius: 5px;
+    outline: none;
+
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 120%;
+}
+.answerUser button{
+    padding: 7px 27px;
+
+    background: #FFFFFF;
+    border: 0.5px solid #7C7C7C;
+    box-sizing: border-box;
+    border-radius: 5px;
+
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 120%;
+
+    color: #7C7C7C
+}
+.showResult button{
+    padding: 9px 50px;
+
+    background: #0165DE;
+    border-radius: 5px;
+    border: none;
+
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 120%;
+    color: #FFFFFF
+}
+.questCalculator.notStart p{
+    color: grey;;
+}
+.questCalculator.notStart button{
+    background: grey;
+    color: #909EBB;
+}
+.sideBar{
+    width: 30%;
+}

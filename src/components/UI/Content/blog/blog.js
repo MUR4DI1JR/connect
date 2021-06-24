@@ -1,43 +1,18 @@
 import React, {useState, useEffect} from 'react';
 import Slider from 'react-slick';
+import {useDispatch, useSelector} from "react-redux";
+import {useHistory} from "react-router";
+import {clickedItem} from "../../../../redux/sliceReducer";
 
 import './blog.css';
 import './media.css';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import blog1 from './../../../../Images/blog1.png';
-import blog2 from './../../../../Images/blog2.png';
-import blog3 from './../../../../Images/blog3.png';
-
-
 const Blog = () => {
-    const blog = [
-        {
-            img: blog1,
-            title: 'Стипендиальная программа для иностранных студентов',
-            data: '5 мая 2021',
-            time: '11:57'
-        },
-        {
-            img: blog2,
-            title: 'Стипендиальная программа для иностранных студентов',
-            data: '5 мая 2021',
-            time: '11:57'
-        },
-        {
-            img: blog3,
-            title: 'Стипендиальная программа для иностранных студентов',
-            data: '5 мая 2021',
-            time: '11:57'
-        },
-        {
-            img: blog3,
-            title: 'Стипендиальная программа для иностранных студентов',
-            data: '5 мая 2021',
-            time: '11:57'
-        }
-    ];
+    const blogs = useSelector(state => state.slice.blogs);
+    const dispatch = useDispatch();
+    const history = useHistory();
 
     const [showOneSlide, setShowOneSlide] = useState(window.matchMedia('(max-width: 650px)').matches);
     const [showTwoSlide, setShowTwoSlide] = useState(window.matchMedia('(max-width: 900px)').matches);
@@ -73,9 +48,9 @@ const Blog = () => {
         return (
             <Slider {...settings}>
                 {
-                    blog.map((blog, i) => {
+                    blogs.map((blog, i) => {
                         return (
-                            <div className="blogCard" key={i}>
+                            <div className="blogCard" key={i} onClick={() => {history.push(`/blog-page`); dispatch(clickedItem(blog.id))}}>
                                 <div className="blogImg">
                                     <img src={blog.img} alt="blogImg"/>
                                 </div>
@@ -113,9 +88,9 @@ const Blog = () => {
                             showSlide() :
                             <Slider {...settings}>
                                 {
-                                    blog.map((blog, i) => {
+                                    blogs.map((blog, i) => {
                                         return (
-                                            <div className="blogCard" key={i}>
+                                            <div className="blogCard" key={i} onClick={() => {history.push(`/blog-page`); dispatch(clickedItem(blog.id))}}>
                                                 <div className="blogImg">
                                                     <img src={blog.img} alt="blogImg"/>
                                                 </div>

@@ -15,7 +15,7 @@ const Descriptions = (props) => {
                     <p>Получить стипендию могут иностранные студенты, которые поступают на одну из таких программ:</p>
                     <ul className='listDescPrograms'>
                         {
-                            props.programs.map(program =>(<li>{program}</li>))
+                            props.programs.map((program, i) =>(<li key={i}>{program}</li>))
                         }
                     </ul>
                 </div>
@@ -29,7 +29,7 @@ const Descriptions = (props) => {
                 <div className="requirementList">
                     <p>Стипендию могут получить студенты, которые:</p>
                     <ul>
-                        {props.req.map(req =>(<li>{req}</li>))}
+                        {props.req.map((req, i) =>(<li key={i}>{req}</li>))}
                     </ul>
                 </div>
                 <div className="requirementDesc">

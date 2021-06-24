@@ -1,0 +1,415 @@
+.userContainer{
+    max-width: 1110px;
+    margin: 0 auto;
+}
+.userNavBar{
+    width: 40%;
+    margin: 0 auto;
+}
+.userNavBar button{
+    margin: 15px 30px;
+
+    color: #949CB3;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+
+    background: none;
+    border: none;
+    border-bottom: 2px solid #fff;
+    outline: none;
+}
+.userNavBar button:hover{
+    color: #000;
+    border-bottom: 2px solid #949CB3;
+}
+.userContent{
+    margin: 30px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.userCard{
+    width: 25%;
+}
+.userLogo{
+    padding: 40px 0;
+    text-align: center;
+
+    border: 0.5px solid #949CB3;
+    box-sizing: border-box;
+    border-radius: 5px 5px 0 0;
+}
+.userLogo img{
+    width: 45%;
+    border-radius: 50%;
+}
+.userLogo h1{
+    margin: 15px 0 5px 0;
+
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+}
+.userLogo p{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+
+    color: #7C7C7C;
+}
+.userEdit{
+    width: 74%;
+    padding: 40px 45px;
+
+    border: 0.5px solid #949CB3;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.userEdit h1{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+}
+.userSocialButtons{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+.userSocialButtons button{
+    padding: 10px 20px;
+    margin: 20px 0;
+
+    border-radius: 5px;
+
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+}
+.userEditItems{
+    display: flex;
+}
+.userDataBase{
+    width: 65%;
+}
+.userEditForms{
+    width: 90%;
+}
+.userEditForms span{
+    color: red;
+}
+.userEditForms h1{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 120%;
+}
+.userEditForms input{
+    width: 100%;
+    height: 34px;
+
+    border: 0.5px solid #7C7C7C;
+    border-radius: 5px;
+    outline: none;
+}
+.userEditForms input::placeholder{
+    padding: 10px;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 120%;
+
+    color: #7C7C7C;
+}
+.userEditForms select{
+    width: 102%;
+    height: 38px;
+
+    border: 0.5px solid #7C7C7C;
+    background-color: #FFF;
+    border-radius: 5px;
+    outline: none;
+    color: #7C7C7C;
+}
+.userPageInfo{
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.userInputOne{
+    width: 47%;
+}
+.userInputTwo{
+    width: 47%;
+}
+.userPageConsBorn{
+    width: 102%;
+    display: flex;
+    justify-content: space-between;
+}
+.userPageConsBorn input{
+    width: 30%;
+}
+.userPageConsBorn
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.userPageConsBorn select{
+    width: 30%;
+}
+.userPageConsGender {
+    margin-top: 20px;
+}
+.userPageConsLocation{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.userPageLocationOne{
+    width: 47%;
+}
+.userPageLocationTwo{
+    width: 47%;
+}
+.userPageContact{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.userPageContactOne{
+    width: 47%;
+}
+.userPageContactTwo{
+    width: 47%;
+}
+.userAccount{
+    width: 35%;
+}
+.userPageEmail{
+    margin-top: 30px;
+}
+.userPageEmail h1{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 120%;
+}
+.userPageEmail span{
+    color: red;
+}
+.userAccount input{
+    width: 100%;
+    height: 34px;
+
+    border: 0.5px solid #7C7C7C;
+    border-radius: 5px;
+    outline: none;
+}
+.userAccount input::placeholder{
+    padding: 10px;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 120%;
+
+    color: #7C7C7C;
+}
+.userPageSocialLink{
+    margin-top: 20px;
+}
+.userMailing{
+    margin-top: 50px;
+}
+.userMailingItem{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding: 25px 20px;
+
+    border: 0.5px solid #7C7C7C;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+input.apple-switch {
+    margin-top: -5px;
+    position: relative;
+    -webkit-appearance: none;
+    outline: none;
+    width: 50px;
+    height: 30px;
+    background-color: #fff;
+    border: 1px solid #D9DADC;
+    border-radius: 50px;
+    box-shadow: inset -20px 0 0 0 #949CB3;
+}
+
+input.apple-switch:after {
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    background: transparent;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    box-shadow: 2px 4px 6px rgba(0,0,0,0.2);
+}
+
+input.apple-switch:checked {
+    box-shadow: inset 20px 0 0 0 #4ed164;
+    border-color: #4ed164;
+}
+
+input.apple-switch:checked:after {
+    left: 20px;
+    box-shadow: -2px 4px 3px rgba(0,0,0,0.05);
+}
+.passUserContainer{
+    max-width: 1150px;
+    margin: 0 auto;
+}
+.passUserContent{
+    display: flex;
+    justify-content: space-between;
+}
+.passCalculatorItem{
+    width: 30%;
+}
+.passCalculator{
+    width: 85%;
+    height: 474px;
+    margin-top: 30px;
+    padding: 0 25px;
+    background-image: url("./../../../Images/calcBackground.png");
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 10px;
+}
+.passCalculator img{
+    width: 48%;
+    position: absolute;
+    bottom: 0;
+    right: 25px;
+}
+.passCalcTitle{
+    padding-top: 78px;
+}
+.passCalcTitle h1{
+    margin: 0;
+    text-align: left;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 120%;
+}
+.passCalcTitle p{
+    margin: 0;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 120%;
+}
+.passCalcTitle p:last-child{
+    margin: 30px 0 20px 0;
+}
+.passButtonCalc{
+    display: flex;
+    justify-content: space-between;
+}
+.passButtonCalc button{
+    width: 45%;
+    padding: 15px 40px;
+
+    border: none;
+    border-radius: 15px;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 120%;
+}
+.passButtonCalc button:hover{
+    color: #fff;
+    background: #0165DE;
+}
+.passUserSubscribe{
+    width: 68%;
+}
+.passPlanCard{
+    padding: 30px;
+
+    border: 0.5px solid #949CB3;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.passPlanLogo{
+    display: flex;
+    align-items: center;
+}
+.passPlanLogo h1{
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.passPlanLogo span{
+    color: #0165DE;
+}
+.passDesc{
+    margin-top: 30px;
+}
+.passDesc h1{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+}
+.passDesc p{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+}
+.passDescButton{
+    display: flex;
+    justify-content: space-between;
+}
+.passDescButton button{
+    margin-top: -12px;
+    padding: 10px 20px;
+
+    color: #fff;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+
+    border: none;
+    background: #0165DE;
+    border-radius: 5px;
+}
+.passPay{
+    margin-top: 30px;
+}
+.passCardPay{
+    display: flex;
+    margin: 20px 0;
+    padding: 35px 40px;
+    justify-content: space-between;
+
+    background: #FFFFFF;
+    border: 0.5px solid #949CB3;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.passPay button{
+    padding: 10px 20px;
+
+    color: #949CB3;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+
+    background: #FFFFFF;
+    border: 0.5px solid #949CB3;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.passCardText{
+    display: flex;
+    align-items: center;
+
+    color: #949CB3;
+}
+.passCardText p{
+    margin-left: 25px;
+}

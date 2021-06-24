@@ -1,0 +1,126 @@
+.login{
+    padding: 140px 0;
+    background: linear-gradient(315deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+.loginContainer{
+    max-width: 1150px;
+    margin: 0 auto;
+}
+.loginItem{
+    width: 45%;
+    margin: 0 auto;
+    padding: 30px 60px;
+    background: #fff;
+    border: 0.5px solid #949CB3;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.loginSocialButtons{
+    display: flex;
+    justify-content: space-between;
+}
+.loginSocialButtons button{
+    padding: 10px 35px;
+    margin: 20px 0;
+
+    border-radius: 5px;
+
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+
+}
+.googleLogin{
+    background: #fff;
+    border: 0.5px solid #7C7C7C;
+    box-sizing: border-box;
+    border-radius: 5px;
+
+    color: #7C7C7C;
+}
+.facebookLogin{
+    background: #1877F2;
+    border: none;
+
+    color: #FFF;
+}
+.loginIcon{
+    margin-right: 10px;
+}
+.loginOr{
+    display: flex;
+    margin: 20px 0;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 120%;
+
+    color: #949CB3;
+}
+.loginOr hr{
+    width: 44%;
+    background: #949CB3;
+}
+.loginFormContent h1{
+    margin: 0;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 120%;
+}
+.loginFormContent p{
+    margin-bottom: 20px;
+
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 120%;
+}
+.loginFormContent span{
+    color: #1877F2;
+    cursor: pointer;
+}
+.loginForm input{
+    width: 100%;
+    padding: 9px;
+    margin: 5px 0;
+
+    background: #FFFFFF;
+    border: 0.5px solid #7C7C7C;
+    box-sizing: border-box;
+    border-radius: 5px;
+    outline: none;
+}
+.loginForm span{
+    cursor: default;
+    color: red;
+}
+.loginPassword{
+    margin-top: 20px;
+}
+.loginForm input::placeholder{
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 120%;
+}
+.loginButton{
+    margin-top: 20px;
+}
+.loginButton button{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px 0;
+    background: #1877F2;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 120%;
+}
+.loginButton a{
+
+    color: #7C7C7C;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 120%;
+}
