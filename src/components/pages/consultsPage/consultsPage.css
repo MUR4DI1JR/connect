@@ -1,0 +1,111 @@
+.conssContainer{
+    max-width: 1200px;
+    margin: 30px auto;
+}
+.conssItems{
+    display: flex;
+    flex-wrap: wrap;
+}
+.conssPageBlock{
+    width: 28%;
+    margin: 15px;
+    padding: 30px 0 30px 20px;
+    cursor: pointer;
+
+    background: #F6F6F6;
+    border-radius: 5px 5px 0px 0px;
+}
+.conssPageItem{
+    display: flex;
+
+    border-bottom: 0.5px solid #949CB3;
+}
+.conssPageImg img{
+    width: 50px;
+    height: 50px;
+}
+.conssPageTitle h1{
+    margin: 0;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 140%;
+
+    color: #000000;
+}
+.conssPageParameters{
+    margin: 0 0 0 15px;
+    padding: 0 40px 32px 0;
+    display: block;
+    justify-content: space-between;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: #334059;
+}
+.conssPageParameters p{
+    font-weight: 400;
+    margin: 10px 0 0 0;
+}
+.conssPageIcon{
+    margin-right: 5px;
+    vertical-align: sub;
+}
+.conssPageParameters img{
+    width: 18px;
+    height: 18px;
+    margin: 10px 3px 0 0;
+}
+.conssParametersCatalog{
+    font-weight: 600 !important;
+    text-decoration: none !important;
+}
+.conssPageData span{
+    text-decoration: underline;
+}
+.conssPageText{
+    width: 90%;
+    padding: 15px 40px 0 0;
+}
+.conssPageText p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+
+    color: #334059;
+}
+.conssBlockButton{
+    display: flex;
+    justify-content: space-between;
+}
+.conssBlockButton a{
+    padding: 12px 20px;
+
+    text-decoration: none;
+    background: #909EBB;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    border: none;
+    border-radius: 5px;
+    color: #FFFFFF;
+}
+.conssBlockButton button{
+    padding: 12px 20px;
+
+    background: #909EBB;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    border: none;
+    border-radius: 5px;
+    color: #FFFFFF;
+}
+.conssTextIcon{
+    font-size: 14px;
+    margin-left: 10px;
+}
+.conssShareIcon{
+    padding: 0 8px !important;
+    border-radius: 50px !important;
+}

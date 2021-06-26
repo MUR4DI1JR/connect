@@ -7,7 +7,7 @@ import './pagination.css';
 const Pagination = ({itemsPerPage, totalItems}) => {
     const dispatch = useDispatch();
     const pageNumbers = [];
-    const [active, setActive] = useState(-1);
+    const [active, setActive] = useState(0);
 
     for (let i = 1; i <= Math.ceil(totalItems / itemsPerPage); i++){
         pageNumbers.push(i)

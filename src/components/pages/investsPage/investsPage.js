@@ -10,7 +10,7 @@ const InvestsPage = () => {
     const invests = useSelector(state => state.slice.invests);
     const value = useSelector(state => state.slice.searchValue);
 
-    const  filteredItems = invests.filter(items =>{
+    const filteredItems = invests.filter(items =>{
         return items.title.toLowerCase().includes(value.toLowerCase());
     });
 

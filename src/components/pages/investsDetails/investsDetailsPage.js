@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import {useHistory} from "react-router";
 import {useSelector} from "react-redux";
 
@@ -8,7 +8,6 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faCheckCircle} from "@fortawesome/free-regular-svg-icons";
 import {
     CalendarBlank,
-    Clock,
     CurrencyCircleDollar,
     GlobeHemisphereWest,
     HourglassLow,
@@ -16,12 +15,12 @@ import {
 } from "phosphor-react";
 import EventSideBar from "../../UI/sideBar/eventSideBar";
 import Descriptions from "../../UI/Content/descriptions/descriptions";
+import Comment from "../../UI/comments/comment";
 
-const InvestsDetailsPage = () => {
+const InvestsDetailsPage = (props) => {
     const invests = useSelector(state => state.slice.invests);
     let investsItem = [];
-    const history = useHistory();
-    const itemId = history.location.pathname.slice(14);
+    const itemId = props.match.params.id;
 
     useEffect(()=>{
         window.scrollTo(0, 0)
@@ -33,8 +32,6 @@ const InvestsDetailsPage = () => {
             break;
         }
     }
-
-
 
     return (
         <div className='investsDetails'>
@@ -75,8 +72,9 @@ const InvestsDetailsPage = () => {
                     <TelegramLogo className="telegramIcon" size={20} />
                 </div>
                 {
-                    investsItem.map(content =>( <Descriptions width='97%' margin='30px 0 0 0' description={content.description} programs={content.programs}  req={content.req}/>))
+                    investsItem.map((content, i) =>( <Descriptions key={i} width='97%' margin='30px 0 0 0' description={content.description} programs={content.programs}  req={content.req}/>))
                 }
+                <Comment comments={investsItem[0].comments} id={itemId}/>
             </div>
             <div className="otherInvestsDetail">
                 <EventSideBar/>

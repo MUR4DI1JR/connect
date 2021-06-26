@@ -1,0 +1,110 @@
+.conssSideBar h1{
+    margin: 0;
+    text-align: left;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 100%;
+    color: #000;
+}
+.conssSideBarContent{
+    margin: 15px 0;
+    padding: 30px 0 30px 20px;
+    cursor: pointer;
+
+    background: #F6F6F6;
+    border-radius: 5px 5px 0px 0px;
+}
+.conssSideBarItem{
+    display: flex;
+
+    border-bottom: 0.5px solid #949CB3;
+}
+.conssSideBarImg img{
+    width: 50px;
+    height: 50px;
+}
+.conssSideBarTitle h1{
+    margin: 0;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 140%;
+
+    color: #000000;
+}
+.conssSideBarParameters{
+    margin: 0 0 0 15px;
+    padding: 0 35px 32px 0;
+    display: block;
+    justify-content: space-between;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: #334059;
+}
+.conssSideBarParameters p{
+    font-weight: 400;
+    margin: 10px 0 0 0;
+}
+.conssSideBarIcon{
+    margin-right: 5px;
+    vertical-align: sub;
+}
+.conssSideBarParameters img{
+    width: 18px;
+    height: 18px;
+    margin: 10px 3px 0 0;
+}
+.conssSideBarParametersCatalog{
+    font-weight: 600 !important;
+    text-decoration: none !important;
+}
+.conssSideBarData span{
+    text-decoration: underline;
+}
+.conssSideBarText{
+    width: 90%;
+    padding: 15px 40px 0 0;
+}
+.conssSideBarText p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+
+    color: #334059;
+}
+.conssSideBarBlockButton{
+    display: flex;
+    justify-content: space-between;
+}
+.conssSideBarBlockButton a{
+    padding: 12px 20px;
+
+    text-decoration: none;
+    background: #909EBB;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    border: none;
+    border-radius: 5px;
+    color: #FFFFFF;
+}
+.conssSideBarBlockButton button{
+    padding: 12px 20px;
+
+    background: #909EBB;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    border: none;
+    border-radius: 5px;
+    color: #FFFFFF;
+}
+.conssSideBarTextIcon{
+    font-size: 14px;
+    margin-left: 10px;
+}
+.conssSideBarShareIcon{
+    padding: 0 8px !important;
+    border-radius: 50px !important;
+}

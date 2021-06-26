@@ -8,6 +8,7 @@ import Search from "../../UI/search/search";
 import {ArrowRight, Plus, Printer} from "phosphor-react";
 import './media.css';
 import Pagination from "../../UI/pagination/pagination";
+import Comment from "../../UI/comments/comment";
 
 const AdsMsb = () => {
     const ads = useSelector(state => state.slice.ads);

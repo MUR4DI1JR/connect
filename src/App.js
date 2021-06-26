@@ -23,6 +23,9 @@ import BlogPage from "./components/pages/blogPage/blogPage";
 import BlogDetails from "./components/pages/blogDetails/blogDetails";
 import DataBasePage from "./components/pages/dataBasePage/dataBasePage";
 import UserPage from "./components/pages/userPage/userPage";
+import ConsultsPage from "./components/pages/consultsPage/consultsPage";
+import ConsultsDetail from "./components/pages/consultsDetails/consultsDetail";
+
 
 import './App.css';
 
@@ -34,6 +37,8 @@ const App = () => {
           <Switch>
               <Route path='/user' component={UserPage}/>
               <Route path='/login' component={Login}/>
+              <Route path='/all-consults/:id' component={ConsultsDetail}/>
+              <Route path='/all-consults' component={ConsultsPage}/>
               <Route path='/about-us' component={AboutUs}/>
               <Route path='/data-base' component={DataBasePage}/>
               <Route path='/calculator' component={Calculator}/>

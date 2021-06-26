@@ -7,12 +7,12 @@ import {faFacebook} from "@fortawesome/free-brands-svg-icons";
 import EventSideBar from "../../UI/sideBar/eventSideBar";
 
 import './blogDetails.css';
+import Comment from "../../UI/comments/comment";
 
-const BlogDetails = () => {
+const BlogDetails = (props) => {
     const blogs = useSelector(state => state.slice.blogs);
     let blogItem = [];
-    const history = useHistory();
-    const itemId = history.location.pathname.slice(11);
+    const itemId = props.match.params.id;
 
     useEffect(()=>{
         window.scrollTo(0, 0)
@@ -49,6 +49,7 @@ const BlogDetails = () => {
                                     <button><FontAwesomeIcon className='blogIcon' icon={faFacebook}/>Поделиться</button>
                                 </div>
                             </div>
+                            <Comment/>
                         </div>
                         <div className="blogSideBar">
                             <EventSideBar/>

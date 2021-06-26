@@ -6,12 +6,12 @@ import {Printer, TelegramLogo} from "phosphor-react";
 import './adDetail.css';
 import EventSideBar from "../../UI/sideBar/eventSideBar";
 import Descriptions from "../../UI/Content/descriptions/descriptions";
+import Comment from "../../UI/comments/comment";
 
-const AdDetails = () => {
+const AdDetails = (props) => {
     const ads = useSelector(state => state.slice.ads);
     let adsItem = [];
-    const history = useHistory();
-    const itemId = history.location.pathname.slice(13);
+    const itemId = props.match.params.id;
 
     useEffect(()=>{
         window.scrollTo(0, 0)
@@ -71,8 +71,9 @@ const AdDetails = () => {
                     <TelegramLogo className="adsTelegramIcon" size={20} />
                 </div>
                 {
-                    adsItem.map(content =>( <Descriptions width='97%' margin='30px 0 0 0' description={content.description} programs={content.programs}  req={content.req}/>))
+                    adsItem.map((content, i) =>( <Descriptions key={i} width='97%' margin='30px 0 0 0' description={content.description} programs={content.programs}  req={content.req}/>))
                 }
+                <Comment/>
             </div>
             <div className="otherEventDetail">
                 <EventSideBar/>

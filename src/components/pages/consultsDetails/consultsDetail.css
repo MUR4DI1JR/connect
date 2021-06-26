@@ -1,29 +1,29 @@
-.investsDetails{
+.conssDetails{
     max-width: 1155px;
     margin: 30px auto;
     display: flex;
 }
-.investsDetailsItems{
+.conssDetailsItems{
     width: 100%;
 }
-.investsDetailsItem{
+.conssDetailsItem{
     display: flex;
 }
-.investsIMG{
+.conssIMG{
     height: 240px;
     position: relative;
 }
-.investsIMG p{
+.conssIMG p{
     padding: 11px 15px;
     position: absolute;
     background: #F6F6F6;
     border-radius: 5px 0;
 }
-.investsIMG img{
+.conssIMG img{
     width: 255px;
-    height: 240px;
+    height: 248px;
 }
-.investsDetailsBlock{
+.conssDetailsBlock{
     width: 60%;
     margin: 0;
     padding: 22px 0 0 40px;
@@ -32,16 +32,16 @@
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
 }
-.investsDetailsTitle{
+.conssDetailsTitle{
     width: 90%;
     display: flex;
     padding: 0 40px 0 0;
 }
-.investsDetailsTitle img{
+.conssDetailsTitle img{
     width: 50px;
     height: 50px;
 }
-.investsDetailsTitle h1{
+.conssDetailsTitle h1{
     margin: 0 0 0 15px;
 
     font-weight: 500;
@@ -50,48 +50,51 @@
 
     color: #000000;
 }
-.investsDetailsCheckIcon{
+.conssDetailsCheckIcon{
     margin-left: 10px;
 
     color: #0165DE;
 }
-.investsDetailsParameters{
+.conssDetailsParameters{
     margin: 15px 0 0 0;
     padding: 0 40px 22px 0;
     display: flex;
     justify-content: space-between;
 
-    font-weight: 400;
+    font-weight: normal;
     font-size: 16px;
     line-height: 100%;
     color: #334059;
     border-bottom: 0.5px solid #949CB3;
 }
-.investsDetailsParameters p{
+.conssDetailsData{
+    width: 40%;
+}
+.conssDetailsParameters p{
     font-weight: 400;
     margin: 10px 0 0 0;
 }
-.investsDetailsIcon{
+.conssDetailsIcon{
     margin-right: 5px;
     vertical-align: sub;
 }
-.investsDetailsParameters img{
+.conssDetailsParameters img{
     width: 18px;
     height: 18px;
     margin: 10px 3px 0 0;
 }
-.parametersDetailsCatalog{
+.conssParametersDetailsCatalog{
     font-weight: 600 !important;
     text-decoration: none !important;
 }
-.investsDetailsData span{
+.conssDetailsData span{
     text-decoration: underline;
 }
-.investsDetailsText{
+.conssDetailsText{
     width: 90%;
-    padding: 15px 40px 0 0;
+    padding: 15px 40px 15px 0;
 }
-.investsDetailsText p{
+.conssDetailsText p{
     font-weight: 400;
     font-size: 14px;
     line-height: 120%;
@@ -101,7 +104,7 @@
 .otherInvestsDetail{
     width: 40%;
 }
-.telegramDetails{
+.conssTelegramDetails{
     width: 96%;
     margin-top: 30px;
     display: flex;
@@ -109,17 +112,26 @@
     justify-content: center;
     background: linear-gradient(180deg, #30A9DD 0%, #208BD4 100%);
     border-radius: 5px;
+    cursor: pointer;
 
     color: #fff;
 }
-.telegramDetails h1{
+.conssTelegramDetails h1{
     font-weight: 500;
     font-size: 24px;
     line-height: 100%;
 }
-.telegramIcon{
+.conssTelegramIcon{
     margin-left: 20px;
     padding: 5px;
     border: 3px solid #fff;
     border-radius: 50px;
+}
+.conssDescItem{
+    margin: 35px 0;
+}
+.conssDescItem h1{
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 140%;
 }

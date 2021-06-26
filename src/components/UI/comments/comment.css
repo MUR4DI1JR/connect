@@ -1,0 +1,102 @@
+.comment{
+    margin-top: 80px;
+}
+.comment button{
+    margin: 20px 0;
+    padding: 8px 35px;
+
+    color: #fff;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 120%;
+
+    background: #0165DE;
+    border: none;
+    border-radius: 5px;
+}
+.textComment{
+    margin-top: 50px;
+}
+.textComment h1{
+    color: #000;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 100%;
+}
+.textComment textarea{
+    width: 50%;
+    height: 180px;
+    margin: 20px 0;
+    outline: none;
+    border: 0.5px solid #949CB3;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.authorComment p{
+    margin: 20px 0 5px 0;
+
+    color: #000;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 120%;
+}
+.authorComment span{
+    margin: 0 !important;
+    color: red;
+}
+.authorComment input{
+    width: 30%;
+    height: 34px;
+
+    outline: none;
+    border: 0.5px solid #7C7C7C;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.comments h1{
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 100%;
+}
+.comment span{
+    margin-left: 10px;
+
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 120%;
+}
+.commentUser{
+    width: 85%;
+    margin: 30px auto;
+}
+.commentUser p{
+    margin-top: 15px;
+
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 120%;
+}
+.commentInfo{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 120%;
+}
+.commentInfo img{
+    width: 25%;
+    height: 35px;
+}
+.commentInfo h1{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 120%;
+}
+.commentInfo p{
+    margin: 0;
+
+    color: #687581
+}
