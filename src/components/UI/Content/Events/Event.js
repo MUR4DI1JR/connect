@@ -137,7 +137,7 @@ class Event extends Component {
 };
 
 const mapStateToProps = state => ({
-    events: state.slice.events,
+    events: state.slice.items.events,
 });
 
 const mapDispatchToProps = dispatch =>{

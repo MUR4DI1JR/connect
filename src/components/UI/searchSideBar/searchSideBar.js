@@ -1,31 +1,48 @@
 import React, {useState} from 'react';
+import {useSelector} from "react-redux";
+
 
 import './searchSideBar.css';
 
 const SearchSideBar = (props) => {
+    const events = useSelector(state => state.slice.items.events);
     const [location, setLocation] = useState('');
     const [onlineFormat, setOnlineFormat] = useState(false);
     const [offlineFormat, setOfflineFormat] = useState(false);
     const [startFilter, setStartFilter] = useState('');
     const [endFilter, setEndFilter] = useState('');
-
-    // const  filteredItems = invests.filter(items =>{
-    //     return items.title.toLowerCase().includes(value.toLowerCase());
-    // });
+    const group = [];
 
     const filterLocation = props.items.filter(item =>{
         return  item.location.toLowerCase().includes(location.toLowerCase());
     });
 
-    if (onlineFormat){
-        const filterFormat = filterLocation.filter(item =>{
-            return item.format.toLowerCase().includes('Онлайн'.toLowerCase());
-        });
-    }else if(offlineFormat){
-        const filterFormat = filterLocation.filter(item =>{
-            return item.format.toLowerCase().includes('Офлайн'.toLowerCase());
-        });
+    const checkDate = (obj) =>{
+        obj.map(item =>{
+            const date = new Date(item.posted);
+            if(date >= startFilter && date <= endFilter){
+                const rt = {title: item.title, date: item.data};
+                group.push(rt)
+            }
+        })
     };
+
+    const searchClick = () =>{
+        if (onlineFormat){
+            const filterFormat = filterLocation.filter(item =>{
+                return item.format === 'Онлайн'
+            });
+            // checkDate(filterFormat);
+        }else if(offlineFormat){
+            const filterFormat = filterLocation.filter(item =>{
+                return item.format === 'Офлайн'
+            });
+            // checkDate(filterFormat);
+        }
+    };
+
+
+    console.log(group);
 
     return (
         <div className='searchSideBar'>
@@ -63,9 +80,9 @@ const SearchSideBar = (props) => {
                 <div className="postedSearch">
                     <h1>Дата публикации</h1>
                     <div className="dateSearch">
-                        <input type="date" onChange={e => setStartFilter(e.target.value)}/>
+                        <input type="date" value={startFilter} onChange={e => setStartFilter(e.target.value)}/>
                         <hr/>
-                        <input type="date" onChange={e => setEndFilter(e.target.value)}/>
+                        <input type="date" value={endFilter} onChange={e => setEndFilter(e.target.value)}/>
                     </div>
                 </div>
                 <hr/>
@@ -78,7 +95,7 @@ const SearchSideBar = (props) => {
                     </div>
                 </div>
                 <div className="buttonConfirm">
-                    <button>Применить</button>
+                    <button onClick={searchClick}>Применить</button>
                     <button>Сбросить</button>
                 </div>
             </div>

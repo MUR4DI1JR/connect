@@ -10,7 +10,7 @@ import './blogDetails.css';
 import Comment from "../../UI/comments/comment";
 
 const BlogDetails = (props) => {
-    const blogs = useSelector(state => state.slice.blogs);
+    const blogs = useSelector(state => state.slice.items.blogs);
     let blogItem = [];
     const itemId = props.match.params.id;
 
@@ -49,7 +49,7 @@ const BlogDetails = (props) => {
                                     <button><FontAwesomeIcon className='blogIcon' icon={faFacebook}/>Поделиться</button>
                                 </div>
                             </div>
-                            <Comment/>
+                            <Comment item={"blogs"} comments={blogItem[0].comments} id={itemId}/>
                         </div>
                         <div className="blogSideBar">
                             <EventSideBar/>

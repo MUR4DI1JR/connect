@@ -8,7 +8,7 @@ import './consultsDetail.css';
 import Comment from "../../UI/comments/comment";
 
 const ConsultsDetail = (props) => {
-    const conss = useSelector(state => state.slice.conss);
+    const conss = useSelector(state => state.slice.items.conss);
     let conssItem = [];
     const itemId = props.match.params.id;
 
@@ -80,7 +80,7 @@ const ConsultsDetail = (props) => {
                         )
                     }
                     <div className="commentItems">
-                        <Comment/>
+                        <Comment item={"conss"} comments={conssItem[0].comments} id={itemId}/>
                     </div>
                 </div>
                 <div className="otherInvestsDetail">

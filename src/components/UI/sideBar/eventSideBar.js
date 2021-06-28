@@ -6,7 +6,7 @@ import {CalendarBlank, Clock, CurrencyCircleDollar, GlobeHemisphereWest} from "p
 import {useHistory} from "react-router";
 
 const EventSideBar = () => {
-    const events = useSelector(state => state.slice.events);
+    const events = useSelector(state => state.slice.items.events);
     const history = useHistory();
     const itemSideBar = events.slice(0, 3);
 

@@ -10,7 +10,7 @@ import icon from './../../../../Images/Mask Group.png';
 
 
 const Conss = () => {
-    const conss = useSelector(state => state.slice.conss);
+    const conss = useSelector(state => state.slice.items.conss);
     const history = useHistory();
 
     const conssItem = conss.slice(0, 2);

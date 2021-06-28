@@ -1,5 +1,4 @@
 import React, {useEffect, useState} from 'react';
-import {useHistory} from "react-router";
 import {useSelector} from "react-redux";
 
 import './investDetails.css';
@@ -18,7 +17,7 @@ import Descriptions from "../../UI/Content/descriptions/descriptions";
 import Comment from "../../UI/comments/comment";
 
 const InvestsDetailsPage = (props) => {
-    const invests = useSelector(state => state.slice.invests);
+    const invests = useSelector(state => state.slice.items.invests);
     let investsItem = [];
     const itemId = props.match.params.id;
 
@@ -26,12 +25,14 @@ const InvestsDetailsPage = (props) => {
         window.scrollTo(0, 0)
     });
 
+
     for (var i = 0; i < invests.length; i++) {
         if (itemId === invests[i].id.toString()) {
             investsItem.push(invests[i]);
             break;
         }
     }
+
 
     return (
         <div className='investsDetails'>
@@ -74,7 +75,7 @@ const InvestsDetailsPage = (props) => {
                 {
                     investsItem.map((content, i) =>( <Descriptions key={i} width='97%' margin='30px 0 0 0' description={content.description} programs={content.programs}  req={content.req}/>))
                 }
-                <Comment comments={investsItem[0].comments} id={itemId}/>
+                <Comment item={"invests"} comments={investsItem[0].comments} id={itemId}/>
             </div>
             <div className="otherInvestsDetail">
                 <EventSideBar/>

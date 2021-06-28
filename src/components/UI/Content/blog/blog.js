@@ -10,7 +10,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const Blog = () => {
-    const blogs = useSelector(state => state.slice.blogs);
+    const blogs = useSelector(state => state.slice.items.blogs);
     const dispatch = useDispatch();
     const history = useHistory();
 

@@ -9,7 +9,7 @@ import Descriptions from "../../UI/Content/descriptions/descriptions";
 import Comment from "../../UI/comments/comment";
 
 const AdDetails = (props) => {
-    const ads = useSelector(state => state.slice.ads);
+    const ads = useSelector(state => state.slice.items.ads);
     let adsItem = [];
     const itemId = props.match.params.id;
 
@@ -73,7 +73,7 @@ const AdDetails = (props) => {
                 {
                     adsItem.map((content, i) =>( <Descriptions key={i} width='97%' margin='30px 0 0 0' description={content.description} programs={content.programs}  req={content.req}/>))
                 }
-                <Comment/>
+                <Comment item={"ads"} comments={adsItem[0].comments} id={itemId}/>
             </div>
             <div className="otherEventDetail">
                 <EventSideBar/>

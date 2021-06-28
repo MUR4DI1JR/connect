@@ -27,7 +27,7 @@ class MainPage extends Component {
 }
 
 const mapStateToProps = state => ({
-    invests: state.slice.invests,
+    invests: state.slice.items.invests,
 });
 
 export default withRouter(connect(mapStateToProps)(MainPage));

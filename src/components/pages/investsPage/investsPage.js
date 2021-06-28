@@ -7,7 +7,7 @@ import Pagination from "../../UI/pagination/pagination";
 const InvestsPage = () => {
     const currentPage = useSelector(state => state.slice.currentPage);
     const itemsPerPage = useSelector(state=> state.slice.itemsPerPage);
-    const invests = useSelector(state => state.slice.invests);
+    const invests = useSelector(state => state.slice.items.invests);
     const value = useSelector(state => state.slice.searchValue);
 
     const filteredItems = invests.filter(items =>{

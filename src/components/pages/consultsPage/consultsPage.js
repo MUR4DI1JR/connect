@@ -15,7 +15,7 @@ import './consultsPage.css';
 
 const ConsultsPage = () => {
     const history = useHistory();
-    const conss = useSelector(state => state.slice.conss);
+    const conss = useSelector(state => state.slice.items.conss);
     const value = useSelector(state => state.slice.searchValue);
     const currentPage = useSelector(state => state.slice.currentPage);
     const itemsPerPage = 9;

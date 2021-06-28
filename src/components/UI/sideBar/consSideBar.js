@@ -11,7 +11,7 @@ import {faArrowRight} from "@fortawesome/free-solid-svg-icons";
 import share from "../../../Images/Share.png";
 
 const ConsSideBar = () => {
-    const conss = useSelector(state => state.slice.conss);
+    const conss = useSelector(state => state.slice.items.conss);
     const history = useHistory();
     const itemSideBar = conss.slice(0, 3);
 

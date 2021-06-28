@@ -6,7 +6,7 @@ import {useHistory} from "react-router";
 import Pagination from "../../UI/pagination/pagination";
 
 const BlogPage = () => {
-    const blogs = useSelector(state => state.slice.blogs);
+    const blogs = useSelector(state => state.slice.items.blogs);
     const itemActive = useSelector(state => state.slice.clicked);
     const currentPage = useSelector(state => state.slice.currentPage);
     const itemsPerPage = useSelector(state=> state.slice.itemsPerPage);

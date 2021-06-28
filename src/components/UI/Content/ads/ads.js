@@ -93,7 +93,7 @@ class Ads extends Component {
 
 const mapStateToProps = state => ({
     active: state.slice.active,
-    ads: state.slice.ads,
+    ads: state.slice.items.ads,
 });
 
 export default withRouter(connect(mapStateToProps)(Ads));

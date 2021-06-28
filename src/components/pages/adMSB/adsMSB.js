@@ -8,10 +8,9 @@ import Search from "../../UI/search/search";
 import {ArrowRight, Plus, Printer} from "phosphor-react";
 import './media.css';
 import Pagination from "../../UI/pagination/pagination";
-import Comment from "../../UI/comments/comment";
 
 const AdsMsb = () => {
-    const ads = useSelector(state => state.slice.ads);
+    const ads = useSelector(state => state.slice.items.ads);
     const value = useSelector(state => state.slice.searchValue);
     const [screen, setScreen] = useState(window.matchMedia('(max-width: 450px)').matches);
     const currentPage = useSelector(state => state.slice.currentPage);

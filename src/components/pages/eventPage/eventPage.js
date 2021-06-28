@@ -10,7 +10,7 @@ import SearchSideBar from "../../UI/searchSideBar/searchSideBar";
 import Pagination from "../../UI/pagination/pagination";
 
 const EventPage = () => {
-    const events = useSelector(state => state.slice.events);
+    const events = useSelector(state => state.slice.items.events);
     const itemActive = useSelector(state => state.slice.clicked);
     const currentPage = useSelector(state => state.slice.currentPage);
     const itemsPerPage = useSelector(state=> state.slice.itemsPerPage);

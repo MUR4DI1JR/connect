@@ -8,11 +8,10 @@ import EventSideBar from "../../UI/sideBar/eventSideBar";
 import Descriptions from "../../UI/Content/descriptions/descriptions";
 import Comment from "../../UI/comments/comment";
 
-const EventDetails = () => {
-    const events = useSelector(state => state.slice.events);
+const EventDetails = (props) => {
+    const events = useSelector(state => state.slice.items.events);
     let investsItem = [];
-    const history = useHistory();
-    const itemId = history.location.pathname.slice(12);
+    const itemId = props.match.params.id;
 
 
     for (var i = 0; i < events.length; i++) {
@@ -48,7 +47,7 @@ const EventDetails = () => {
                                 </div>
                                 <Descriptions width='92%' margin='0 auto' description={content.description} programs={content.programs}  req={content.req}/>
                                 <div className="eventComment">
-                                    <Comment/>
+                                    <Comment item={"events"} comments={investsItem[0].comments} id={itemId}/>
                                 </div>
                             </div>
                         )

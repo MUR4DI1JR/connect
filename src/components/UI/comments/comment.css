@@ -54,6 +54,7 @@
     border-radius: 5px;
 }
 .comments h1{
+    color: #000;
     font-weight: normal;
     font-size: 18px;
     line-height: 100%;
@@ -70,6 +71,7 @@
     margin: 30px auto;
 }
 .commentUser p{
+    color: #000;
     margin-top: 15px;
 
     font-weight: normal;
@@ -77,7 +79,7 @@
     line-height: 120%;
 }
 .commentInfo{
-    width: 25%;
+    width: 35%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -87,7 +89,7 @@
     line-height: 120%;
 }
 .commentInfo img{
-    width: 25%;
+    width: 20%;
     height: 35px;
 }
 .commentInfo h1{
