@@ -26,6 +26,10 @@ const SearchSideBar = (props) => {
             }
         })
     };
+    // const checkDate = props.items.filter(item=>{
+    //     return new Date(item.posted) >= '2021-03-01' && new Date(item) <= endFilter
+    // });
+
 
     const searchClick = () =>{
         if (onlineFormat){
