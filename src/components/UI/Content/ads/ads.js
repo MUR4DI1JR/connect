@@ -53,7 +53,7 @@ class Ads extends Component {
                                                 {ads.title}
                                             </p>
                                             <h2 className="adsTitle">
-                                                {ads.date}
+                                                {ads.date},{ads.time}
                                             </h2>
                                         </div>
                                         <div className="ads">

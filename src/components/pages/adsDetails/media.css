@@ -1,0 +1,44 @@
+@media screen and (max-width: 900px){
+    .adsDetailItems{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .otherEventDetail{
+        display: none;
+    }
+}
+@media screen and (max-width: 500px){
+    .adsTelegramDetails {
+        width: 90%;
+        padding: 0 20px;
+        flex-wrap: wrap;
+        align-items: center;
+        /* justify-content: center; */
+    }
+    .adsTelegramDetails h1 {
+        width: 70%;
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 400px){
+    .adsDetailItem {
+         padding-left: 0;
+    }
+    .ads-Detail-msb-date {
+        /* justify-content: space-between; */
+    }
+    .ads-Detail-msb-date p {
+        padding: 13px 15px 10px 15px;
+        font-size: 12px;
+    }
+    .ads-Detail-msb-date h2 {
+        padding: 13px 10px;
+        font-size: 10px !important;
+    }
+    .adsDetailMsbContent {
+        padding: 0 0 0 15px;
+    }
+    .adsTelegramDetails {
+        width: 87%;
+    }
+}

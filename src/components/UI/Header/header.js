@@ -11,6 +11,7 @@ import {faFacebookF, faTelegramPlane, faTwitter, faVk} from "@fortawesome/free-b
 
 const Header = () => {
     const active = useSelector(state => state.slice.active);
+    const user = useSelector(state => state.slice.users);
     let history = useHistory();
     const navText = ['Финансы', 'Консультанты', 'Мероприятия', 'Форум', 'О нас', 'Дать Объявление'];
     const [screen, setScreen] = useState(window.matchMedia('(max-width: 915px)').matches);
@@ -49,6 +50,8 @@ const Header = () => {
         history.push('/')
     };
 
+    console.log(user);
+
     const adaptiveHeader = () =>{
         if (active){
             document.body.style.overflow = 'visible'
@@ -65,6 +68,12 @@ const Header = () => {
                     <h1>Connect<span>4pro</span></h1>
                 </div>
                 <div className="magnifier">
+                    {
+                        !user ?
+                            null
+                            :
+                            <img src={user[0].avatar} alt=""/>
+                    }
                 </div>
                 <div className={active ? "wallpaper" : "wallpaper".concat(' active')}>
                     <div className={active ? "menu-burger" : "menu-burger".concat(' active')}>
@@ -130,10 +139,17 @@ const Header = () => {
                                     showText
                                 }
                             </div>
-                            <div className="auth-log">
-                                <button className="signIn" onClick={loginClick}>Вход</button>
-                                <button className="signUp" onClick={registerClick}>Регистрация</button>
-                            </div>
+                            {
+                                user ?
+                                    <div className="magnifier">
+                                        <img src={user[0].avatar} alt=""/>
+                                    </div>
+                                    :
+                                    <div className="auth-log">
+                                        <button className="signIn" onClick={loginClick}>Вход</button>
+                                        <button className="signUp" onClick={registerClick}>Регистрация</button>
+                                    </div>
+                            }
                         </div>
                     </div>
             }

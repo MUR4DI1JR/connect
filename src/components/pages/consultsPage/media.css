@@ -1,0 +1,21 @@
+@media screen and (max-width: 1000px){
+    .conssItems {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .conssPageBlock {
+        width: 44%;
+        margin: 15px auto;
+    }
+}
+@media screen and (max-width: 660px){
+    .conssPageParameters {
+        font-size: 14px;
+    }
+}
+@media screen  and (max-width: 600px){
+    .conssPageBlock {
+        width: 85%;
+        margin: 15px auto;
+    }
+}

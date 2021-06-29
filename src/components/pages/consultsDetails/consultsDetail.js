@@ -5,6 +5,7 @@ import Descriptions from "../../UI/Content/descriptions/descriptions";
 import ConsSideBar from "../../UI/sideBar/consSideBar";
 
 import './consultsDetail.css';
+import './media.css';
 import Comment from "../../UI/comments/comment";
 
 const ConsultsDetail = (props) => {
@@ -83,7 +84,7 @@ const ConsultsDetail = (props) => {
                         <Comment item={"conss"} comments={conssItem[0].comments} id={itemId}/>
                     </div>
                 </div>
-                <div className="otherInvestsDetail">
+                <div className="otherConssDetail">
                     <ConsSideBar/>
                 </div>
             </div>

@@ -8,6 +8,7 @@
 }
 .adsDetailItems{
     width: 67%;
+    margin: 0 auto;
 }
 .adsDetailItem{
     padding-left: 40px;

@@ -9,7 +9,11 @@
 }
 .searchTitle h1{
     margin: 0;
+    font-size: 46px;
     padding: 45px 0 25px 0;
+}
+.searchTitle span{
+    color: #0165DE;
 }
 .searchItem{
     position: relative;

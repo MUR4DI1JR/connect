@@ -1,0 +1,41 @@
+@media screen and (max-width: 1000px){
+    .itemSideBar h1 {
+        width: 70%;
+        font-size: 20px;
+    }
+    .eventSideBarTitleCard h1 {
+        width: 90%;
+        font-size: 14px;
+    }
+    .eventSideBarParameters {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 900px){
+    .blogSideBar{
+        display: none;
+    }
+    .blogDetailContent {
+        width: 93%;
+    }
+}
+@media screen and (max-width: 600px){
+    .blogDetailImg img {
+        width: 100%;
+        height: 200px;
+    }
+    .blogTelegramDetails {
+        width: 87%;
+        padding: 0 20px;
+        flex-wrap: wrap;
+        align-items: center;
+        /* justify-content: center; */
+    }
+    .blogDetailTitle h1 {
+        font-size: 24px;
+    }
+    .blogTelegramDetails h1 {
+        width: 70%;
+        font-size: 16px;
+    }
+}

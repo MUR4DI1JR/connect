@@ -1,0 +1,45 @@
+@media screen and (max-width: 1030px){
+    .eventItems {
+        width: 65%;
+    }
+    .eventItemCard {
+        width: 48%;
+    }
+    .eventSideBar {
+        width: 27%;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 900px){
+    .eventSideBar {
+        display: none;
+    }
+    .eventItems {
+        width: 90%;
+    }
+}
+@media screen and (max-width: 600px){
+    .eventItemTitleCard h1 {
+        margin: 0;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 100%;
+    }
+    .eventItemParameters {
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 500px){
+    .eventItems {
+        display: block;
+    }
+    .eventItemCard {
+        width: 100%;
+    }
+    .eventItemTitleCard h1 {
+        font-size: 18px;
+    }
+    .eventItemParameters {
+        font-size: 16px;
+    }
+}

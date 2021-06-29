@@ -82,7 +82,7 @@ const Invests = (props) => {
                     <button onClick={clickShowItem} className={showInvests ? "investsInvests":"investsInvests".concat(" active")}>Инвестиции</button>
                 </div>
             </div>
-            <div className="investsItems" style={{marginTop: props.button ? '0' : '-35px'}}>
+            <div className="investsItems" style={{marginTop: props.button ? '35px' : '-35px'}}>
                 {screen ?
                     showItem() :
                     listItems.map((invests, i) => {

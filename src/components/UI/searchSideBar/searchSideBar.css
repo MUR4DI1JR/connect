@@ -1,5 +1,5 @@
 .searchSideBar{
-    width: 70%;
+    width: 100%;
 }
 .searchSideBar h1{
     font-weight: 500;
@@ -46,6 +46,7 @@
 .sort{
     padding: 15px 0;
     display: flex;
+    justify-content: space-between;
 }
 .searchLocation{
     display: flex;

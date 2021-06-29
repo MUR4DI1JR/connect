@@ -12,6 +12,7 @@
     padding-bottom: 30px;
     border: 1px solid #949CB3;
     border-radius: 5px;
+    margin: 0 auto;
 }
 .eventDetailImg img{
     width: 100%;
@@ -61,13 +62,7 @@
     margin-right: 5px;
 }
 .eventDetailParameters span{
-    margin-left: 5px;
-
-    text-decoration: underline;
-}
-.eventDetailCountry{
-    margin: 0 !important;
-    text-decoration: none !important;
+    font-weight: bold;
 }
 .icon::before{
     display: inline-block;

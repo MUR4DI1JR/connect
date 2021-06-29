@@ -44,7 +44,7 @@ const AdsMsb = () => {
 
     return (
         <div className="adsMsb">
-            <Search title='Поиск объявления МСБ' item={ads}/>
+            <Search title='Поиск объявления МСБ' item={ads} investTitle={false}/>
             {
                 screen ? addMsbAd() : null
             }
@@ -61,7 +61,7 @@ const AdsMsb = () => {
                                     </div>
                                     <div className="adsMsbDate">
                                         <h2>
-                                            Размещено: <span>{ads.date}</span>
+                                            Размещено: <span>{ads.date},{ads.time}</span>
                                         </h2>
                                         <button>
                                             <Printer size={24}/>

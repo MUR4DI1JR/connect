@@ -29,7 +29,12 @@ const Search = (props) => {
         <div className="searchComponent">
             <div className="searchContainer">
                 <div className="searchTitle">
-                    <h1>{props.title}</h1>
+                    {
+                        props.investTitle ?
+                            <h1><span>Гранты</span>{props.title}</h1>
+                            :
+                            <h1>{props.title}</h1>
+                    }
                 </div>
                 <div className="searchItem">
                     <div className="searchInput">

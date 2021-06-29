@@ -24,7 +24,7 @@ const InvestsPage = () => {
 
     return (
         <div>
-            <Search item={invests} title='Гранты / Инвестиции'/>
+            <Search item={invests} title=' / Инвестиции' investTitle={true}/>
             <Invests button={false} filteredItem={currentItem}/>
             <Pagination itemsPerPage={itemsPerPage} totalItems={invests.length}/>
         </div>

@@ -2,6 +2,7 @@ import React, {useEffect} from 'react';
 import {useSelector} from "react-redux";
 
 import './blogPage.css';
+import './media.css';
 import {useHistory} from "react-router";
 import Pagination from "../../UI/pagination/pagination";
 
@@ -23,7 +24,7 @@ const BlogPage = () => {
     return (
         <div className='blogPage'>
             <div className="blogPageTitle">
-                <div className="blogText">
+                <div className="blogPageDesc">
                     <h1>Блог</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis massa ac erat ac vel dictum nisl enim. Nulla arcu morbi duis pretium orci, volutpat ut. Odio sit habitant integer mauris netus varius sed gravida imperdiet.</p>
                 </div>

@@ -80,7 +80,13 @@
         text-decoration: none;
     }
     .magnifier{
-        margin: 30px 10px 0 0;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .magnifier img{
+        width: 40px;
+        border-radius: 50px;
     }
     .menu-burger{
         display: none;

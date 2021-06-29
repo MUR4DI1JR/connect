@@ -1,0 +1,16 @@
+@media screen and (max-width: 700px){
+    .commentInfo {
+        width: 50%;
+    }
+    .textComment textarea {
+        width: 100%;
+    }
+    .authorComment input {
+        width: 70%;
+    }
+}
+@media screen and (max-width: 400px){
+    .commentInfo {
+        width: 60%;
+    }
+}

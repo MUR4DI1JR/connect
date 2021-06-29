@@ -1,14 +1,14 @@
 import React, {useState} from 'react';
+import {useHistory} from "react-router";
+import {CreditCard} from "phosphor-react";
 
 import './userPage.css';
+import './media.css';
 import avatar from './../../../Images/avatar.jpg';
 import logo from './../../../Images/logo.png';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faFacebook, faGoogle} from "@fortawesome/free-brands-svg-icons";
 import dart from "../../../Images/dart.png";
-import {useHistory} from "react-router";
-import {CreditCard} from "phosphor-react";
-
 
 const UserPage = () => {
     const user = [
@@ -29,6 +29,8 @@ const UserPage = () => {
         }
     ];
     const history = useHistory();
+    const [facebook, setFaceBook] = useState(false);
+    const [google, setGoogle] = useState(false);
     const [show, setShow] = useState(false);
 
     const passShow = () => {
@@ -114,13 +116,31 @@ const UserPage = () => {
                             <div className="userEdit">
                                 <div className="userSocialButtonsItem">
                                     <h1>Подключиться</h1>
-                                    <div className="userSocialButtons">
-                                        <button className='facebookLogin'><FontAwesomeIcon className='loginIcon'
-                                                                                           icon={faFacebook}/>Facebook
-                                        </button>
-                                        <button className='googleLogin'><FontAwesomeIcon className='loginIcon'
-                                                                                         icon={faGoogle}/>Google
-                                        </button>
+                                    <div className={!facebook && !google ? "userSocialButtons" : "userSocialButtons".concat(' loginSocial')}>
+                                        {
+                                            !facebook ?
+                                            <button className='facebookLogin' onClick={() => setFaceBook(true)}>
+                                                <FontAwesomeIcon className='loginIcon'
+                                                                 icon={faFacebook}
+                                                />Facebook
+                                            </button>
+                                                :
+                                                <button className='facebookLogin'>
+                                                    Зарегистрирован в Facebook
+                                                </button>
+                                        }
+                                        {
+                                            !google ?
+                                                <button className='googleLogin' onClick={() => setGoogle(true)}>
+                                                    <FontAwesomeIcon className='loginIcon'
+                                                                     icon={faGoogle}
+                                                    />Google
+                                                </button>
+                                                :
+                                                <button className='googleLogin'>
+                                                    Зарегистрирован в Google
+                                                </button>
+                                        }
                                     </div>
                                 </div>
                                 <div className="userEditItems">

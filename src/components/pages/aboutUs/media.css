@@ -1,0 +1,26 @@
+@media screen and (max-width: 900px){
+    .aboutSideBar{
+        display: none;
+    }
+    .aboutUsContent {
+        width: 95%;
+    }
+}
+@media screen and (max-width: 600px){
+    .aboutTelegramDetails {
+        width: 87%;
+        padding: 0 20px;
+        flex-wrap: wrap;
+        align-items: center;
+        /* justify-content: center; */
+    }
+    .aboutTelegramDetails h1 {
+        width: 70%;
+        font-size: 16px !important;
+    }
+}
+@media screen and (max-width: 450px){
+    .aboutUsText h1 {
+        font-size: 24px;
+    }
+}

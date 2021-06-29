@@ -83,3 +83,12 @@
     box-sizing: border-box;
     background: none;
 }
+.magnifier{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.magnifier img{
+    width: 40px;
+    border-radius: 50px;
+}

@@ -1,6 +1,7 @@
 import React from 'react';
 
 import './comment.css';
+import './media.css';
 import {useDispatch, useSelector} from "react-redux";
 import {changeComment, changeEmail, changeName, addComment, clickItemId, clickItem} from "../../../redux/sliceReducer";
 import avatar from '../../../Images/avatar.jpg';

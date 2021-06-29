@@ -1,0 +1,27 @@
+@media screen and (max-width: 1040px){
+    .loginItem {
+        width: 60%;
+    }
+}
+@media screen and (max-width: 900px){
+    .loginItem {
+        width: 70%;
+    }
+}
+@media screen and (max-width: 700px){
+    .loginItem {
+        width: 90%;
+    }
+}
+@media screen and (max-width: 550px){
+    .loginItem {
+        padding: 30px 17px;
+    }
+    .loginSocialButtons button {
+        padding: 10px 17px;
+    }
+    .loginFormContent p {
+        font-weight: 400;
+        font-size: 13px;
+    }
+}

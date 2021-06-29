@@ -1,9 +1,9 @@
 import React, {useEffect} from 'react';
 import {useSelector} from "react-redux";
-import {useHistory} from "react-router";
 import {Printer, TelegramLogo} from "phosphor-react";
 
 import './adDetail.css';
+import './media.css';
 import EventSideBar from "../../UI/sideBar/eventSideBar";
 import Descriptions from "../../UI/Content/descriptions/descriptions";
 import Comment from "../../UI/comments/comment";
@@ -39,7 +39,7 @@ const AdDetails = (props) => {
                                     </div>
                                     <div className="adsDetailMsbDate">
                                         <h2>
-                                            Размещено: <span>{ads.date}</span>
+                                            Размещено: <span>{ads.date},{ads.time}</span>
                                         </h2>
                                         <button>
                                             <Printer size={24}/>

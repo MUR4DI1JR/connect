@@ -1,6 +1,6 @@
 .userContainer{
     max-width: 1110px;
-    margin: 0 auto;
+    margin: 0 auto 190px auto;
 }
 .userNavBar{
     width: 40%;
@@ -23,10 +23,11 @@
     color: #000;
     border-bottom: 2px solid #949CB3;
 }
-.userContent{
-    margin: 30px 0;
+.userContent {
+    margin: 30px auto;
     display: flex;
     justify-content: space-between;
+    width: 99%;
 }
 .userCard{
     width: 25%;
@@ -58,7 +59,7 @@
     color: #7C7C7C;
 }
 .userEdit{
-    width: 74%;
+    width: 73%;
     padding: 40px 45px;
 
     border: 0.5px solid #949CB3;
@@ -71,19 +72,24 @@
     line-height: 29px;
 }
 .userSocialButtons{
-    width: 40%;
     display: flex;
-    justify-content: space-between;
 }
 .userSocialButtons button{
+    width: 153px;
     padding: 10px 20px;
-    margin: 20px 0;
+    margin: 20px 15px 20px 0;
 
     border-radius: 5px;
 
     font-weight: 500;
     font-size: 18px;
     line-height: 22px;
+}
+.userSocialButtons.loginSocial{
+    width: 100%;
+}
+.userSocialButtons.loginSocial button{
+    width: 47%;
 }
 .userEditItems{
     display: flex;
@@ -263,11 +269,14 @@ input.apple-switch:checked:after {
 }
 .passUserContainer{
     max-width: 1150px;
-    margin: 0 auto;
+    margin: 0 auto 190px auto;
 }
 .passUserContent{
+    width: 98%;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
+
 }
 .passCalculatorItem{
     width: 30%;

@@ -1,8 +1,8 @@
 import React from 'react';
 import {useSelector} from "react-redux";
-import {useHistory} from "react-router";
 
 import './eventDetails.css';
+import './media.css';
 import {CalendarBlank, Clock, CurrencyCircleDollar, GlobeHemisphereWest} from "phosphor-react";
 import EventSideBar from "../../UI/sideBar/eventSideBar";
 import Descriptions from "../../UI/Content/descriptions/descriptions";
@@ -36,12 +36,12 @@ const EventDetails = (props) => {
                                     <h1>{content.title}</h1>
                                     <div className="eventDetailParameters">
                                         <div className="timeParameters">
-                                            <p><CalendarBlank size={20} className="eventDetailIcon"/>Когда: {content.data}</p>
-                                            <p><Clock size={20} className="eventDetailIcon"/>Время: {content.time}</p>
+                                            <p><CalendarBlank size={20} className="eventDetailIcon"/><span>Когда:</span> {content.data}</p>
+                                            <p><Clock size={20} className="eventDetailIcon"/><span>Время:</span> {content.time}</p>
                                         </div>
                                         <div className="locationParameters">
-                                            <p><GlobeHemisphereWest size={20} className="eventDetailIcon"/>Где: {content.location}<span className="eventDetailCountry">,{content.country}</span></p>
-                                            <p><CurrencyCircleDollar size={20} className="eventDetailIcon"/>Cумма: {content.coins}<span>{content.value}</span></p>
+                                            <p><GlobeHemisphereWest size={20} className="eventDetailIcon"/><span>Где:</span> {content.location},{content.country}</p>
+                                            <p><CurrencyCircleDollar size={20} className="eventDetailIcon"/><span>Cумма:</span> {content.coins} {content.value}</p>
                                         </div>
                                     </div>
                                 </div>
@@ -54,7 +54,9 @@ const EventDetails = (props) => {
                     })
                 }
             </div>
-            <EventSideBar/>
+            <div className="eventDetailSideBar">
+                <EventSideBar/>
+            </div>
         </div>
     );
 };

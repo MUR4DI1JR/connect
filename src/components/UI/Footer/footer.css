@@ -46,7 +46,7 @@
     color: #334059;
 }
 .footerNavLink{
-    width: 40%;
+    width: 29%;
 }
 .footerNavLink p{
     font-weight: 600;
@@ -54,9 +54,6 @@
     line-height: 100%;
 
     color: #334059;
-}
-.footerText{
-    width: 70%;
 }
 .footerText span{
     color: #0165DE;

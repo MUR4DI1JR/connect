@@ -1,18 +1,19 @@
 .eventItemContainer{
     max-width: 1150px;
-    margin: 0 auto;
+    margin: 30px auto;
     display: flex;
     justify-content: space-between;
 }
 .eventItems{
-    width: 60%;
+    width: 73%;
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 .eventItemCard{
-    margin: 30px 0;
-    width: 45%;
+    margin: 15px 0;
+    width: 48%;
 
     background: #fff;
     border: 0.5px solid #949CB3;
@@ -69,4 +70,8 @@
     -webkit-font-smoothing: antialiased;
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
+}
+.eventSideBar{
+    width: 23%;
+    margin: 0 auto;
 }

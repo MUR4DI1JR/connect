@@ -3,6 +3,7 @@ import {useSelector} from "react-redux";
 import {useHistory} from "react-router";
 
 import './consSideBar.css';
+import './media.css';
 import {CalendarBlank, CurrencyCircleDollar, GlobeHemisphereWest, HourglassLow} from "phosphor-react";
 import icon from "../../../Images/Mask Group.png";
 import {Link} from "react-router-dom";

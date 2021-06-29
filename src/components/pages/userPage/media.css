@@ -1,0 +1,100 @@
+@media screen and (max-width: 900px){
+    .userNavBar {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .userCard {
+        display: none;
+    }
+    .userEdit {
+        width: 95%;
+        margin: 0 auto;
+    }
+    .passUserContent {
+        width: 98%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .passUserSubscribe {
+        order: 1;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .passCalculatorItem{
+        width: 91%;
+        margin: 0 auto;
+        order: 2;
+    }
+    .passCalculator {
+        height: 512px;
+    }
+}
+@media screen and (max-width: 650px){
+    .userEditItems {
+        display: block;
+    }
+    .userDataBase {
+        margin: 0 auto;
+        width: 98%;
+    }
+    .userEditForms {
+        width: 100%;
+    }
+    .userAccount {
+        width: 98%;
+        margin: 0 auto;
+    }
+    .userMailingItem {
+        padding: 25px 20px 45px 20px;
+    }
+    .userMailingItem {
+        display: block;
+    }
+    input.apple-switch {
+        margin-top: 0;
+        float: right;
+        position: relative;
+        -webkit-appearance: none;
+        outline: none;
+        width: 50px;
+        height: 30px;
+        background-color: #fff;
+        border: 1px solid #D9DADC;
+        border-radius: 50px;
+        box-shadow: inset -20px 0 0 0 #949cb3;
+    }
+}
+@media screen and (max-width: 500px){
+    .passPlanCard {
+        padding: 16px;
+        border: 0.5px solid #949CB3;
+        box-sizing: border-box;
+        border-radius: 5px;
+    }
+    .passDescButton {
+        display: block;
+        padding-bottom: 45px;
+    }
+    .passDescButton button {
+        margin-top: 10px;
+        float: right;
+    }
+    .passCardPay {
+        display: block;
+    }
+    .passPay button {
+        margin-top: 30px;
+    }
+}
+@media screen and (max-width: 460px){
+    .userSocialButtons button {
+        padding: 10px 17px;
+    }
+    .userSocialButtons svg{
+        display: none;
+    }
+    .userEdit {
+        padding: 40px 15px;
+    }
+}

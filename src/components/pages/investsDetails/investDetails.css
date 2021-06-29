@@ -4,7 +4,8 @@
     display: flex;
 }
 .investsDetailsItems{
-    width: 100%;
+    width: 72%;
+    margin: 0 auto;
 }
 .investsDetailsItem{
     display: flex;
@@ -14,17 +15,18 @@
     position: relative;
 }
 .investsIMG p{
-    padding: 11px 15px;
+    padding: 11px 8px;
+    font-size: 14px;
     position: absolute;
     background: #F6F6F6;
     border-radius: 5px 0;
 }
 .investsIMG img{
-    width: 255px;
+    width: 100%;
     height: 240px;
 }
 .investsDetailsBlock{
-    width: 60%;
+    width: 65%;
     margin: 0;
     padding: 22px 0 0 40px;
 
@@ -99,10 +101,10 @@
     color: #334059;
 }
 .otherInvestsDetail{
-    width: 40%;
+    width: 26%;
 }
 .telegramDetails{
-    width: 96%;
+    width: 100%;
     margin-top: 30px;
     display: flex;
     align-items: center;

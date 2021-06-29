@@ -6,6 +6,7 @@
 }
 .blogDetailContent{
     width: 68%;
+    margin: 0 auto;
 }
 .blogDetailImg img{
     width: 100%;

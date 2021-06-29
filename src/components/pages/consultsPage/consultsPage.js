@@ -11,6 +11,7 @@ import Search from "../../UI/search/search";
 
 
 import './consultsPage.css';
+import './media.css';
 
 
 const ConsultsPage = () => {
@@ -30,7 +31,7 @@ const ConsultsPage = () => {
 
     return (
         <div>
-            <Search title='Каталог консультантов / Фирм' item={conss}/>
+            <Search title='Каталог консультантов / Фирм' item={conss} investTitle={false}/>
             <div className='conssContainer'>
                 <div className="conssItems">
                     {

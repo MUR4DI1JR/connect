@@ -1,0 +1,71 @@
+@media screen and (max-width: 1000px){
+    .investsDetailsItems{
+        width: 70%;
+        margin: 0 auto;
+    }
+    .investsDetailsParameters {
+        padding: 0 20px 22px 0;
+        font-size: 12px;
+    }
+    .itemSideBar h1 {
+        width: 90%;
+        font-size: 18px;
+    }
+    .eventSideBarTitleCard h1 {
+        width: 90%;
+        font-size: 14px;
+    }
+    .eventSideBarParameters {
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 900px){
+    .otherInvestsDetail{
+        display: none;
+    }
+    .investsDetailsItems {
+        width: 93%;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 750px){
+    .investsDetailsTitle {
+        padding: 0;
+    }
+    .investsDetailsTitle h1 {
+        font-size: 14px;
+    }
+    .investsDetailsText p {
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 600px){
+    .investsDetailsItem {
+         display: block;
+    }
+    .investsDetailsBlock {
+        width: 97%;
+        padding: 22px 0 10px 20px;
+    }
+    .telegramDetails {
+        width: 90%;
+        padding: 0 20px;
+        flex-wrap: wrap;
+        align-items: center;
+        /*justify-content: center; */
+    }
+    .telegramDetails h1 {
+        width: 70%;
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 450px){
+    .investsDetailsParameters {
+        display: block;
+        font-size: 14px;
+    }
+    .investsDetailsText {
+        width: 90%;
+        padding: 15px 10px 0 0;
+    }
+}

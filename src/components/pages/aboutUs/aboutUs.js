@@ -2,6 +2,7 @@ import React from 'react';
 import EventSideBar from "../../UI/sideBar/eventSideBar";
 
 import './aboutUs.css';
+import './media.css';
 import aboutImg from '../../../Images/about.png';
 import {TelegramLogo} from "phosphor-react";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";

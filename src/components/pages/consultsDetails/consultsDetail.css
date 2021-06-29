@@ -4,27 +4,33 @@
     display: flex;
 }
 .conssDetailsItems{
-    width: 100%;
+    width: 68%;
+    margin: 0 auto;
 }
 .conssDetailsItem{
     display: flex;
+    width: 100%;
+    margin: 0 auto;
 }
 .conssIMG{
+    width: 30%;
     height: 240px;
     position: relative;
 }
 .conssIMG p{
-    padding: 11px 15px;
+    width: 87%;
+    padding: 11px 8px;
     position: absolute;
+    font-size: 14px;
     background: #F6F6F6;
     border-radius: 5px 0;
 }
 .conssIMG img{
-    width: 255px;
+    width: 100%;
     height: 248px;
 }
 .conssDetailsBlock{
-    width: 60%;
+    width: 62%;
     margin: 0;
     padding: 22px 0 0 40px;
 
@@ -101,11 +107,12 @@
 
     color: #334059;
 }
-.otherInvestsDetail{
-    width: 40%;
+.otherConssDetail{
+    width: 30%;
+    margin: 0 auto;
 }
 .conssTelegramDetails{
-    width: 96%;
+    width: 97%;
     margin-top: 30px;
     display: flex;
     align-items: center;

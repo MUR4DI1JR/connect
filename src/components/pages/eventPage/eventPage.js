@@ -6,6 +6,7 @@ import {CalendarBlank, Clock, CurrencyCircleDollar, GlobeHemisphereWest} from "p
 import Search from "../../UI/search/search";
 
 import './eventPage.css';
+import './media.css';
 import SearchSideBar from "../../UI/searchSideBar/searchSideBar";
 import Pagination from "../../UI/pagination/pagination";
 
@@ -31,7 +32,7 @@ const EventPage = () => {
 
     return (
         <div>
-            <Search item={events} title='Мероприятия'/>
+            <Search item={events} title='Мероприятия' investTitle={false}/>
             <div className="eventItemContainer">
                 <div className="eventItems">
                     {
@@ -60,7 +61,7 @@ const EventPage = () => {
                     }
                     <Pagination itemsPerPage={itemsPerPage} totalItems={events.length}/>
                 </div>
-                <div className="sideBar">
+                <div className="eventSideBar">
                     <SearchSideBar items={events}/>
                 </div>
             </div>

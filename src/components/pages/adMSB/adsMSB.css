@@ -3,7 +3,7 @@ p{
     margin: 0;
 }
 .adsItems{
-    max-width: 1152px;
+    max-width: 1177px;
     margin: 30px auto;
     display: flex;
     flex-wrap: wrap;
@@ -12,7 +12,7 @@ p{
     font-size: 13px;
 }
 .adsItem{
-    width: 45%;
+    width: 44%;
     margin: 15px auto;
     padding-left: 40px;
     border: 0.5px solid #949CB3;

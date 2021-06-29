@@ -1,0 +1,71 @@
+@media screen and (max-width: 1150px){
+    .conssDetailsItems {
+        width: 65%;
+        margin: 0 auto;
+    }
+    .conssDetailsParameters {
+        padding: 0 10px 22px 0;
+        font-size: 12px;
+    }
+    .otherInvestsDetail{
+        width: 27%;
+    }
+}
+@media screen  and (max-width: 900px){
+    .otherConssDetail{
+        display: none;
+    }
+    .conssDetailsItems {
+        width: 95%;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 600px){
+    .conssDetailsItem {
+         display: block;
+    }
+    .conssIMG p {
+        width: 43%;
+    }
+    .conssIMG {
+        width: 100%;
+        height: 240px;
+        position: relative;
+    }
+    .conssDetailsBlock {
+         width: 97%;
+        padding: 22px 0 0 10px;
+    }
+    .conssTelegramDetails {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 500px){
+    .conssDetailsItems {
+        width: 92%;
+        margin: 0 auto;
+    }
+    .conssDetailsParameters {
+        display: block;
+        font-size: 14px;
+    }
+    .conssDetailsData {
+         width: 100%;
+    }
+    .conssTelegramDetails {
+        width: 90%;
+        padding: 0 20px;
+        flex-wrap: wrap;
+        align-items: center;
+        /* justify-content: center; */
+    }
+    .conssTelegramDetails h1 {
+        width: 70%;
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 450px){
+    .conssIMG p {
+        width: 60%;
+    }
+}

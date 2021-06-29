@@ -1,12 +1,12 @@
 import React, {useEffect} from 'react';
 import {useSelector} from "react-redux";
-import {useHistory} from "react-router";
 import {TelegramLogo} from "phosphor-react";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faFacebook} from "@fortawesome/free-brands-svg-icons";
 import EventSideBar from "../../UI/sideBar/eventSideBar";
 
 import './blogDetails.css';
+import './media.css';
 import Comment from "../../UI/comments/comment";
 
 const BlogDetails = (props) => {
