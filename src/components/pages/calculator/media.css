@@ -1,0 +1,31 @@
+@media screen and (max-width: 900px){
+    .calculatorSideBar{
+        display: none;
+    }
+    .questCalculator {
+        width: 100%;
+    }
+    .answerUser {
+        margin: 20px 0;
+        display: flex;
+        justify-content: normal;
+    }
+    .answerUser select {
+        margin-right: 20px;
+    }
+}
+@media screen and (max-width: 450px){
+    .calculatorHeadingText h1 {
+        font-size: 24px;
+    }
+    .calculatorHeadingText p {
+        font-size: 14px;
+    }
+    .answerUser select {
+        padding: 7px 25px;
+    }
+    .answerUser button {
+        padding: 7px 25px;
+        font-size: 16px;
+    }
+}

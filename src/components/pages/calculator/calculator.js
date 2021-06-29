@@ -1,7 +1,8 @@
 import React, {useState} from 'react';
 import EventSideBar from "../../UI/sideBar/eventSideBar";
 
-import './calculator.css'
+import './calculator.css';
+import './media.css';
 
 const Calculator = () => {
     const [start, setStart] = useState(false);
@@ -30,7 +31,7 @@ const Calculator = () => {
                             <button onClick={() => console.log('click')} disabled={!start}>Показать результат</button>
                         </div>
                     </div>
-                    <div className="sideBar">
+                    <div className="calculatorSideBar">
                         <EventSideBar/>
                     </div>
                 </div>

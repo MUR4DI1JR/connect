@@ -1,0 +1,62 @@
+.forumPageContainer{
+    max-width: 1150px;
+    margin: 30px auto;
+}
+.forumPageTitle{
+    background: #F6F6F6;
+    border-radius: 5px;
+}
+.forumPageTitle h1{
+    margin: 20px 0;
+    padding: 10px 20px;
+
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 100%;
+}
+.forumPageContent{
+    width: 95%;
+    margin: 50px auto;
+}
+.forumPageItem{
+    margin-top: 20px;
+}
+.forumPageLogo{
+    display: flex;
+    align-items: center;
+}
+.forumPageLogo img{
+    width: 28px;
+    padding: 5px;
+    border: 1px solid  #7C7C7C;
+    border-radius: 10px;
+}
+.forumPageText{
+    margin-left: 20px;
+}
+.forumPageText h1{
+    margin: 0;
+
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 100%;
+}
+.forumPageInfo{
+    display: flex;
+}
+.forumPageInfo p{
+    color: #7C7C7C;
+}
+.forumPageInfo span{
+    color: #000;
+}
+.forumPageAnswer{
+    display: none;
+}
+.forumPageAnswer.forumShow{
+    margin-left: 50px;
+    display: block;
+}
+.forumPageAnswer li{
+    margin: 20px 0;
+}

@@ -50,7 +50,6 @@ const Header = () => {
         history.push('/')
     };
 
-    console.log(user);
 
     const adaptiveHeader = () =>{
         if (active){

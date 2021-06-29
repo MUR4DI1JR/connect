@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 
 import './dataBasePage.css';
+import './media.css';
 import {MagnifyingGlass} from "phosphor-react";
 
 const DataBasePage = () => {

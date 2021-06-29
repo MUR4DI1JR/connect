@@ -3,6 +3,7 @@
 }
 .calculatorHeadingText{
     max-width: 1150px;
+    width: 95%;
     margin: 0 auto;
     padding: 40px 0;
 }
@@ -39,10 +40,11 @@
 }
 .calculatorContainer{
     max-width: 1150px;
+    width: 95%;
     margin: 0 auto;
 }
 .calculatorContent{
-    margin: 50px 0;
+    margin: 50px auto;
     display: flex;
     justify-content: space-between;
 }
@@ -105,6 +107,6 @@
     background: grey;
     color: #909EBB;
 }
-.sideBar{
+.calculatorSideBar{
     width: 30%;
 }
