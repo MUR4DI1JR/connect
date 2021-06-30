@@ -111,6 +111,7 @@
         display: block;
         top: -150%;
         background: rgba(0, 0, 0, 0.4);
+        z-index: 1;
     }
     .wallpaper.active{
         top: 0;

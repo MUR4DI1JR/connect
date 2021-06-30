@@ -21,6 +21,8 @@ const Header = () => {
         dispatch(openHandle());
         if (e.target.textContent === 'О нас') {
             history.push('/about-us')
+        }if(e.target.textContent === 'Форум'){
+            history.push('/forum')
         }
     };
 
@@ -35,6 +37,24 @@ const Header = () => {
         window.matchMedia('(max-width: 915px)').addListener(handler)
     });
 
+    console.log(user);
+
+    const showUser = () =>{
+        if (user.length === 0){
+            return (
+                <div className="auth-log">
+                    <button className="signIn" onClick={loginClick}>Вход</button>
+                    <button className="signUp" onClick={registerClick}>Регистрация</button>
+                </div>
+            )
+        }else {
+            return (
+                <div className="magnifier">
+                    <img src={user[0].avatar} alt=""/>
+                </div>
+            )
+        }
+    };
 
     const registerClick = () =>{
         dispatch(openHandle());
@@ -68,10 +88,10 @@ const Header = () => {
                 </div>
                 <div className="magnifier">
                     {
-                        !user ?
+                        user.length === 0 ?
                             null
                             :
-                            <img src={user[0].avatar} alt=""/>
+                            showUser()
                     }
                 </div>
                 <div className={active ? "wallpaper" : "wallpaper".concat(' active')}>
@@ -80,7 +100,11 @@ const Header = () => {
                             active ? null
                                 :
                                 <div className="signInHeader">
-                                    <button className={ active ? "signIn" : "signIn".concat(' active')} onClick={loginClick}>Вход</button>
+                                    {
+                                        user.length !== 0 ? null
+                                            :
+                                            <button className={ active ? "signIn" : "signIn".concat(' active')} onClick={loginClick}>Вход</button>
+                                    }
                                 </div>
                         }
                         <div className="navBar">
@@ -89,7 +113,12 @@ const Header = () => {
                             }
                         </div>
                         <div className="auth-log">
-                            <button className="signUp" onClick={registerClick}>Регистрация</button>
+                            {
+                                user.length === 0 ?
+                                    <button className="signUp" onClick={registerClick}>Регистрация</button>
+                                    :
+                                    null
+                            }
                         </div>
                         <div className="headerButtonLang">
                             <select size="1">
@@ -139,15 +168,7 @@ const Header = () => {
                                 }
                             </div>
                             {
-                                user ?
-                                    <div className="magnifier">
-                                        <img src={user[0].avatar} alt=""/>
-                                    </div>
-                                    :
-                                    <div className="auth-log">
-                                        <button className="signIn" onClick={loginClick}>Вход</button>
-                                        <button className="signUp" onClick={registerClick}>Регистрация</button>
-                                    </div>
+                                showUser()
                             }
                         </div>
                     </div>

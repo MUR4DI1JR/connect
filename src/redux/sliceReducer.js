@@ -23,21 +23,7 @@ const slice = createSlice({
         item: '',
         itemId: 0,
         result: [],
-        users: [{
-            id: 1,
-            avatar: avatar,
-            name: 'Muradil',
-            surname: 'Koychubekov',
-            telNumber: '+9969999999',
-            payCard: [
-                {
-                    card: '1234 **** **** 5678',
-                },
-                {
-                    card: 'ОДеньги'
-                }
-            ]
-        }],
+        users: [],
         items:{
             ads : [
                 {
