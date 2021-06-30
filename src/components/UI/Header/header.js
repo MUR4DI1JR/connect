@@ -114,10 +114,10 @@ const Header = () => {
                         </div>
                         <div className="auth-log">
                             {
-                                user.length === 0 ?
-                                    <button className="signUp" onClick={registerClick}>Регистрация</button>
-                                    :
+                                user.length !== 0 ?
                                     null
+                                    :
+                                    <button className="signUp" onClick={registerClick}>Регистрация</button>
                             }
                         </div>
                         <div className="headerButtonLang">
