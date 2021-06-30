@@ -31,7 +31,7 @@ const Search = (props) => {
                 <div className="searchTitle">
                     {
                         props.investTitle ?
-                            <h1><span>Гранты</span>{props.title}</h1>
+                            <h1><span style={{textDecoration: props.underline ? 'underline' : 'none'}}>{props.theme}</span>{props.title}</h1>
                             :
                             <h1>{props.title}</h1>
                     }

@@ -11,6 +11,12 @@
         font-size: 35px;
     }
 }
+@media screen and (max-width: 520px){
+    .headingText.userActive p {
+        width: 90%;
+        font-size: 18px;
+    }
+}
 @media screen and (max-width: 425px){
     .heading {
         height: 287px;

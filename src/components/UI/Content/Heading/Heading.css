@@ -2,6 +2,9 @@
     height: 377px;
     background-color: #F6F6F6;
 }
+.heading.userActive{
+    background: #0165DE;
+}
 .headingContainer{
     width: 100%;
     margin: 0 auto;
@@ -15,15 +18,31 @@
     justify-content: center;
     align-items: center;
 }
+.headingText.userActive p{
+    width: 55%;
+    margin: 0 auto;
+
+    font-family: "SF UI Display Light";
+    font-weight: normal;
+    font-size: 24px;
+}
+.headingText.userActive span{
+    color: #FFC700;
+}
+.headingText.userActive svg{
+    vertical-align: text-top;
+}
 .headingText h1{
     width: 80%;
     margin: 0 auto 10px auto;
 
-    font-weight: 700;
+    font-family: 'SF UI Display Semibold';
+    font-weight: normal;
     font-size: 46px;
     line-height: 120%;
 }
 .headingText p{
+    font-family: 'SF UI Display Light';
     font-weight: 300;
     font-size: 18px;
     line-height: 140%;
@@ -42,16 +61,25 @@
     border-radius: 5px;
 }
 .headingButton button{
-    font-weight: 600;
+    font-family: "SF UI Display Semibold";
+    font-weight: normal;
     font-size: 18px;
     line-height: 22px;
     background: none;
     border: none;
     outline: none;
 }
+.headingButton.userActive button{
+    padding: 15px 20px;
+    background: #FFC700;
+    border-radius: 5px;
+}
 .arrow-down{
     margin: -3px 5px;
 
     color: #0165DE;
     font-size: 20px;
+}
+.headingContainer.userActive{
+    color: #fff;
 }

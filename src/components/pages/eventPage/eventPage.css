@@ -28,10 +28,18 @@
 .eventItemTitleCard{
     padding: 15px 20px;
 }
+.eventItemCard p{
+    width: 90%;
+    margin: 10px auto 0 auto;
+    font-family: "SF UI Display Light";
+    font-weight: normal;
+    font-size: 14px;
+}
 .eventItemTitleCard h1{
     margin: 0;
 
-    font-weight: 600;
+    font-family: "SF UI Display Medium";
+    font-weight: normal;
     font-size: 18px;
     line-height: 100%;
 }
@@ -44,7 +52,11 @@
     line-height: 100%;
 }
 .eventItemParameters p {
+    width: 100%;
     margin: 14px 0 14px 3px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 120%;
 }
 .eventItemTime:last-child{
     margin-left: 50px;

@@ -63,13 +63,15 @@
 }
 .loginFormContent h1{
     margin: 0;
-    font-weight: 500;
+    font-family: "SF UI Display Medium";
+    font-weight: normal;
     font-size: 24px;
     line-height: 120%;
 }
 .loginFormContent p{
     margin-bottom: 20px;
 
+    font-family: "SF UI Display Medium";
     font-weight: normal;
     font-size: 14px;
     line-height: 120%;
@@ -77,6 +79,10 @@
 .loginFormContent span{
     color: #1877F2;
     cursor: pointer;
+}
+.loginForm{
+    font-family: "SF UI Display Medium";
+    font-weight: normal;
 }
 .loginForm input{
     width: 100%;

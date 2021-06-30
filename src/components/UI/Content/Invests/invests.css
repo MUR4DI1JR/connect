@@ -74,7 +74,8 @@ button:hover{
 .investsTitle h1{
     margin: 0 0 0 15px;
 
-    font-weight: 500;
+    font-family: "SF UI Display Medium";
+    font-weight: normal;
     font-size: 18px;
     line-height: 140%;
 
@@ -91,7 +92,8 @@ button:hover{
     display: flex;
     justify-content: space-between;
 
-    font-weight: 400;
+    font-family: "SF UI Display Light";
+    font-weight: normal;
     font-size: 16px;
     line-height: 100%;
     color: #334059;
@@ -122,6 +124,7 @@ button:hover{
     padding: 15px 40px 0 0;
 }
 .investsText p{
+    font-family: "SF UI Display Light";
     font-weight: 400;
     font-size: 14px;
     line-height: 120%;
@@ -137,7 +140,8 @@ button:hover{
 
     text-decoration: none;
     background: #909EBB;
-    font-weight: 500;
+    font-family: "SF UI Display Light";
+    font-weight: normal;
     font-size: 16px;
     line-height: 19px;
     border: none;

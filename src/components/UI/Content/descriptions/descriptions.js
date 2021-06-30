@@ -9,7 +9,7 @@ const Descriptions = (props) => {
             <div className="descriptionItem">
                 <h1>Описание</h1>
                 <div className="descriptionText">
-                    {props.description}
+                    <p>{props.description}</p>
                 </div>
                 {
                     props.programs ?

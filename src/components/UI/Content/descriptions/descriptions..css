@@ -8,29 +8,44 @@
     color: #334059;
 }
 .descriptionContainer h1{
-    font-weight: 600;
+    font-family: "SF UI Display Medium";
+    font-weight: normal;
     font-size: 18px;
     line-height: 100%;
 
     color: #000;
+}
+.descriptionContainer p{
+    font-family: "SF UI Display Light";
+    font-weight: normal;
+    font-size: 16px;
 }
 .descriptionContainer span{
     color: #0165DE;
 }
 .descriptionContainer a{
     color: #0165DE;
+
+    font-family: "SF UI Display Light";
+    font-weight: normal;
 }
 .descPrograms{
     margin-top: 20px;
 }
 .listDescPrograms{
     color: #0165DE;
+    font-family: "SF UI Display Light";
+    font-weight: normal;
+    font-size: 16px;
 }
 .requirementItem{
     margin-top: 30px;
 }
 .requirementList{
     margin-top: 20px;
+
+    font-family: "SF UI Display Light";
+    font-weight: normal;
 }
 .shareDesc{
      margin-top: 80px;

@@ -11,7 +11,11 @@
     margin-top: 70px;
 
     text-align: center;
-    font-weight: 600;
+}
+.roleTitle h1{
+    text-transform: uppercase;
+    font-family: "SF UI Display Medium";
+    font-weight: normal;
     font-size: 24px;
     line-height: 120%;
 }
@@ -38,7 +42,8 @@
     border: 1px solid #949CB3;
 }
 .roleTitleText h1{
-    font-weight: 700;
+    font-family: "SF UI Display Medium";
+    font-weight: normal;
     font-size: 18px;
     line-height: 120%;
 }
@@ -47,7 +52,8 @@
     margin: 0 auto;
 }
 .roleText p{
-    font-weight: 400;
+    font-family: "SF UI Display Light";
+    font-weight: normal;
     font-size: 14px;
     line-height: 20px;
 
@@ -63,6 +69,9 @@
     padding: 20px 39px 20px 45px;
     border: 0.5px solid #949CB3;
     border-radius: 5px;
+
+    font-family: "SF UI Display Light";
+    font-weight: normal;
 }
 .roleHelpText span{
     color: #0165DE;

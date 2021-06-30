@@ -41,7 +41,8 @@ p{
     padding: 19px 20px 10px 15px;
 
     color: #000;
-    font-weight: 400;
+    font-family: "SF UI Display Medium";
+    font-weight: normal;
     font-size: 18px;
     line-height: 120%;
     border-top: none;
@@ -55,7 +56,8 @@ p{
     padding: 20px;
 
     color: #949CB3;
-    font-weight: 400;
+    font-family: "SF UI Display Light";
+    font-weight: normal;
     font-size: 16px;
     line-height: 120%;
     background: none;
@@ -70,19 +72,25 @@ p{
 .adsMsbContent:last-child{
     margin: 20px 0 40px 0;
 }
+.adsMsbContent p{
+    font-family: "SF UI Display Light";
+    font-weight: normal;
+}
 .adsMsbContent h1{
     margin-top: 7px;
 
     color: #014DA8;
+    font-family: "SF UI Display Medium";
     font-size: 18px;
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: normal;
 }
 .adsItem h4{
     width: 85%;
 
     margin: 7px 0 0 0;
-    font-weight: 400;
+    font-family: "SF UI Display Medium";
+    font-weight: normal;
     font-size: 16px;
     line-height: 120%;
     color: #334059;
@@ -95,7 +103,8 @@ p{
     color: #014DA8;
 }
 .adsLink a{
-    font-weight: 600;
+    font-family: "SF UI Display Medium";
+    font-weight: normal;
     font-size: 16px;
     line-height: 120%;
     margin-right: 20px;

@@ -84,7 +84,10 @@ const Header = () => {
                 </div>
                 <div className="logo" onClick={mainPage}>
                     <img src={logo} alt="logo"/>
-                    <h1>Connect<span>4pro</span></h1>
+                    <div className="textLogo">
+                        <h1>Connect</h1>
+                        <span>4pro</span>
+                    </div>
                 </div>
                 <div className="magnifier">
                     {
@@ -156,7 +159,10 @@ const Header = () => {
                     <div className="container">
                         <div className="logo" onClick={mainPage}>
                             <img src={logo} alt="logo"/>
-                            <h1>Connect<span>4pro</span></h1>
+                            <div className="textLogo">
+                                <h1>Connect</h1>
+                                <span>4pro</span>
+                            </div>
                         </div>
                         <div className={active ? "burger" : "burger".concat(' active')} onClick={() => openHandle()}>
                             <span></span>

@@ -2,7 +2,14 @@ import React from 'react';
 import {useSelector} from "react-redux";
 import icon from "../../../Images/Mask Group.png";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {CalendarBlank, CurrencyCircleDollar, GlobeHemisphereWest, HourglassLow} from "phosphor-react";
+import {
+    Calendar,
+    CalendarBlank,
+    CurrencyCircleDollar,
+    GlobeHemisphereWest, GlobeSimple,
+    HourglassLow, MapPinLine,
+    Storefront
+} from "phosphor-react";
 import {Link, useHistory} from "react-router-dom";
 import {faArrowRight} from "@fortawesome/free-solid-svg-icons";
 import share from "../../../Images/Share.png";
@@ -31,7 +38,7 @@ const ConsultsPage = () => {
 
     return (
         <div>
-            <Search title='Каталог консультантов / Фирм' item={conss} investTitle={false}/>
+            <Search theme='Каталог консультантов' title=' / Фирм' item={conss} investTitle={true} underline={true}/>
             <div className='conssContainer'>
                 <div className="conssItems">
                     {
@@ -47,12 +54,12 @@ const ConsultsPage = () => {
                                                 <h1>Название: {conss.title}</h1>
                                             </div>
                                             <div className="conssPageData">
-                                                <p><HourglassLow size={20} className="conssPageIcon"/><span className="conssParametersCatalog">Год основания:</span> {conss.ownerYear}</p>
-                                                <p><CurrencyCircleDollar size={20} className="conssPageIcon"/><span className="conssParametersCatalog">Сфера деятельности:</span> {conss.work}</p>
+                                                <p><Calendar  size={20} className="conssPageIcon"/><span className="conssParametersCatalog">Год основания:</span> {conss.ownerYear}</p>
+                                                <p><GlobeSimple size={20} className="conssPageIcon"/><span className="conssParametersCatalog">Сфера деятельности:</span> {conss.work}</p>
                                             </div>
                                             <div className="conssPageEvents">
-                                                <p><CalendarBlank size={20} className="conssPageIcon"/><span className="conssParametersCatalog">Услуги/продукты: </span> {conss.service}</p>
-                                                <p><GlobeHemisphereWest size={20} className="conssPageIcon"/><span className="conssParametersCatalog">Локация компании:</span> {conss.location}<span className="investsLocation">, {conss.country}</span></p>
+                                                <p><Storefront  size={20} className="conssPageIcon"/><span className="conssParametersCatalog">Услуги/продукты: </span> {conss.service}</p>
+                                                <p><MapPinLine size={20} className="conssPageIcon"/><span className="conssParametersCatalog">Локация компании:</span> {conss.location}<span className="investsLocation">, {conss.country}</span></p>
                                             </div>
                                         </div>
                                     </div>

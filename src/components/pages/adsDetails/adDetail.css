@@ -1,6 +1,6 @@
 .adsDetailContainer{
     max-width: 1152px;
-    margin: 30px auto;
+    margin: 30px auto 190px auto;
     display: flex;
     justify-content: space-between;
     color: #909EBB;
@@ -38,7 +38,8 @@
     padding: 19px 20px 10px 15px;
 
     color: #000;
-    font-weight: 400;
+    font-family: "SF UI Display Medium";
+    font-weight: normal;
     font-size: 18px;
     line-height: 120%;
     border-top: none;
@@ -52,7 +53,8 @@
     padding: 20px;
 
     color: #949CB3;
-    font-weight: 400;
+    font-family: "SF UI Display Light";
+    font-weight: normal;
     font-size: 16px;
     line-height: 120%;
     background: none;
@@ -60,6 +62,10 @@
 }
 .adsDetailMsbContent{
     margin: 20px 0 0 0;
+}
+.adsDetailMsbContent p{
+    font-family: "SF UI Display Medium";
+    font-weight: normal;
 }
 .adsDetailMsbContent:first-child{
     margin: 30px 0 0 0 !important;
@@ -79,7 +85,8 @@
     width: 85%;
 
     margin: 7px 0 0 0;
-    font-weight: 400;
+    font-family: "SF UI Display Medium";
+    font-weight: normal;
     font-size: 16px;
     line-height: 120%;
     color: #334059;
@@ -99,7 +106,8 @@
     color: #fff;
 }
 .adsTelegramDetails h1{
-    font-weight: 500;
+    font-family: "SF UI Display Medium";
+    font-weight: normal;
     font-size: 24px;
     line-height: 100%;
 }

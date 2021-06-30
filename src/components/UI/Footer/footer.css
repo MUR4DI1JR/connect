@@ -37,7 +37,8 @@
 .footerNavBar a{
     margin-right: 20px;
 
-    font-weight: 600;
+    font-family: "SF UI Display Light";
+    font-weight: normal;
     font-size: 16px;
     line-height: 19px;
 
@@ -49,7 +50,8 @@
     width: 29%;
 }
 .footerNavLink p{
-    font-weight: 600;
+    font-family: "SF UI Display Light";
+    font-weight: normal;
     font-size: 16px;
     line-height: 100%;
 
@@ -80,7 +82,8 @@
 .footerTextSecurity p{
     margin: 15px 0;
 
-    font-weight: 600;
+    font-family: "SF UI Display Light";
+    font-weight: normal;
     font-size: 14px;
     line-height: 17px;
 

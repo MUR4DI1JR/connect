@@ -18,7 +18,8 @@
     margin-top: 0;
     margin-bottom: 25px;
 
-    font-weight: 500;
+    font-family: "SF UI Display Medium";
+    font-weight: normal;
     font-size: 24px;
     line-height: 120%;
 }
@@ -43,7 +44,8 @@
 .registerContactItem p{
     margin-bottom: 5px;
 
-    font-weight: 600;
+    font-family: "SF UI Display Medium";
+    font-weight: normal;
     font-size: 13px;
     line-height: 16px;
 }

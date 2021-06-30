@@ -1,3 +1,6 @@
+.forumPage{
+    margin-bottom: 190px;
+}
 .forumPageContainer{
     max-width: 1150px;
     margin: 30px auto;
@@ -37,12 +40,17 @@
 .forumPageText h1{
     margin: 0;
 
+    font-family: "SF UI Display Medium";
     font-weight: normal;
     font-size: 20px;
     line-height: 100%;
 }
 .forumPageInfo{
     display: flex;
+
+    font-family: "SF UI Display Light";
+    font-weight: normal;
+    font-size: 14px;
 }
 .forumPageInfo p{
     color: #7C7C7C;

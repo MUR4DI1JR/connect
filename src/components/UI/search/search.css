@@ -10,6 +10,8 @@
 .searchTitle h1{
     margin: 0;
     font-size: 46px;
+    font-weight: normal;
+    font-family: "SF UI Display Semibold";
     padding: 45px 0 25px 0;
 }
 .searchTitle span{

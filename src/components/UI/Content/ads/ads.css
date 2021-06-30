@@ -30,6 +30,7 @@ p{
     padding: 19px 20px 10px 15px;
 
     color: #000;
+    font-family: "SF UI Display Medium";
     font-weight: 400;
     font-size: 18px;
     line-height: 120%;
@@ -44,7 +45,8 @@ p{
     padding: 20px;
 
     color: #949CB3;
-    font-weight: 400;
+    font-family: "SF UI Display Light";
+    font-weight: normal;
     font-size: 16px;
     line-height: 120%;
     background: none;
@@ -74,7 +76,8 @@ p{
     width: 80%;
 
     margin: 7px 0 0 0;
-    font-weight: 400;
+    font-family: "SF UI Display Medium";
+    font-weight: normal;
     font-size: 16px;
     line-height: 120%;
     color: #334059;
@@ -91,10 +94,14 @@ p{
 .ads h1{
     margin-top: 7px;
 
+    font-family: 'SF UI Display Medium';
     color: #014DA8;
     font-size: 18px;
     text-transform: uppercase;
     font-weight: 500;
+}
+.ads p{
+    font-family: "SF UI Display Light";
 }
 .paging{
     width: 8px;

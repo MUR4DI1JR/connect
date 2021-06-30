@@ -8,11 +8,16 @@
 }
 .blogPageDesc h1{
     margin: 0 0 15px 0;
+
+    font-family: 'SF UI Display Medium';
+    font-weight: normal;
 }
 .blogPageDesc p{
     width: 42%;
+
+    font-family: "SF UI Display Light";
     font-size: 18px;
-    font-weight: 400;
+    font-weight: normal;
 }
 .blogPageContainer{
     max-width: 1150px;
@@ -45,14 +50,16 @@
     padding: 15px 20px;
 }
 .blogPageText p{
-    font-weight: 600;
+    font-family: "SF UI Display Light";
+    font-weight: normal;
     font-size: 16px;
     line-height: 120%;
 
     color: #334059;
 }
 .blogPageText h1{
-    font-weight: 400;
+    font-family: "SF UI Display Medium";
+    font-weight: normal;
     font-size: 18px;
     line-height: 25px;
 

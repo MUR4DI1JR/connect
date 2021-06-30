@@ -41,6 +41,7 @@ const EventPage = () => {
                                 <div className={itemActive === events.id ? "eventItemCard".concat(' itemActive') : "eventItemCard"} key={i}
                                      onClick={() => history.push(`/event-page/${events.id}`)}>
                                     <img className="eventItemImg" src={events.img} alt=""/>
+                                    <p>Размещено: {events.posted},{events.timePosted}</p>
                                     <div className="eventItemTitleCard">
                                         <h1>{events.title}</h1>
                                         <div className="eventItemParameters">

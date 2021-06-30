@@ -47,12 +47,14 @@
 .userLogo h1{
     margin: 15px 0 5px 0;
 
-    font-weight: 500;
+    font-family: "SF UI Display Medium";
+    font-weight: normal;
     font-size: 18px;
     line-height: 21px;
 }
 .userLogo p{
-    font-weight: 500;
+    font-family: "SF UI Display Medium";
+    font-weight: normal;
     font-size: 14px;
     line-height: 17px;
 
@@ -67,7 +69,8 @@
     border-radius: 5px;
 }
 .userEdit h1{
-    font-weight: 500;
+    font-family: "SF UI Display Medium";
+    font-weight: normal;
     font-size: 24px;
     line-height: 29px;
 }
@@ -276,7 +279,6 @@ input.apple-switch:checked:after {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-
 }
 .passCalculatorItem{
     width: 30%;
@@ -303,13 +305,15 @@ input.apple-switch:checked:after {
 .passCalcTitle h1{
     margin: 0;
     text-align: left;
-    font-weight: 600;
+    font-family: "SF UI Display Medium";
+    font-weight: normal;
     font-size: 40px;
     line-height: 120%;
 }
 .passCalcTitle p{
     margin: 0;
-    font-weight: 600;
+    font-family: "SF UI Display Medium";
+    font-weight: normal;
     font-size: 20px;
     line-height: 120%;
 }
@@ -337,6 +341,11 @@ input.apple-switch:checked:after {
 .passUserSubscribe{
     width: 68%;
 }
+.passPlan h1{
+    font-family: "SF UI Display Medium";
+    font-weight: normal;
+    font-size: 24px;
+}
 .passPlanCard{
     padding: 30px;
 
@@ -350,8 +359,9 @@ input.apple-switch:checked:after {
 }
 .passPlanLogo h1{
     margin-left: 10px;
+    font-family: "SF UI Display Semibold";
     font-size: 20px;
-    font-weight: bold;
+    font-weight: normal;
 }
 .passPlanLogo span{
     color: #0165DE;
@@ -360,13 +370,15 @@ input.apple-switch:checked:after {
     margin-top: 30px;
 }
 .passDesc h1{
-    font-weight: 600;
+    font-family: "SF UI Display Medium";
+    font-weight: normal;
     font-size: 18px;
     line-height: 21px;
 }
 .passDesc p{
+    font-family: "SF UI Display Medium";
     font-weight: normal;
-    font-size: 16px;
+    font-size: 15px;
     line-height: 19px;
 }
 .passDescButton{
@@ -388,6 +400,11 @@ input.apple-switch:checked:after {
 }
 .passPay{
     margin-top: 30px;
+}
+.passPay h1{
+    font-family: "SF UI Display Medium";
+    font-weight: normal;
+    font-size: 24px;
 }
 .passCardPay{
     display: flex;
@@ -420,5 +437,8 @@ input.apple-switch:checked:after {
     color: #949CB3;
 }
 .passCardText p{
+    font-family: "SF UI Display Light";
+    font-weight: normal;
+    font-size: 16px;
     margin-left: 25px;
 }

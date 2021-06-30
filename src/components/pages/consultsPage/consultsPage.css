@@ -26,7 +26,8 @@
 }
 .conssPageTitle h1{
     margin: 0;
-    font-weight: 500;
+    font-family: "SF UI Display Medium";
+    font-weight: normal;
     font-size: 18px;
     line-height: 140%;
 
@@ -38,7 +39,8 @@
     display: block;
     justify-content: space-between;
 
-    font-weight: 400;
+    font-family: "SF UI Display Light";
+    font-weight: normal;
     font-size: 16px;
     line-height: 100%;
     color: #334059;
@@ -68,7 +70,8 @@
     padding: 15px 40px 0 0;
 }
 .conssPageText p{
-    font-weight: 400;
+    font-family: "SF UI Display Light";
+    font-weight: normal;
     font-size: 14px;
     line-height: 120%;
 

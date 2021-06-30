@@ -17,7 +17,8 @@
 .registerConsItem h1{
     margin: 5px 0;
 
-    font-weight: 600;
+    font-family: "SF UI Display Medium";
+    font-weight: normal;
     font-size: 16px;
     line-height: 120%;
 }
@@ -61,7 +62,8 @@
 }
 .userSkill p{
     margin-top: 10px;
-    font-weight: 600;
+    font-family: "SF UI Display Medium";
+    font-weight: normal;
     font-size: 13px;
     line-height: 120%;
 

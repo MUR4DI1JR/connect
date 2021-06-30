@@ -18,7 +18,8 @@
     margin-top: 0;
     margin-bottom: 25px;
 
-    font-weight: 500;
+    font-family: "SF UI Display Medium";
+    font-weight: normal;
     font-size: 24px;
     line-height: 120%;
 }
@@ -33,6 +34,7 @@
 .registerInvestItem p{
     margin-bottom: 5px;
 
+    font-family: "SF UI Display Medium";
     font-weight: normal;
     font-size: 13px;
     line-height: 16px;
@@ -68,6 +70,7 @@
 }
 .CountCollab input{
     width: 30%;
+    outline: none;
 }
 .CountCollab select{
     width: 30%;
@@ -98,6 +101,7 @@
     display: flex;
     justify-content: space-between;
     position: relative;
+    font-family: "SF UI Display Medium";
     font-weight: normal;
     font-size: 13px;
     line-height: 120%;
@@ -132,6 +136,7 @@
     width: 100%;
 }
 .showCount span{
+    font-family: "SF UI Display Medium";
     position: absolute;
 }
 .registerButtons{

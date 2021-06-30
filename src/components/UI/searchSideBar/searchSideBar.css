@@ -2,11 +2,16 @@
     width: 100%;
 }
 .searchSideBar h1{
-    font-weight: 500;
+    font-family: "SF UI Display Medium";
+    font-weight: normal;
     font-size: 18px;
     line-height: 120%;
 
     color: #000000;
+}
+.searchSideBar p{
+    font-family: "SF UI Display Light";
+    font-weight: normal;
 }
 .searchSideBar select{
     background: none;
@@ -19,6 +24,7 @@
     color: #949CB3;
 }
 .searchSideBar label{
+    font-family: "SF UI Display Light";
     font-weight: normal;
     font-size: 14px;
     line-height: 120%;

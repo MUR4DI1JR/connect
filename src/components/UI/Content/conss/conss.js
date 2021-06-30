@@ -37,7 +37,7 @@ const Conss = () => {
                                 <div className="conssText">
                                     <div className="conssName">
                                         <p>Название услуги / продукты</p>
-                                        <h1>{conss.name}</h1>
+                                        <h1>{conss.title}</h1>
                                     </div>
                                     <div className="conssContact">
                                         <p>Контакты</p>

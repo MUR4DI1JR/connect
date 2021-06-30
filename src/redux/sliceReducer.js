@@ -1527,7 +1527,7 @@ const slice = createSlice({
         addComment(state, action){
             for (var item in state.items) {
                 if(state.item === item){
-                    state.items[item][0].comments.push(action.payload);
+                    state.items[item][state.itemId].comments.push(action.payload);
                 }
             }
         },

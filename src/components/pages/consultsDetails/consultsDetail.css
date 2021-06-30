@@ -1,6 +1,6 @@
 .conssDetails{
     max-width: 1155px;
-    margin: 30px auto;
+    margin: 30px auto 190px auto;
     display: flex;
 }
 .conssDetailsItems{
@@ -22,6 +22,8 @@
     padding: 11px 8px;
     position: absolute;
     font-size: 14px;
+    font-family: "SF UI Display Light";
+    font-weight: normal;
     background: #F6F6F6;
     border-radius: 5px 0;
 }
@@ -50,7 +52,8 @@
 .conssDetailsTitle h1{
     margin: 0 0 0 15px;
 
-    font-weight: 500;
+    font-family: "SF UI Display Medium";
+    font-weight: normal;
     font-size: 18px;
     line-height: 140%;
 
@@ -67,6 +70,7 @@
     display: flex;
     justify-content: space-between;
 
+    font-family: "SF UI Display Light";
     font-weight: normal;
     font-size: 16px;
     line-height: 100%;
@@ -101,7 +105,8 @@
     padding: 15px 40px 15px 0;
 }
 .conssDetailsText p{
-    font-weight: 400;
+    font-family: "SF UI Display Light";
+    font-weight: normal;
     font-size: 14px;
     line-height: 120%;
 
@@ -124,7 +129,8 @@
     color: #fff;
 }
 .conssTelegramDetails h1{
-    font-weight: 500;
+    font-family: "SF UI Display Medium";
+    font-weight: normal;
     font-size: 24px;
     line-height: 100%;
 }
@@ -138,6 +144,7 @@
     margin: 35px 0;
 }
 .conssDescItem h1{
+    font-family: "SF UI Display Medium";
     font-weight: normal;
     font-size: 21px;
     line-height: 140%;

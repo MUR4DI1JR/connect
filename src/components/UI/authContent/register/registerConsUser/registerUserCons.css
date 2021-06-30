@@ -53,6 +53,7 @@
     justify-content: space-between;
 }
 .registerUserInfo h1{
+    font-family: "SF UI Display Medium";
     font-weight: normal;
     font-size: 16px;
     line-height: 120%;
@@ -76,6 +77,7 @@
     color: red;
 }
 .registerUserConsItem h1{
+    font-family: "SF UI Display Medium";
     font-weight: normal;
     font-size: 16px;
     line-height: 120%;

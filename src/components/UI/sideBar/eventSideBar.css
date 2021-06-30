@@ -2,7 +2,8 @@
     margin: 0;
     width: 55%;
     text-align: left;
-    font-weight: 500;
+    font-family: "SF UI Display Medium";
+    font-weight: normal;
     font-size: 24px;
     line-height: 100%;
     color: #000;
@@ -26,7 +27,8 @@
     width: 90%;
     margin: 0;
 
-    font-weight: 600;
+    font-family: "SF UI Display Medium";
+    font-weight: normal;
     font-size: 18px;
     line-height: 100%;
 }
@@ -34,11 +36,13 @@
     margin-top: 23px;
 
     color: #334059;
-    font-weight: 600;
+    font-family: "SF UI Display Light";
+    font-weight: normal;
     font-size: 16px;
     line-height: 100%;
 }
 .eventSideBarParameters p {
+    width: 100%;
     margin: 14px 0 14px 3px;
 }
 .eventSideBarTime:last-child{

@@ -10,6 +10,7 @@
 .logo{
     display: flex;
     cursor: pointer;
+    align-items: center;
 }
 .logo img{
     margin: 18px 0;
@@ -19,16 +20,26 @@
     position: relative;
     z-index: 5;
 }
-.logo h1{
-    margin: 32px 0 0 13px;
+.textLogo{
+    display: block;
+}
+.textLogo h1{
+    margin: 0 0 0 13px;
 
+    font-family: "SF UI Display Semibold";
     position: relative;
     z-index: 5;
     font-size: 20px;
-    font-weight: bold;
+    font-weight: normal;
 }
-.logo span{
-    color: #0165DE;
+.textLogo span{
+    font-family: "SF UI Display Medium";
+    font-weight: normal;
+    margin: 0 0 0 13px;
+    padding: 2px;
+    color: #fff;
+    background: #0165DE;
+    border-radius: 5px;
 }
 .burger{
     display: none;
@@ -46,6 +57,7 @@
 .navBar p{
     margin:0 28px 0 0;
 
+    font-family: "SF UI Display Light";
     font-size: 16px;
     font-weight: 500;
 }
