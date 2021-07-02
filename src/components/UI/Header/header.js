@@ -37,7 +37,6 @@ const Header = () => {
         window.matchMedia('(max-width: 915px)').addListener(handler)
     });
 
-    console.log(user);
 
     const showUser = () =>{
         if (user.length === 0){
