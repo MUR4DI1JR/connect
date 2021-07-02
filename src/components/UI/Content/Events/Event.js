@@ -53,7 +53,7 @@ class Event extends Component {
             slidesToShow: this.state.screen6 ? 1 : 2,
             slidesToScroll: 1,
             className: 'eventSlides',
-
+            nextArrow: <SampleNextArrow />,
         };
 
         return(

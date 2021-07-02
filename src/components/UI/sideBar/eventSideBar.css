@@ -1,6 +1,6 @@
 .itemSideBar h1{
     margin: 0;
-    width: 55%;
+    width: 75%;
     text-align: left;
     font-family: "SF UI Display Medium";
     font-weight: normal;
@@ -53,13 +53,18 @@
     margin-right: 5px;
 }
 .eventSideBarParameters span{
-    margin-left: 5px;
-
-    text-decoration: underline;
+    font-family: "SF UI Display Medium";
+    font-weight: normal;
 }
 .eventSideBarCountry{
     margin: 0 !important;
     text-decoration: none !important;
+    font-family: "SF UI Display Light" !important;
+}
+.eventSideBarValue{
+    font-family: "SF UI Display Light" !important;
+    margin-left: 5px;
+    text-decoration: underline;
 }
 .icon::before{
     display: inline-block;

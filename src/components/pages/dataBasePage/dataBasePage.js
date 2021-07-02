@@ -1,7 +1,8 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
+import Slider from 'react-slick';
 
 import './dataBasePage.css';
-import './media.css';
+import './mediaDataBase.css';
 import {MagnifyingGlass} from "phosphor-react";
 
 const DataBasePage = () => {
@@ -28,7 +29,6 @@ const DataBasePage = () => {
         },
     ];
 
-    const [active, setActive] = useState(2);
 
     const catalog = [
         {
@@ -243,9 +243,126 @@ const DataBasePage = () => {
         },
     ];
 
-
+    const [active, setActive] = useState(2);
+    const [item, setItem] = useState('');
+    const tableName =['Имя получается',  'Город', 'Страна', 'Стоимость', 'Количество'];
     const lastItem = catalog[active].info.length;
+    const [screen11, setScreen11] = useState(window.matchMedia('(max-width: 1165px)').matches);
+    const [screen7, setScreen7] = useState(window.matchMedia('(max-width: 720px)').matches);
 
+
+    useEffect(()=>{
+        const handler = e => setScreen11(e.matches);
+        window.matchMedia("(max-width: 1160px)").addListener(handler);
+        const screenHandler = e => setScreen7(e.matches);
+        window.matchMedia("(max-width: 720px)").addListener(screenHandler)
+    }, []);
+
+    function SampleNextArrow(props) {
+        const { className, style, onClick } = props;
+        return (
+            <div
+                className={'dataBaseIcon ' + className}
+                style={{ ...style, display: "block"}}
+                onClick={onClick}
+            />
+        );
+    }
+
+    function SamplePrevArrow(props) {
+        const { className, style, onClick } = props;
+        return (
+            <div
+                className={className}
+                style={{ ...style, display: "none", background: "green" }}
+                onClick={onClick}
+            />
+        );
+    }
+
+    const settingsCatalog = {
+        dots: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: screen11 ? 6 : 7,
+        slidesToScroll: 1,
+        className: 'dataBaseSlides',
+        nextArrow: <SampleNextArrow />,
+        prevArrow: <SamplePrevArrow />,
+        adaptiveHeight: true,
+    };
+
+    const settings = {
+        dots: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: screen7 ? 1 : 5,
+        slidesToScroll: 1,
+        className: 'tableSlide',
+        nextArrow: <SampleNextArrow />,
+        prevArrow: <SamplePrevArrow />,
+        adaptiveHeight: true,
+    };
+
+
+
+    const tableSlide = () => {
+        return (
+            <div className="dataBaseTable">
+                <Slider {...settings}>
+                    {
+                        tableName.map((item, i) => <th key={i} onClick={e => setItem(e.target.textContent)}>{item}</th>)
+                    }
+                </Slider>
+                    {
+                        catalog[active].info.map((catalog, i) =>{
+                            if ((lastItem - 1) === i){
+                                return(
+                                    <tbody key={i}>
+                                    <tr  style={{borderBottom: 'none'}}>
+                                        <td>
+                                            {
+                                                item === 'Имя получается' ? catalog.name : catalog.city
+                                                &&
+                                                item === 'Город' ? catalog.city : catalog.country
+                                                &&
+                                                item === 'Страна' ? catalog.country : catalog.value
+                                                &&
+                                                item === 'Стоимость' ? catalog.value : catalog.count
+                                                &&
+                                                item === 'Количество' ? catalog.count : catalog.name
+                                            }
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                )
+                            }else {
+                                return(
+                                    <tbody key={i}>
+                                    <tr>
+                                        <td>
+                                            {
+                                                item === 'Имя получается' ? catalog.name : catalog.city
+                                                &&
+                                                item === 'Город' ? catalog.city : catalog.country
+                                                &&
+                                                item === 'Страна' ? catalog.country : catalog.value
+                                                &&
+                                                item === 'Стоимость' ? catalog.value : catalog.count
+                                                &&
+                                                item === 'Количество' ? catalog.count : catalog.name
+                                            }
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                )
+                            }
+                        })
+                    }
+            </div>
+
+        )
+    };
 
     return (
         <div className='dataBase'>
@@ -296,56 +413,65 @@ const DataBasePage = () => {
                 <div className="dataBaseItem">
                     <div className="dataBaseContent">
                         <div className="dataBaseCatalog">
-                            {
-                                catalog.map((catalog, i) =>(
-                                    <div className={active !== i ? 'cardCatalog' : 'cardCatalog'.concat(' catalogActive')} onClick={()=> setActive(i)} key={i}>
-                                        <h1>{catalog.catalog}</h1>
-                                    </div>
-                                ))
-                            }
+                            <Slider  {...settingsCatalog}>
+                                {
+                                    catalog.map((catalog, i) => (
+                                        <div
+                                            className={active !== i ? 'cardCatalog' : 'cardCatalog'.concat(' catalogActive')}
+                                            onClick={() => setActive(i)} key={i}>
+                                            <h1>{catalog.catalog}</h1>
+                                        </div>
+                                    ))
+                                }
+                            </Slider>
                         </div>
                         <div className="dataBaseInfo">
                             <p>305 015 получателей, начиная с 2003 г. по настоящее время</p>
-                            <table className="dataBaseTable">
-                                <thead>
-                                <tr>
-                                    <th>Имя получается</th>
-                                    <th>Город</th>
-                                    <th>Страна</th>
-                                    <th>Стоимость</th>
-                                    <th>Количество</th>
-                                </tr>
-                                </thead>
-                                {
-                                    catalog[active].info.map((catalog, i) =>{
-                                        if ((lastItem - 1) === i){
-                                            return(
-                                                <tbody key={i}>
-                                                <tr  style={{borderBottom: 'none'}}>
-                                                    <td>{catalog.name}</td>
-                                                    <td>{catalog.city}</td>
-                                                    <td>{catalog.country}</td>
-                                                    <td>{catalog.value}</td>
-                                                    <td>{catalog.count}</td>
-                                                </tr>
-                                                </tbody>
-                                            )
-                                        }else {
-                                            return(
-                                                <tbody key={i}>
-                                                <tr>
-                                                    <td>{catalog.name}</td>
-                                                    <td>{catalog.city}</td>
-                                                    <td>{catalog.country}</td>
-                                                    <td>{catalog.value}</td>
-                                                    <td>{catalog.count}</td>
-                                                </tr>
-                                                </tbody>
-                                            )
+                            {
+                                screen7 ?
+                                    tableSlide()
+                                    :
+                                    <table className="dataBaseTable">
+                                        <thead>
+                                        <tr>
+                                            <th>Имя получается</th>
+                                            <th>Город</th>
+                                            <th>Страна</th>
+                                            <th>Стоимость</th>
+                                            <th>Количество</th>
+                                        </tr>
+                                        </thead>
+                                        {
+                                            catalog[active].info.map((catalog, i) => {
+                                                if ((lastItem - 1) === i) {
+                                                    return (
+                                                        <tbody key={i}>
+                                                        <tr style={{borderBottom: 'none'}}>
+                                                            <td>{catalog.name}</td>
+                                                            <td>{catalog.city}</td>
+                                                            <td>{catalog.country}</td>
+                                                            <td>{catalog.value}</td>
+                                                            <td>{catalog.count}</td>
+                                                        </tr>
+                                                        </tbody>
+                                                    )
+                                                } else {
+                                                    return (
+                                                        <tbody key={i}>
+                                                        <tr>
+                                                            <td>{catalog.name}</td>
+                                                            <td>{catalog.city}</td>
+                                                            <td>{catalog.country}</td>
+                                                            <td>{catalog.value}</td>
+                                                            <td>{catalog.count}</td>
+                                                        </tr>
+                                                        </tbody>
+                                                    )
+                                                }
+                                            })
                                         }
-                                    })
-                                }
-                            </table>
+                                    </table>
+                            }
                         </div>
                     </div>
                 </div>

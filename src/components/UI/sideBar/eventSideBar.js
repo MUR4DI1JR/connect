@@ -24,12 +24,11 @@ const EventSideBar = () => {
                         <div className="eventSideBarTitleCard">
                             <h1>{event.title}</h1>
                             <div className="eventSideBarParameters">
-                                <p><CalendarBlank size={20} className="eventSideBarIcon"/>Когда: {event.data}</p>
-                                <p><Clock size={20} className="eventSideBarIcon"/>Время: {event.time}</p>
-                                <p><GlobeHemisphereWest size={20} className="eventSideBarIcon"/>Где: {event.location}<span
-                                    className="eventSideBarCountry">,{event.country}</span></p>
+                                <p><CalendarBlank size={20} className="eventSideBarIcon"/><span>Когда:</span> {event.data}</p>
+                                <p><Clock size={20} className="eventSideBarIcon"/><span>Время:</span> {event.time}</p>
+                                <p><GlobeHemisphereWest size={20} className="eventSideBarIcon"/><span>Где:</span> {event.location}<span className="eventSideBarCountry">,{event.country}</span></p>
                                 <p><CurrencyCircleDollar size={20}
-                                                         className="eventSideBarIcon"/>Cумма: {event.coins}<span>{event.value}</span>
+                                                         className="eventSideBarIcon"/><span>Cумма:</span> {event.coins}<span className="eventSideBarValue">{event.value}</span>
                                 </p>
                             </div>
                         </div>

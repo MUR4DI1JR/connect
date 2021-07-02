@@ -45,7 +45,7 @@ class Ads extends Component {
                 <div className={this.props.active ? "adsContainer" : "adsContainer".concat(' active')}>
                     <Slider ref={c => (this.slider = c)} {...settings}>
                         {
-                            this.props.ads.map((ads, i) =>{
+                            this.props.ads.slice(0, 6).map((ads, i) =>{
                                 return(
                                     <div key={i}>
                                         <div className="ads-date">

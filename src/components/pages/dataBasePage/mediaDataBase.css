@@ -1,0 +1,108 @@
+@media screen and (max-width: 1160px){
+    .dataBaseIcon::before{
+        display: inline-block;
+        font-style: normal;
+        font-variant: normal;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+    }
+    .dataBaseCatalog .slick-next::before {
+        width: 10px;
+        height: 17px;
+        padding: 8px 11px 8px 13px;
+        font-size: 15px;
+        content: "\f054";
+        color: #000;
+        opacity: 1;
+        background: #fff;
+        border-radius: 50px;
+    }
+    .dataBaseCatalog.slick-prev, .slick-next {
+        margin-right: 15px !important;
+        margin-top: -5px !important;
+    }
+}
+@media screen and (max-width: 900px){
+    .dataBaseHeadingContent h1{
+        width: 95%;
+        margin: 0 auto;
+    }
+    .searchHeading {
+        width: 95%;
+        margin: 0 auto;
+        flex-wrap: wrap;
+    }
+    .countDataBase {
+        width: 95%;
+        margin: 0 auto;
+        flex-wrap: wrap;
+    }
+    .cardDataBase {
+        width: 45%;
+        margin-top: 15px;
+    }
+}
+@media screen and (max-width: 720px){
+    .tableSlide::before{
+        display: inline-block;
+        font-style: normal;
+        font-variant: normal;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+    }
+    .tableSlide .slick-next::before {
+        width: 10px;
+        height: 8px;
+        padding: 8px 5px 8px 10px;
+        font-size: 12px;
+        content: "\f054";
+        color: #000;
+        opacity: 1;
+        background: #fff;
+        border-radius: 50px;
+    }
+    .dataBaseCatalog.slick-prev, .slick-next {
+        margin-right: 15px;
+        margin-top: -5px ;
+    }
+    .tableSlide.slick-prev, .slick-next {
+        margin-right: 23px !important;
+        margin-top: -2px !important;
+    }
+    .dataBaseTable td {
+        width: 24%;
+    }
+}
+@media screen and (max-width: 500px){
+    .searchHeading {
+        display: block;
+    }
+    .commSearch {
+        width: 100%;
+    }
+    .locationSearch {
+        margin-top: 20px;
+        width: 100%;
+    }
+    .headingParametersSearch {
+        width: 60%;
+        float: right;
+    }
+    .cardDataBase {
+        width: 100%;
+        margin-top: 15px;
+    }
+    .dataBaseContent {
+        padding: 10px;
+    }
+    .dataBaseInfo {
+        padding: 40px 5px;
+    }
+    .dataBaseTable td {
+        font-size: 14px;
+    }
+}

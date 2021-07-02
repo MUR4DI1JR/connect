@@ -3,7 +3,7 @@ a {
 }
 .pagination_container{
     max-width: 1200px;
-    margin: 80px auto;
+    margin: 30px auto 190px auto;
     display: flex;
     justify-content: center;
 }
