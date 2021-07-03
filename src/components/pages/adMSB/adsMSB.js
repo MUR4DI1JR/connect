@@ -57,7 +57,7 @@ const AdsMsb = () => {
     return (
         <div className="adsMsb">
             {
-                showModal ? showAddItem() : null
+                showModal && screen ? showAddItem() : null
             }
             <Search title='Поиск объявления МСБ' item={ads} investTitle={false}/>
             {
