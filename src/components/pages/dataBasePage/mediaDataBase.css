@@ -19,10 +19,6 @@
         background: #fff;
         border-radius: 50px;
     }
-    .dataBaseCatalog.slick-prev, .slick-next {
-        margin-right: 15px !important;
-        margin-top: -5px !important;
-    }
 }
 @media screen and (max-width: 900px){
     .dataBaseHeadingContent h1{
@@ -64,14 +60,6 @@
         opacity: 1;
         background: #fff;
         border-radius: 50px;
-    }
-    .dataBaseCatalog.slick-prev, .slick-next {
-        margin-right: 15px;
-        margin-top: -5px ;
-    }
-    .tableSlide.slick-prev, .slick-next {
-        margin-right: 23px !important;
-        margin-top: -2px !important;
     }
     .dataBaseTable td {
         width: 10%;

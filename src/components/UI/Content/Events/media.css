@@ -6,16 +6,6 @@
         display: flex;
         font-size: 13px;
     }
-    .eventContainer .slick-prev, .slick-next {
-        margin-right: 52px !important;
-        margin-top: 65px !important;
-    }
-}
-@media screen and (max-width: 450px){
-    .eventContainer .slick-prev, .slick-next {
-        margin-right: 52px !important;
-        margin-top: 35px !important;
-    }
 }
 @media screen and (max-width: 420px){
     .eventParameters {
@@ -23,9 +13,5 @@
     }
     .eventTime:last-child {
         margin-left: 15px;
-    }
-    .eventContainer .slick-prev, .slick-next {
-        margin-right: 52px !important;
-        margin-top: 5px !important;
     }
 }

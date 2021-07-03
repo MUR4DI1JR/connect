@@ -7,6 +7,7 @@ import './media.css';
 import EventSideBar from "../../UI/sideBar/eventSideBar";
 import Descriptions from "../../UI/Content/descriptions/descriptions";
 import Comment from "../../UI/comments/comment";
+import SearchSideBar from "../../UI/searchSideBar/searchSideBar";
 
 const AdDetails = (props) => {
     const ads = useSelector(state => state.slice.items.ads);
@@ -76,7 +77,7 @@ const AdDetails = (props) => {
                 <Comment item={"ads"} comments={adsItem[0].comments} id={itemId}/>
             </div>
             <div className="otherEventDetail">
-                <EventSideBar/>
+                <SearchSideBar addItem={true} items={ads}/>
             </div>
         </div>
     );

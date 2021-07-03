@@ -8,6 +8,7 @@ import Search from "../../UI/search/search";
 import {ArrowRight, Plus, Printer} from "phosphor-react";
 import './media.css';
 import Pagination from "../../UI/pagination/pagination";
+import SearchSideBar from "../../UI/searchSideBar/searchSideBar";
 
 const AdsMsb = () => {
     const ads = useSelector(state => state.slice.items.ads);
@@ -15,6 +16,7 @@ const AdsMsb = () => {
     const [screen, setScreen] = useState(window.matchMedia('(max-width: 450px)').matches);
     const currentPage = useSelector(state => state.slice.currentPage);
     const itemsPerPage = useSelector(state=> state.slice.itemsPerPage);
+    const [showModal, setShowModal] = useState(false);
 
     useEffect(()=>{
         const handler = e => setScreen(e.matches);
@@ -31,10 +33,20 @@ const AdsMsb = () => {
     const currentItem = filteredItems.slice(firstItemsIndex, lastItemsIndex);
 
 
+    const showAddItem = () =>{
+        return(
+            <div className='adsModal' onClick={() =>{setShowModal(false)}}>
+                <div className="ModalContent">
+                    <SearchSideBar items={ads}/>
+                </div>
+            </div>
+        )
+    };
+
     const addMsbAd = () =>{
       return(
           <div className='addMsdAd'>
-              <button>
+              <button onClick={(e) => {e.preventDefault(); setShowModal(true)}}>
                   Разместить свое объявление
                   <Plus size={48} />
               </button>
@@ -44,6 +56,9 @@ const AdsMsb = () => {
 
     return (
         <div className="adsMsb">
+            {
+                showModal ? showAddItem() : null
+            }
             <Search title='Поиск объявления МСБ' item={ads} investTitle={false}/>
             {
                 screen ? addMsbAd() : null

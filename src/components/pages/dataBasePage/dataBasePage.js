@@ -249,21 +249,49 @@ const DataBasePage = () => {
     const lastItem = catalog[active].info.length;
     const [screen11, setScreen11] = useState(window.matchMedia('(max-width: 1165px)').matches);
     const [screen7, setScreen7] = useState(window.matchMedia('(max-width: 720px)').matches);
+    const [screen5, setScreen5] = useState(window.matchMedia('max-width: 500px').matches);
 
 
     useEffect(()=>{
         const handler = e => setScreen11(e.matches);
         window.matchMedia("(max-width: 1160px)").addListener(handler);
         const screenHandler = e => setScreen7(e.matches);
-        window.matchMedia("(max-width: 720px)").addListener(screenHandler)
+        window.matchMedia("(max-width: 720px)").addListener(screenHandler);
+        const screenSlide = e => setScreen5(e.matches);
+        window.matchMedia('max-width: 500px').addListener(screenSlide);
     }, []);
+
+
+    function SimpleNextArrow(props) {
+        const { className, style, onClick } = props;
+        return (
+            <div
+                id='nextSlideCatalog'
+                className={'dataBaseIcon ' + className}
+                style={{ ...style, display: "block", marginRight: screen5 ? '15px' : '30px', marginTop: '-5px'}}
+                onClick={onClick}
+            />
+        );
+    }
+
+    function SimplePrevArrow(props) {
+        const { className, style, onClick } = props;
+        return (
+            <div
+                className={className}
+                style={{ ...style, display: "none", background: "green" }}
+                onClick={onClick}
+            />
+        );
+    }
 
     function SampleNextArrow(props) {
         const { className, style, onClick } = props;
         return (
             <div
+                id='nextSlideItem'
                 className={'dataBaseIcon ' + className}
-                style={{ ...style, display: "block"}}
+                style={{ ...style, display: "block", marginRight: '23px', marginTop: '-2px'}}
                 onClick={onClick}
             />
         );
@@ -287,8 +315,8 @@ const DataBasePage = () => {
         slidesToShow: screen11 ? 6 : 7,
         slidesToScroll: 1,
         className: 'dataBaseSlides',
-        nextArrow: <SampleNextArrow />,
-        prevArrow: <SamplePrevArrow />,
+        nextArrow: <SimpleNextArrow />,
+        prevArrow: <SimplePrevArrow />,
         adaptiveHeight: true,
     };
 

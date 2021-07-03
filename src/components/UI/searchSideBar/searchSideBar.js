@@ -3,6 +3,7 @@ import {useSelector} from "react-redux";
 
 
 import './searchSideBar.css';
+import {Plus} from "phosphor-react";
 
 const SearchSideBar = (props) => {
     // const events = useSelector(state => state.slice.items.events);
@@ -72,9 +73,22 @@ const SearchSideBar = (props) => {
     };
 
 
+    const addMsbAd = () =>{
+        return(
+            <div className='addMsdAd'>
+                <button>
+                    Разместить свое объявление
+                    <Plus size={48} />
+                </button>
+            </div>
+        )
+    };
 
     return (
         <div className='searchSideBar'>
+            {
+                props.addItem ? addMsbAd() : null
+            }
             <h1>Параметры поиска</h1>
             <div className="searchSideBarContainer">
                 <div className="sort">

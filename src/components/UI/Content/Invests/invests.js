@@ -3,7 +3,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheckCircle } from '@fortawesome/free-regular-svg-icons';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import {CalendarBlank, CurrencyCircleDollar, GlobeHemisphereWest, HourglassLow} from "phosphor-react";
-import {useSelector} from "react-redux";
 import {useHistory} from "react-router";
 
 
@@ -42,7 +41,7 @@ const Invests = (props) => {
             let listInvests = props.filteredItem.slice(0, 3);
             return listInvests.map((invests, i)=>{
                 return(
-                    <div className="investsBlock" key={i} onClick={() => history.push(`invests-page/${invests.id}`)}>
+                    <div className="investsBlock" key={i} onClick={() => history.push(`/invests-page/${invests.id}`)}>
                         <div className="investsTitle">
                             <img src={icon} alt="iconTitle"/>
                             <h1>{invests.title}{invests.star ? <FontAwesomeIcon className="investsCheckIcon" icon={faCheckCircle} /> : null}</h1>
