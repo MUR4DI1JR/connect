@@ -47,7 +47,7 @@ const AdDetails = (props) => {
                                     </div>
                                 </div>
                                 <div className="adsDetailMsbContent">
-                                    <p>Назавание</p>
+                                    <p>Название</p>
                                     <h1>{ads.title}</h1>
                                 </div>
                                 <div className="adsDetailMsbContent">

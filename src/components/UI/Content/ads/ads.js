@@ -57,7 +57,7 @@ class Ads extends Component {
                                             </h2>
                                         </div>
                                         <div className="ads">
-                                            <p>Назавание</p>
+                                            <p>Название</p>
                                             <h1>{ads.title}</h1>
                                         </div>
                                         <div className="ads">

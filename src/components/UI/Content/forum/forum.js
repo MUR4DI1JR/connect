@@ -28,7 +28,7 @@ const Forum = () => {
     const history = useHistory();
 
     return (
-        <div className="forum" id='3'>
+        <div className="forum">
             <div className="forumContainer">
                 <div className="forumCalc">
                     <div className="forumCalcTitle">

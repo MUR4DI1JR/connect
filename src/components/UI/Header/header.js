@@ -26,9 +26,10 @@ const Header = () => {
         }
     };
 
+
     let showText = navText.map((text, i) => {
         return (
-            <p key={i}><a href={`#${i}`} onClick={clickHeader}>{text}</a></p>
+            <p key={i}><a href={history.action === "POP" ? `/#${i}` : `#${i}`} onClick={clickHeader}>{text}</a></p>
         )
     });
 

@@ -69,7 +69,7 @@ const AdsMsb = () => {
                                     </div>
                                 </div>
                                 <div className="adsMsbContent">
-                                    <p>Назавание</p>
+                                    <p>Название</p>
                                     <h1>{ads.title}</h1>
                                 </div>
                                 <div className="adsMsbContent">
