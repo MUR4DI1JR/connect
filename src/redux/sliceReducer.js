@@ -1533,8 +1533,11 @@ const slice = createSlice({
         },
         addUser(state, action){
             state.users.push(action.payload)
+        },
+        deleteUser(state, action){
+            state.users = action.payload
         }
     }
 });
 export default slice.reducer;
-export const {openHandle, filtered, paginate, clickedItem, changeComment, changeDate, changeEmail, changeName, addComment, clickItemId, clickItem, addUser} = slice.actions;
+export const {openHandle, filtered, paginate, clickedItem, changeComment, changeDate, changeEmail, changeName, addComment, clickItemId, clickItem, addUser, deleteUser} = slice.actions;

@@ -5,7 +5,7 @@ import {useDispatch, useSelector} from 'react-redux';
 import './header.css';
 import './media.css';
 import logo from './../../../Images/logo.png';
-import {openHandle} from "../../../redux/sliceReducer";
+import {deleteUser, openHandle} from "../../../redux/sliceReducer";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faFacebookF, faTelegramPlane, faTwitter, faVk} from "@fortawesome/free-brands-svg-icons";
 
@@ -70,6 +70,12 @@ const Header = () => {
         history.push('/')
     };
 
+    const signOutClick = () =>{
+        const user = [];
+        dispatch(deleteUser(user));
+        dispatch(openHandle());
+        history.push('/')
+    };
 
     const adaptiveHeader = () =>{
         if (active){
@@ -104,7 +110,8 @@ const Header = () => {
                                 :
                                 <div className="signInHeader">
                                     {
-                                        user.length !== 0 ? null
+                                        user.length !== 0 ?
+                                            <button className={ active ? "signIn" : "signIn".concat(' active')} onClick={signOutClick}>Выход</button>
                                             :
                                             <button className={ active ? "signIn" : "signIn".concat(' active')} onClick={loginClick}>Вход</button>
                                     }
